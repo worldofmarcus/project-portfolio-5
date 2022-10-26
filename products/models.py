@@ -1,5 +1,30 @@
 from django.db import models
 
+
+class Tag(models.Model):
+    """ Tag model """
+    name = models.CharField(max_length=200, null=True)
+
+    def __str__(self):
+        return self.name
+
+
+class Category(models.Model):
+    """ Category model """
+    class Meta:
+        verbose_name_plural = 'Categories' #Fix plural bug in admin area
+
+    name = models.CharFIeld(max_length=254)
+    view_name = models.CharField(max_length=254, null=True, blank=True)
+
+    def __str__(self):
+        return self.name
+
+    def get_view_name(self):
+        return self.view_name
+
+
+
 class Product(models.Model):
     """ Product model """
 
