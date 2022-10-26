@@ -19,6 +19,7 @@
                     <th>Price</th>
                     <th>Rating</th>
                     <th>Tags</th>
+                    <th>Image</th>
                 </tr>
 
                 {% for product in products %}
@@ -31,6 +32,16 @@
                     <td>{{ product.price }}</td>
                     <td>{{ product.rating }}</td>
                     <td>{% for tag in product.tags.all|join:", " %}{{ tag }}{% endfor %}</td>
+
+
+                    <td>
+                        {% if product.image %}
+                        <img src="{{ product.image.url }}">
+
+                        {% else %}
+                        No image
+                        {% endif %}
+                    </td>
 
 
 
