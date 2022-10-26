@@ -12,7 +12,7 @@ class Tag(models.Model):
 class Category(models.Model):
     """ Category model """
     class Meta:
-        verbose_name_plural = 'Categories' #Fix plural bug in admin area
+        verbose_name_plural = 'Categories'  # Fix plural bug in admin area
 
     name = models.CharField(max_length=254)
     view_name = models.CharField(max_length=254, null=True, blank=True)
