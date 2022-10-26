@@ -14,7 +14,7 @@ class Category(models.Model):
     class Meta:
         verbose_name_plural = 'Categories' #Fix plural bug in admin area
 
-    name = models.CharFIeld(max_length=254)
+    name = models.CharField(max_length=254)
     view_name = models.CharField(max_length=254, null=True, blank=True)
 
     def __str__(self):
