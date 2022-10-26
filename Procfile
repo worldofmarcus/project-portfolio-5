@@ -1,0 +1,1 @@
+web: gunicorn kollektiv_fem.wsgi:application
