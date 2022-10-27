@@ -8,9 +8,14 @@
    global styles
    ============== */
 
-/* ==============
-   nav bar
-   ============== */
+/* ==================
+   top bar & nav bar
+   ================== */
+
+#topContent {
+    background-color: orange;
+    height: 3rem;
+}
 
 .navbar-brand {
     font-family: 'Poppins', sans-serif;
