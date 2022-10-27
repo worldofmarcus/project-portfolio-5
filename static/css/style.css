@@ -1,4 +1,16 @@
+/* ==============
+   google fonts
+   ============== */
+
 @import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* ==============
+   global styles
+   ============== */
+
+/* ==============
+   nav bar
+   ============== */
 
 .navbar-brand {
     font-family: 'Poppins', sans-serif;
@@ -13,4 +25,17 @@
     font-family: 'Nunito Sans', sans-serif;
     text-transform: uppercase;
     font-size: 12px;
+}
+
+/* ==============
+   footer
+   ============== */
+
+.footer-bg {
+    background-color: orange;
+    ;
+}
+
+.footer-text {
+    font-family: 'Nunito Sans', sans-serif;
 }

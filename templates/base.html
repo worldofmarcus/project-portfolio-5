@@ -42,11 +42,8 @@
     <title>Kollektiv Fem {% block extra_title %}{% endblock %}</title>
 </head>
 
-<body>
-    <header class="container-fluid fixed-top"></header>
+<body class="d-flex flex-column min-vh-100">
     {% include 'navbar.html' %}
-
-
 
     {% if messages %}
     <div class="message-container"></div>
@@ -62,7 +59,7 @@
     {% block postloadjs %}
     {% endblock %}
 
-
+    {% include 'footer.html' %}
 </body>
 
 </html>
