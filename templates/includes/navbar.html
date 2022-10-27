@@ -28,14 +28,16 @@
                         Categories
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownCategories">
-                        <li><a class="dropdown-item" href="#">Tapes</a></li>
-                        <li><a class="dropdown-item" href="#">CDs</a></li>
-                        <li><a class="dropdown-item" href="#">Posters</a></li>
-                        <li><a class="dropdown-item" href="#">Pins</a></li>
-                        <li><a class="dropdown-item" href="#">T-shirts</a></li>
-                        <li><a class="dropdown-item" href="#">Tank Tops</a></li>
-                        <li><a class="dropdown-item" href="#">Tote Bags</a></li>
-                        <li><a class="dropdown-item" href="#">Vinyls</a></li>
+                        <li><a class="dropdown-item" href="">Tapes</a></li>
+                        <li>
+                            <CDs class="dropdown-item" href="">CDs</a>
+                        </li>
+                        <li><a class="dropdown-item" href="">Posters</a></li>
+                        <li><a class="dropdown-item" href="">Pins</a></li>
+                        <li><a class="dropdown-item" href="">T-shirts</a></li>
+                        <li><a class="dropdown-item" href="">Tank Tops</a></li>
+                        <li><a class="dropdown-item" href="">Tote Bags</a></li>
+                        <li><a class="dropdown-item" href="">Vinyls</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -57,11 +59,12 @@
                     <a class="nav-link" href="#"><i class="fa-solid fa-user"></i></a>
                 </li>
             </ul>
-            <form class="w-auto mx-4">
+            <form method="GET" action="{% url 'list_all_products' %}" class="w-auto mx-4">
                 <div class="input-group">
                     <button class="btn btn-link nav-search-btn" type="submit"><i class="fa fa-search"
                             aria-hidden="true"></i></button>
-                    <input class="form-control input-sm me-2" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control input-sm me-2" type="search" name="q" placeholder="Search"
+                        aria-label="Search">
                 </div>
             </form>
         </div>
