@@ -33,18 +33,35 @@
     font-size: 12px;
 }
 
-input[type=search],
-input[type=sign-up] {
+/* ==============
+   input fields
+   ============== */
+
+input[type=search] {
     border: none;
     border-bottom: 1px solid #dfe2e6;
     background-color: #f8f9fa;
     font-size: 12px;
 }
 
-.input-group-text {
+input[type=sign-up] {
+    border: none;
+    border-bottom: 1px solid #000000;
+    background-color: orange;
+    font-size: 12px;
+}
+
+.nav-search-btn {
     color: #707071;
     font-size: 12px;
     background-color: #f8f9fa;
+    border: none;
+}
+
+.footer-search-btn {
+    color: #000;
+    font-size: 12px;
+    background-color: orange;
     border: none;
 }
 
@@ -59,4 +76,5 @@ input[type=sign-up] {
 
 .footer-text {
     font-family: 'Nunito Sans', sans-serif;
+    font-size: 12px;
 }
