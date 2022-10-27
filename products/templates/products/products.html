@@ -31,12 +31,12 @@
                     <td>{{ product.category }}</td>
                     <td>{{ product.price }}</td>
                     <td>{{ product.rating }}</td>
-                    <td>{% for tag in product.tags.all|join:", " %}{{ tag }}{% endfor %}</td>
+                    <td>{% for tag in product.tags.all|join:" | " %}{{ tag }}{% endfor %}</td>
 
 
                     <td>
                         {% if product.image %}
-                        <img src="{{ product.image.url }}">
+                        <img src="{{ product.image.url }}" alt="Girl in a jacket" width="200" height="200">
 
                         {% else %}
                         No image
