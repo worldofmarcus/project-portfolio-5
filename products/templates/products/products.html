@@ -28,6 +28,8 @@
                             <p class="" mt-1 mb-1">{{ product.description }}</p>
                             <p class="" mb-1">{{ product.category }}</p>
                             <p class="" mb-1">{{ product.rating }}</p>
+                            <p class="" mb-1">{{ product.price }}</p>
+
                             <p class="" mb-1">{% for tag in product.tags.all|join:" | " %}{{ tag }}{% endfor %}</p>
 
 
@@ -52,10 +54,10 @@
             {% if product_list.has_previous %}
 
             <li class="page-item"><a class="page-link"
-                    href="{% if category %}?page=1&category={{ category }}{% else %}?page=1{% endif %}">&laquo;
+                    href="{% if current_categories %}?page=1&category={{ category }}{% else %}?page=1{% endif %}">&laquo;
                     First</a></li>
             <li class="page-item"><a class="page-link"
-                    href="{% if category %}?page={{ product_list.previous_page_number }}&category={{ category }}{% else %}?page={{ product_list.previous_page_number }}{% endif %}">Previous</a>
+                    href="{% if current_categories %}?page={{ product_list.previous_page_number }}&category={{ category }}{% else %}?page={{ product_list.previous_page_number }}{% endif %}">Previous</a>
             </li>
             {% endif %}
 
@@ -64,18 +66,18 @@
 
             {% if product_list.has_next %}
             <li class="page-item"><a class="page-link"
-                    href="{% if category %}?page={{ product_list.next_page_number }}&category={{ category }}{% else %}?page={{ product_list.next_page_number }}{% endif %}">Next</a>
+                    href="{% if current_sorting %}?page={{ product_list.next_page_number }}&sort={{ sort }}&direction={{ direction }}{% elif current_categories %}?page={{ product_list.next_page_number }}&category={{ category }}{% else %}?page={{ product_list.next_page_number }}{% endif %}">Next</a>
             </li>
 
 
             <li class="page-item"><a class="page-link"
-                    href="{% if category %}?page={{ product_list.paginator.num_pages }}&category={{ category }}{% else %}?page={{ product_list.paginator.num_pages }}{% endif %}">Last
+                    href="{% if current_categories %}?page={{ product_list.paginator.num_pages }}&category={{ category }}{% else %}?page={{ product_list.paginator.num_pages }}{% endif %}">Last
                     &raquo;</a></li>
             {% endif %}
         </ul>
     </nav>
     <!-- End Of Pagination Area -->
-
+    {{ current_sorting }}
 
 </div>
 {% endblock%}

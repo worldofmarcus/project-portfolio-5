@@ -16,9 +16,12 @@
                         Products
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownProducts">
-                        <li><a class="dropdown-item" href="#">By Added Date</a></li>
-                        <li><a class="dropdown-item" href="#">By Price</a></li>
-                        <li><a class="dropdown-item" href="#">By Rating</a></li>
+                        <li><a class="dropdown-item" href="{% url 'list_all_products' %}?sort=date&direction=asc">By
+                                Added Date</a></li>
+                        <li><a class="dropdown-item" href="{% url 'list_all_products' %}?sort=price&direction=asc">By
+                                Price</a></li>
+                        <li><a class="dropdown-item" href="{% url 'list_all_products' %}?sort=rating&direction=desc">By
+                                Rating</a></li>
                         <li><a class="dropdown-item" href="{% url 'list_all_products' %}">All Products</a></li>
                     </ul>
                 </li>
@@ -30,7 +33,7 @@
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownCategories">
                         <li><a class="dropdown-item" href="{% url 'list_all_products' %}?category=tapes">Tapes</a></li>
                         <li>
-                            <CDs class="dropdown-item" href="{% url 'list_all_products' %}?category=cds">CDs</a>
+                            <a class="dropdown-item" href="{% url 'list_all_products' %}?category=cds">CDs</a>
                         </li>
                         <li><a class="dropdown-item" href="{% url 'list_all_products' %}?category=posters">Posters</a>
                         </li>

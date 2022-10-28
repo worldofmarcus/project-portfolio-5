@@ -13,10 +13,27 @@ def list_all_products(request):
     query = None
     categories = None
     category = None
+    sort = None
+    direction = None
 
     total_products = Product.objects.all().count()
 
     if request.GET:
+
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+            if sortkey == 'name':
+                sortkey = 'lower_name'
+                products = products.annotate(lower_name=Lower('name'))
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+            products = products.order_by(sortkey)
+
+
+
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             category = request.GET['category']
@@ -39,13 +56,17 @@ def list_all_products(request):
     product_list = p.get_page(page)
     # End of Pagination code
 
+    current_sorting = f'{sort}_{direction}'
 
     context = {
         'total_products': total_products,
         'product_list': product_list,
         'search_term': query,
         'current_categories': categories,
-        'category': category
+        'category': category,
+        'current_sorting': current_sorting,
+        'sort': sort,
+        'direction': direction,
 
         }
 
