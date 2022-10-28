@@ -33,7 +33,6 @@ def list_all_products(request):
             products = products.order_by(sortkey)
 
 
-
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             category = request.GET['category']
