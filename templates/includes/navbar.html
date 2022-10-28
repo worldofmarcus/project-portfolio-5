@@ -28,16 +28,21 @@
                         Categories
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownCategories">
-                        <li><a class="dropdown-item" href="">Tapes</a></li>
+                        <li><a class="dropdown-item" href="{% url 'list_all_products' %}?category=tapes">Tapes</a></li>
                         <li>
-                            <CDs class="dropdown-item" href="">CDs</a>
+                            <CDs class="dropdown-item" href="{% url 'list_all_products' %}?category=cds">CDs</a>
                         </li>
-                        <li><a class="dropdown-item" href="">Posters</a></li>
-                        <li><a class="dropdown-item" href="">Pins</a></li>
-                        <li><a class="dropdown-item" href="">T-shirts</a></li>
-                        <li><a class="dropdown-item" href="">Tank Tops</a></li>
-                        <li><a class="dropdown-item" href="">Tote Bags</a></li>
-                        <li><a class="dropdown-item" href="">Vinyls</a></li>
+                        <li><a class="dropdown-item" href="{% url 'list_all_products' %}?category=posters">Posters</a>
+                        </li>
+                        <li><a class="dropdown-item" href="{% url 'list_all_products' %}?category=pins">Pins</a></li>
+                        <li><a class="dropdown-item" href="{% url 'list_all_products' %}?category=tshirts">T-shirts</a>
+                        </li>
+                        <li><a class="dropdown-item" href="{% url 'list_all_products' %}?category=tanktops">Tank
+                                Tops</a></li>
+                        <li><a class="dropdown-item" href="{% url 'list_all_products' %}?category=totebags">Tote
+                                Bags</a></li>
+                        <li><a class="dropdown-item" href="{% url 'list_all_products' %}?category=vinyls">Vinyls</a>
+                        </li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -46,8 +51,12 @@
                         Special Offers
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownSpecialOffers">
-                        <li><a class="dropdown-item" href="#">New Arrivals</a></li>
-                        <li><a class="dropdown-item" href="#">Product of the Month</a></li>
+                        <li><a class="dropdown-item" href="{% url 'list_all_products' %}?category=newarrivals">New
+                                Arrivals</a>
+                        </li>
+                        <li><a class="dropdown-item"
+                                href="{% url 'list_all_products' %}?category=productofthemonth">Product of
+                                the Month</a></li>
                     </ul>
                 </li>
             </ul>
