@@ -53,11 +53,13 @@ def list_all_products(request):
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
-    # Pagination code
-    p = Paginator(products, 6)
-    page = request.GET.get('page')
-    product_list = p.get_page(page)
-    # End of Pagination code
+    # # Pagination code
+    # p = Paginator(products, 6)
+    # page = request.GET.get('page')
+    # product_list = p.get_page(page)
+    # # End of Pagination code
+
+    product_list = products
 
     current_sorting = f'{sort}_{direction}'
 

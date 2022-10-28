@@ -20,11 +20,11 @@
             <select id="sort-selector"
                 class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
                 <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
-                <option value="date_created_on_desc"
-                    {% if current_sorting == 'date_created_on_desc' %}selected{% endif %}>Date added (low to high)
+                <option value="date_desc" {% if current_sorting == 'date_desc' %}selected{% endif %}>
+                    Date added (low to high)
                 </option>
-                <option value="date_created_on_asc"
-                    {% if current_sorting == 'date_created_on_desc' %}selected{% endif %}>Date added (high to low)
+                <option value="date_asc" {% if current_sorting == 'date_desc' %}selected{% endif %}>Date
+                    added (high to low)
                 </option>
                 <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)
                 </option>
@@ -138,5 +138,30 @@
 
 {% block postloadjs %}
 {{ block.super }}
+<script type="text/javascript">
+    $('#sort-selector').change(function () {
+        var selector = $(this);
+        var currentUrl = new URL(window.location);
+
+        var selectedVal = selector.val();
+        if (selectedVal != "reset") {
+            var sort = selectedVal.split("_")[0];
+            var direction = selectedVal.split("_")[1];
+
+            currentUrl.searchParams.set("sort", sort);
+            currentUrl.searchParams.set("direction", direction);
+
+            window.location.replace(currentUrl);
+        } else {
+            currentUrl.searchParams.delete("sort");
+            currentUrl.searchParams.delete("direction");
+
+            window.location.replace(currentUrl);
+        }
+    })
+</script>
+
+
+
 
 {% endblock %}

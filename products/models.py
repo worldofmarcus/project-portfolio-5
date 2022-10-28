@@ -30,7 +30,7 @@ class Product(models.Model):
 
     category = models.ForeignKey('Category', null=True, blank=True,
                                  on_delete=models.SET_NULL)
-    date_created_on = models.DateTimeField(auto_now_add=True)
+    date = models.DateTimeField(auto_now_add=True)
     name = models.CharField(max_length=200, null=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     tags = models.ManyToManyField(Tag)
