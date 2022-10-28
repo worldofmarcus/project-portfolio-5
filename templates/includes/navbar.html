@@ -17,12 +17,14 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownProducts">
                         <li><a class="dropdown-item"
-                                href="{% url 'list_all_products' %}?sort=date_created_on&direction=asc">By
+                                href="{% url 'list_all_products' %}?sort=date_created_on&direction=desc">By
                                 Added Date</a></li>
                         <li><a class="dropdown-item" href="{% url 'list_all_products' %}?sort=price&direction=asc">By
                                 Price</a></li>
                         <li><a class="dropdown-item" href="{% url 'list_all_products' %}?sort=rating&direction=desc">By
                                 Rating</a></li>
+                        <li><a class="dropdown-item" href="{% url 'list_all_products' %}?sort=name&direction=asc">By
+                                Name</a></li>
                         <li><a class="dropdown-item" href="{% url 'list_all_products' %}">All Products</a></li>
                     </ul>
                 </li>
