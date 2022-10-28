@@ -16,7 +16,8 @@
                         Products
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownProducts">
-                        <li><a class="dropdown-item" href="{% url 'list_all_products' %}?sort=date&direction=asc">By
+                        <li><a class="dropdown-item"
+                                href="{% url 'list_all_products' %}?sort=date_created_on&direction=asc">By
                                 Added Date</a></li>
                         <li><a class="dropdown-item" href="{% url 'list_all_products' %}?sort=price&direction=asc">By
                                 Price</a></li>
