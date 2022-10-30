@@ -5,15 +5,17 @@
 
 <div class="container flex-grow-1">
     <div>
-        <h1 class="headline mt-4">All Products</h1>
-        <hr>
+        <h1>Products</h1>
+        {% if sort or not sort %}
+        <p class="text-muted">[Sorted by '{{ sort }}']</p>
+        {% elif sort or not sort and category %}
+        <p class="text-muted">[Sorted by '{{ sort }}']</p>
+        {% endif %}
+        {% for category in current_categories %}
+        <p class="text-muted">{{ category.view_name }}</p>
+        <br>
+        {% endfor %}
     </div>
-
-    {% for category in current_categories %}
-    <a class="category-badge text-decoration-none" href="{% url 'list_all_products' %}?category={{ c.name }}">
-        <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ category.view_name }}</span>
-    </a>
-    {% endfor %}
 
     <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
         <div class="sort-select-wrapper w-50">
@@ -74,8 +76,6 @@
                             <p class="" mb-1">{{ product.category }}</p>
                             <p class="" mb-1">{{ product.rating }}</p>
                             <p class="" mb-1">€{{ product.price }}</p>
-
-
                             {% if product.category %}
                             <p class="small mt-1 mb-0">
                                 <a class="text-muted"
@@ -84,10 +84,7 @@
                                 </a>
                             </p>
                             {% endif %}
-
-                            <p class="" mb-1">{% for tag in product.tags.all|join:" | " %}{{ tag }}{% endfor %}</p>
-
-
+                            <p class="mb-1">{% for tag in product.tags.all|join:" | " %}{{ tag }}{% endfor %}</p>
                         </div>
                     </div>
                 </div>
