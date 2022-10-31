@@ -5,8 +5,8 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
-            <div class="image-container my-5">
+        <div class="col-12 col-md-6 col-lg-4 offset-lg-2 align-items-center d-flex">
+            <div class="image-container img-zoom my-5">
                 {% if product.image %}
                 <a href="{{ product.image.url }}" data-bs-toggle="modal" data-bs-target="#imageModal">
                     <img class="card-img-top img-fluid rounded" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -17,31 +17,41 @@
                         alt="{{ product.name }}">
                 </a>
                 {% endif %}
+
             </div>
+
+
+
         </div>
         <div class="col-12 col-md-6 col-lg-4">
-            <div class="product-details-container mb-5 mt-md-5">
-                <p class="mb-0">{{ product.name }}</p>
-                <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
-                {% if product.category %}
-                <p class="small mt-1 mb-0">
-                    <a class="text-muted" href="{% url 'list_all_products' %}?category={{ product.category.name }}">
-                        <i class="fas fa-tag mr-1"></i>{{ product.category.view_name }}
-                    </a>
-                </p>
-                {% endif %}
+            <div class="product-details-container mb-5 mt-md-5 body-text">
+                <h4 class="mb-0">{{ product.name }}</h4>
                 {% if product.rating %}
                 <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
                 {% else %}
                 <small class="text-muted">No Rating</small>
                 {% endif %}
+                <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
+                {% if product.category %}
+                <p class="small mt-1 mb-0">
+                    <a class="text-muted" href="{% url 'list_all_products' %}?category={{ product.category.name }}">
+                        <i class="fa-solid fa-list mr-1"></i> {{ product.category.view_name }}
+                    </a>
+                </p>
+                <p class="small mt-1 mb-0 mb-0 text-muted">
+                    {% for tag in product.tags.all %} <i class="fa-solid fa-tag">
+                    </i><a class="text-muted"
+                        href="{% url 'list_all_products' %}?tag={{ tag }}">{{ tag }}</a>{% endfor %}
+                </p>
+                {% endif %}
 
-                <p>{{ product.description }}</p>
+
+                <p class="product-description">{{ product.description }}</p>
             </div>
         </div>
 
         <!-- Image Modal -->
-        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModal" aria-hidden="true">
+        <div class=" modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModal" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">

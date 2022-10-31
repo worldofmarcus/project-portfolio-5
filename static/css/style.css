@@ -24,6 +24,12 @@ h6 {
     font-size: 15px;
 }
 
+.product-description {
+
+    font-family: 'Cousine', monospace;
+    font-size: 15px;
+}
+
 .img-zoom {
     overflow: hidden;
 }
