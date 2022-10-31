@@ -8,10 +8,34 @@
    global styles
    ============== */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+
+}
+
 .body-text {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 15px;
 }
+
+.img-zoom {
+    overflow: hidden;
+}
+
+.img-zoom img {
+    transition: transform .5s ease;
+}
+
+.img-zoom:hover img {
+    transform: scale(1.2);
+}
+
 
 /* ==================
    top bar & nav bar
@@ -60,8 +84,6 @@
     background-image: url(/media/kfem_canvas_04.png);
 }
 
-
-
 .overlay-image {
     position: absolute;
     bottom: 0;
@@ -95,7 +117,6 @@
     padding: 20px;
 
 }
-
 
 /* ==============
    input fields

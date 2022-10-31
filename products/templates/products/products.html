@@ -4,21 +4,18 @@
 {% block content %}
 
 <div class="container flex-grow-1">
-    <div>
-        <h1>Products</h1>
-        {% if sort or not sort %}
-        <p class="text-muted">[Sorted by '{{ sort }}']</p>
-        {% elif sort or not sort and category %}
-        <p class="text-muted">[Sorted by '{{ sort }}']</p>
-        {% endif %}
-        {% for category in current_categories %}
-        <p class="text-muted">{{ category.view_name }}</p>
-        <br>
-        {% endfor %}
-    </div>
+    <div class="text-center">
+        <h1 class="mt-3">Products</h1>
 
-    <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
-        <div class="sort-select-wrapper w-50">
+        {% if category %}
+        <p class=body-text>
+            {% for category in current_categories %}<i class=" fa-solid fa-list mr-1"></i> {{ category.view_name }}
+            {% endfor %}
+            {% endif  %}
+        </p>
+    </div>
+    <div class="body-text">
+        <div class="dropdown text-center">
             <select id="sort-selector"
                 class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
                 <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
@@ -41,11 +38,8 @@
             </select>
         </div>
     </div>
-    <div class="col-12 col-md-6 order-md-first">
-        <p class="text-muted mt-3 text-center text-md-left">
-            {% if search_term or current_categories or current_sorting != 'None_None' %}
-            <span class="small"><a href="{% url 'list_all_products' %}">Products Home</a> | </span>
-            {% endif %}
+    <div>
+        <p class="text-muted mt-3 text-center body-text">
             {{ product_list|length }} Products{% if search_term %} found for
             <strong>"{{ search_term }}"</strong>{% endif %}
         </p>
@@ -56,9 +50,9 @@
             <div class="row">
                 {% for product in product_list %}
                 <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="card mb-4 border-0 shadow p-3 bg-white rounded">
+                    <div class="card mb-4 border-0 shadow p-3 bg-white rounded body-text">
                         <div class="card-body">
-                            <div class="image-container">
+                            <div class="image-container img-zoom rounded">
                                 {% if product.image %}
                                 <a href="{% url 'product_detail' product.id %}">
                                     <img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -70,9 +64,15 @@
                                 {% endif %}
                             </div>
                             <p class="mt-1 mb-1 small text-muted">{{ product.name }}</p>
+                            {% if product.rating %}
                             <p class="mb-1 small text-muted"><i class="fa-solid fa-star"></i> {{ product.rating }}</p>
+                            {% else %}
+                            <p class="mb-1 small text-muted"><i class="fa-solid fa-star"></i> No rating yet</p>
+                            {% endif %}
                             <p class="mb-1 small text-muted"><i class="fa-solid fa-euro-sign"></i> {{ product.price }}
                             </p>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
+                            <hr>
                             {% if product.category %}
                             <p class="small mt-1 mb-0 text-muted">
                                 <i class=" fa-solid fa-list mr-1"></i>
@@ -84,7 +84,6 @@
                             {% endif %}
                             <p class="small mt-1 mb-0 mb-0 text-muted">
                                 {% for tag in product.tags.all %} <i class="fa-solid fa-tag">
-
                                 </i><a href="{% url 'list_all_products' %}?tag={{ tag }}">{{ tag }}</a>{% endfor %}
                             </p>
                         </div>

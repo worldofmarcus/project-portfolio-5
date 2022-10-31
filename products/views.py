@@ -48,7 +48,6 @@ def list_all_products(request):
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
-
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
@@ -77,8 +76,6 @@ def list_all_products(request):
         'current_sorting': current_sorting,
         'sort': sort,
         'direction': direction,
-
-
         }
 
     return render(request, 'products/products.html', context)
