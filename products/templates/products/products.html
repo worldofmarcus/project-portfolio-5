@@ -50,8 +50,6 @@
             <strong>"{{ search_term }}"</strong>{% endif %}
         </p>
     </div>
-
-
     <div class="row">
         <!-- All Products -->
         <div class="col-12 mt-3 left">
@@ -87,7 +85,7 @@
                             <p class="small mt-1 mb-0 mb-0 text-muted">
                                 {% for tag in product.tags.all %} <i class="fa-solid fa-tag">
 
-                                </i>{{ tag }}</a>{% endfor %}
+                                </i><a href="{% url 'list_all_products' %}?tag={{ tag }}">{{ tag }}</a>{% endfor %}
                             </p>
                         </div>
                     </div>

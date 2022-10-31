@@ -7,6 +7,7 @@ from django.db.models.functions import Lower
 
 # Create your views here.
 
+
 def list_all_products(request):
     """ A view that lists all products """
 
@@ -16,6 +17,7 @@ def list_all_products(request):
     category = None
     sort = None
     direction = None
+    tag = None
 
     total_products = Product.objects.all().count()
 
@@ -36,14 +38,15 @@ def list_all_products(request):
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
 
+        if 'tag' in request.GET:
+            tag = request.GET['tag']
+            products = products.filter(tags__name=tag)
 
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             category = request.GET['category']
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
-
-
 
 
         if 'q' in request.GET:
