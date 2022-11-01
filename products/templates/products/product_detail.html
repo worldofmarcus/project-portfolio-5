@@ -37,10 +37,29 @@
                         href="{% url 'list_all_products' %}?tag={{ tag }}">{{ tag }}</a>{% endfor %}
                 </p>
                 {% endif %}
+                <p class="product-description">{{ product.description }}</p>
 
                 <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                     {% csrf_token %}
                     <div class="form-row">
+
+                        {% with product.product_size as s %}
+                        {% if s %}
+                        <div class="col-12">
+                            <p><strong>Size: </strong></p>
+                            <select class="form-control form-select rounded-0 w-50" name="product_size"
+                                id="'product_size">
+                                <option value="xs">XS</option>
+                                <option value="xs">S</option>
+                                <option value="xs">M</option>
+                                <option value="xs">L</option>
+                                <option value="xs">XL</option>
+                            </select>
+
+                        </div>
+
+
+                        {% endif%}
                         <div class="col-12">
                             <p class="mt-3"><strong>Quantity:</strong></p>
                             <div class="form-group w-50">
@@ -51,7 +70,7 @@
                             </div>
                         </div>
 
-                        <div class="col-12">
+                        <div class="col{% if s %}-12 mt-2{% endif %}">
                             <a href="{% url 'list_all_products' %}"
                                 class="btn btn-sm btn-outline-secondary rounded-0 mt-5">
                                 <span class="icon">
@@ -63,11 +82,12 @@
                                 value="Add to Bag">
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                        {% endwith %}
                     </div>
                 </form>
 
 
-                <p class="product-description">{{ product.description }}</p>
+
             </div>
         </div>
 
