@@ -11,8 +11,9 @@
         <p class=body-text>
             {% for category in current_categories %}<i class=" fa-solid fa-list mr-1"></i> {{ category.view_name }}
             {% endfor %}
-            {% endif  %}
+
         </p>
+        {% endif  %}
     </div>
     <div class="body-text">
         <div class="dropdown text-center">
@@ -144,7 +145,7 @@
 
 {% block postloadjs %}
 {{ block.super }}
-<script type="text/javascript">
+<script>
     $('#sort-selector').change(function () {
         var selector = $(this);
         var currentUrl = new URL(window.location);

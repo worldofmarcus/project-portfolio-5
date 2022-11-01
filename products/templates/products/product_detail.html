@@ -9,10 +9,10 @@
             <div class="image-container img-zoom my-5">
                 {% if product.image %}
                 <a href="{{ product.image.url }}" data-bs-toggle="modal" data-bs-target="#imageModal">
-                    <img class="card-img-top img-fluid rounded" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    <img class="card-img-top rounded" src="{{ product.image.url }}" alt="{{ product.name }}">
                 </a>
                 {% else %}
-                <img class="card-img-top img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                <img class="card-img-top rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                 {% endif %}
             </div>
         </div>
@@ -93,7 +93,7 @@
 
         <!-- Image Modal -->
         <div class=" modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModal" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="imageModalLabel">{{ product.name }}</h5>
@@ -102,8 +102,7 @@
                     <div class="modal-body">
                         {% if product.image %}
                         <a href="{{ product.image.url }}" data-bs-toggle="modal" data-bs-target="#imageModal">
-                            <img class="card-img-top img-fluid rounded" src="{{ product.image.url }}"
-                                alt="{{ product.name }}">
+                            <img class="card-img-top rounded" src="{{ product.image.url }}" alt="{{ product.name }}">
                         </a>
                         {% else %}
                         <img class="card-img-top img-fluid rounded" src="{{ MEDIA_URL }}noimage.png"
