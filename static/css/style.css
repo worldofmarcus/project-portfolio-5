@@ -174,20 +174,3 @@ input[type=sign-up] {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 12px;
 }
-
-/* ------------------------------- bootstrap toasts */
-
-.message-container {
-    position: fixed;
-    top: 72px;
-    right: 15px;
-    z-index: 99999999999;
-}
-
-.custom-toast {
-    overflow: visible;
-}
-
-.toast-capper {
-    height: 2px;
-}
