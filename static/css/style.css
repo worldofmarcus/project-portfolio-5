@@ -174,3 +174,9 @@ input[type=sign-up] {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 12px;
 }
+
+.bag-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
