@@ -73,20 +73,9 @@
     {% block content %}
     {% endblock %}
 
+    {% include 'includes/footer.html' %}
+
     {% block postloadjs %}
-
-
-
-
-    <!-- <script>
-        document.getElementById("toastbtn").onclick = function () {
-            var toastElList = [].slice.call(document.querySelectorAll('.toast'))
-            var toastList = toastElList.map(function (toastEl) {
-                return new bootstrap.Toast(toastEl)
-            })
-            toastList.forEach(toast => toast.show())
-        };
-    </script> -->
 
     <script>
         $(document).ready(function () {
@@ -95,7 +84,6 @@
     </script>
     {% endblock %}
 
-    {% include 'includes/footer.html' %}
 </body>
 
 </html>

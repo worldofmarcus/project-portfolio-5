@@ -35,7 +35,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = True
 
 ALLOWED_HOSTS = ['project-portfolio-5.herokuapp.com/', 'localhost']
-CSRF_TRUSTED_ORIGINS = ['https://8000-worldofmarc-projectport-pfzlly4vy23.ws-eu73.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://8000-worldofmarc-projectport-pfzlly4vy23.ws-eu74.gitpod.io']
+
+
+
 
 # Application definition
 
@@ -55,6 +58,7 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'django_countries',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -68,6 +72,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'kollektiv_fem.urls'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
 TEMPLATES = [
     {
@@ -88,6 +94,10 @@ TEMPLATES = [
                 'django.template.context_processors.media',
                 'bag.contexts.bag_contents',
             ],
+            'builtins': [
+            'crispy_forms.templatetags.crispy_forms_tags',
+            'crispy_forms.templatetags.crispy_forms_field',
+            ]
         },
     },
 ]
