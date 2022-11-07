@@ -66,27 +66,37 @@
                 </li>
             </ul>
             <ul class="navbar-nav d-flex flex-row me-1 text-center">
-                <li class="nav-item me-3 me-lg-0">
-                    <a class="nav-link" href="#"><i class="fa-solid fa-user"></i></a>
-                    My Account
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMyAccount" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-user"></i>
+                        My Account
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownSpecialOffers">
+                        {% if request.user.is_authenticated %}
+                        {% if request.user.is_superuser %}
+                        <a href="" class="dropdown-item">Product Management</a>
+                        {% endif %}
+                        <a href="" class="dropdown-item">My Profile</a>
+                        <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                        {% else %}
+                        <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                        <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                        {% endif %}
+                    </ul>
                 </li>
                 <li class="nav-item me-3 me-lg-0">
-                    <a class="nav-link" href="{% url 'view_bag' %}"><i class="fa-solid fa-cart-shopping"></i></a>
-                    <div>
-
+                    <a class="nav-link" href="{% url 'view_bag' %}"><i class="fa-solid fa-cart-shopping"></i>
                         {% if grand_total %}
                         €{{ grand_total|floatformat:2 }}
                         {% else %}
                         €0.00
                         {% endif %}
-                    </div>
-
+                    </a>
                 </li>
-
-
-
-
             </ul>
+
+
+
 
 
             <form method="GET" action="{% url 'list_all_products' %}" class="w-auto mx-4">
