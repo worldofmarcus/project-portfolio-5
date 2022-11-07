@@ -2,10 +2,9 @@
 
 from django.db import models
 from django.contrib.auth.models import User
-from django.db.models.signals import post_save
-from django.dispatch import receiver
 
 STATUS = ((0, 'Draft'), (1, 'Published'))
+
 
 class Category(models.Model):
     """
@@ -42,6 +41,7 @@ class Post(models.Model):
     """
 
     title = models.CharField(max_length=255, unique=True)
+    featured_image = models.ImageField(null=True, blank=True)
     slug = models.SlugField(max_length=255, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE,
                                related_name="posts")
