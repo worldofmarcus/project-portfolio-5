@@ -18,7 +18,7 @@
     <div class="body-text">
         <div class="dropdown text-center">
             <select id="sort-selector"
-                class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                class="w-50 custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
                 <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
                 <option value="date_desc" {% if current_sorting == 'date_desc' %}selected{% endif %}>
                     Date added (low to high)
