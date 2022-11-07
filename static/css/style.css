@@ -180,3 +180,22 @@ input[type=sign-up] {
     overflow-x: hidden;
     overflow-y: auto;
 }
+
+/* ==============
+   Image field in product form
+   ============== */
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
