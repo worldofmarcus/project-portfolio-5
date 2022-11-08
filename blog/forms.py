@@ -1,3 +1,7 @@
+from django import forms
+from .models import Post
+
+
 class CreateBlogPostForm(forms.ModelForm):
     """
     This class creates the blog form.
@@ -12,7 +16,7 @@ class CreateBlogPostForm(forms.ModelForm):
         """
 
         model = Post
-        fields = ('title', '', 'featured_image', 'body',
+        fields = ('title', 'featured_image', 'body',
                   'category', 'status',)
 
         widgets = {
