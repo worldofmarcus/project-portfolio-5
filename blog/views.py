@@ -54,7 +54,6 @@ def add_blog_post(request):
             form.instance.slug = slugify(form.instance.title)
             post = form.save()
             messages.success(request, 'Successfully added blog post!')
-            # return redirect(reverse('blog_post_detail', args=[post.slug]))
             return redirect(reverse('add_blog_post'))
 
         else:
@@ -99,3 +98,16 @@ def edit_blog_post(request, slug):
     }
 
     return render(request, template, context)
+
+@login_required
+def delete_blog_post(request, slug):
+    """ This view will delete a blog post from the site """
+
+    if not request.user.is_superuser:
+        messages.error(request, 'You do not have access to this page!')
+        return redirect(reverse('home'))
+
+    blog_post = get_object_or_404(Post, slug=slug)
+    blog_post.delete()
+    messages.success(request, 'Successfully deleted the blog post!')
+    return redirect(reverse('home'))
