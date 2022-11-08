@@ -25,11 +25,9 @@
                 <small class="text-muted">No Rating</small>
                 {% endif %}
                 {% if request.user.is_superuser %}
-                <small class="ml-3">
-                    <a href="{% url 'edit_product' product.id %}">Edit</a>
-                    <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
-                    <a href="" data-bs-toggle="modal" data-bs-target="#warningModal">Delete modal</a>
-                </small>
+                <p class="small mt-1 mb-0 mb-0 text-muted">
+                    <a class="btn btn-outline-secondary btn-sm" href="{% url 'edit_product' product.id %}">Edit</a>
+                </p>
                 {% endif %}
                 <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
                 {% if product.category %}

@@ -102,9 +102,8 @@
 
                                 {% if user.id == post.author.id %}
                                 <a href="{% url 'edit_blog_post' post.slug %}"
-                                    class=" btn btn-outline-secondary btn-sm">Update</a>
-                                <a href="{% url 'delete_blog_post' post.slug %}"
-                                    class="btn btn-danger btn-sm">Delete</a>
+                                    class=" btn btn-outline-info btn-sm">Edit</a>
+
                                 {% endif %}
                             </p>
                             <hr>

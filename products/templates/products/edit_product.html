@@ -34,13 +34,42 @@
                 {% endif %}
                 {% endfor %}
                 <div class="text-right">
-                    <a class="btn btn-outline-black rounded-0" href="{% url 'list_all_products' %}">Cancel</a>
-                    <button class="btn btn-black rounded-0" type="submit">Update Product</button>
+
+                    <a href="#" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#warningModal">Delete Product</a>
+                    <a class="btn btn-outline-secondary btn-sm" href="{% url 'list_all_products' %}">Cancel</a>
+                    <button class="btn btn-outline-secondary btn-sm" type="submit">Update Product</button>
                 </div>
             </form>
         </div>
     </div>
 </div>
+
+<!-- Warning Modal -->
+<div class=" modal fade" id="warningModal" tabindex="-1" aria-labelledby="imageModal" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-upper" id="imageModalLabel">Delete product</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="alert alert-danger">Are you sure that you want to delete the product <span
+                        class="fw-bold">'{{ product.name }}'?</span></p>
+            </div>
+            <div class="modal-footer">
+
+                {{ post.slug }}
+
+                <a href="{% url 'delete_product' product.id %}" class="btn btn-outline-danger btn-sm">Delete</a>
+
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Warning Modal -->
+
 {% endblock %}
 
 {% block postloadjs %}

@@ -90,10 +90,12 @@
                                     href="{% url 'list_all_products' %}?tag={{ tag }}">{{ tag }}</a>{% endfor %}
                             </p>
                             {% if request.user.is_superuser %}
-                            <small class="ml-3">
-                                <a href="{% url 'edit_product' product.id %}">Edit</a>
-                                <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
-                            </small>
+                            <p class="small mt-1 mb-0 mb-0 text-muted">
+                                <a class="btn btn-outline-secondary btn-sm"
+                                    href="{% url 'edit_product' product.id %}">Edit</a>
+                            </p>
+
+
                             {% endif %}
                         </div>
                     </div>
