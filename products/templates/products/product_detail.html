@@ -130,30 +130,7 @@
         </div>
         <!-- End of Image Modal -->
 
-        <!-- Warning Modal -->
-        <div class=" modal fade" id="warningModal" tabindex="-1" aria-labelledby="imageModal" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="imageModalLabel">{{ product.name }}</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p class="alert alert-danger">Are you sure that you want to delete the product?</p>
-                    </div>
-                    <div class="modal-footer">
 
-                        {{ post.slug }}
-
-                        <a href="{% url 'delete_product' product.id %}"
-                            class="btn btn-outline-secondary btn-sm">Delete</a>
-
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End of Warning Modal -->
 
 
     </div>
