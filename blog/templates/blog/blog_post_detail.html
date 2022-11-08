@@ -7,6 +7,10 @@
 <!-- Blog post detail -->
 <div class="container">
     <div>
+        {% if blog_post.status is 0 %}
+        <h1 class="headline mt-4">This blog post is not published yet</h1>
+        {% else %}
+
         <h1 class="headline mt-4">{{ blog_post.title }}</h1>
 
         <hr>
@@ -23,6 +27,7 @@
         </div>
 
         {{ blog_post.body }}
+        {% endif %}
     </div>
 
     <p>
@@ -30,6 +35,7 @@
 
 </div>
 
+<a href="{% url 'edit_blog_post' blog_post.slug %}" class="btn btn-outline-secondary btn-sm">edit</a>
 
 
 

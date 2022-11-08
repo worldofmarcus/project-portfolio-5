@@ -53,10 +53,12 @@ def add_blog_post(request):
             form.instance.author = request.user
             form.instance.slug = slugify(form.instance.title)
             post = form.save()
-            messages.success(request, 'Successfully added product!')
-            return redirect(reverse('blog_post_detail', args=[post.slug]))
+            messages.success(request, 'Successfully added blog post!')
+            # return redirect(reverse('blog_post_detail', args=[post.slug]))
+            return redirect(reverse('add_blog_post'))
+
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(request, 'Failed to add blog post. Please ensure the form is valid.')
     else:
         form = CreateBlogPostForm()
 
@@ -64,4 +66,36 @@ def add_blog_post(request):
     context = {
         'form': form,
     }
+    return render(request, template, context)
+
+@login_required
+def edit_blog_post(request, slug):
+    """ This view makes it possible to edit a blog post
+    on the site """
+
+    if not request.user.is_superuser:
+        messages.error(request, 'You do not have access to this page!')
+        return redirect(reverse('home'))
+
+    blog_post = get_object_or_404(Post, slug=slug)
+    if request.method == 'POST':
+        form = CreateBlogPostForm(request.POST, request.FILES, instance=blog_post)
+        if form.is_valid():
+            form.instance.author = request.user
+            form.instance.slug = slugify(form.instance.title)
+            form.save()
+            messages.success(request, 'Successfully updated blog post!')
+            return redirect(reverse('blog_post_detail', args=[blog_post.slug]))
+        else:
+            messages.error(request, 'Failed to update blog post. Please ensure the form is valid.')
+    else:
+        form = CreateBlogPostForm(instance=blog_post)
+        messages.info(request, f'You are editing {blog_post.title}.')
+
+    template = 'blog/edit_blog_post.html'
+    context = {
+        'form': form,
+        'blog_post': blog_post,
+    }
+
     return render(request, template, context)
