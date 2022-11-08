@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<!-- Blog post detail -->
+<div class="container">
+    <div>
+        <h1 class="headline mt-4">{{ blog_post.title }}</h1>
+
+        <hr>
+
+        <div class="image-container">
+            {% if blog_post.featured_image %}
+            <img class="mb-3" src="{{ blog_post.featured_image.url }}" alt="{{ post.name }}">
+
+            {% else %}
+
+            <img class="mb-3" src="
+                {{ MEDIA_URL }}noimage.png" alt="{{ post.name }}">
+            {% endif %}
+        </div>
+
+        {{ blog_post.body }}
+    </div>
+
+    <p>
+        <a href="{% url 'home' %}" class="btn btn-outline-secondary btn-sm">Back to home</a>
+
+</div>
+
+
+
+
+
+{% endblock %}
