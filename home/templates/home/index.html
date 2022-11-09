@@ -64,7 +64,7 @@
             <div class="row">
                 {% for post in blog_posts %}
                 <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="card mb-4 border-0 shadow p-3 bg-white rounded">
+                    <div class="card mb-4 border-0 shadow rounded bg-white">
                         <div class="card-body">
                             <div class="image-container">
                                 {% if post.featured_image %}
@@ -75,23 +75,22 @@
                                     {{ MEDIA_URL }}noimage.png" alt="{{ post.name }}">
                                 {% endif %}
                             </div>
-                            <p class="card-text bold-text mt-1 mb-1">{{ post.title }}</p>
-                            <p class="card-text bold-text mb-1">{{ post.category }}</p>
-                            <strong>
-                                <p class="card-text bold-text mb-1">{{ post.slug }}</p>
-                                <p class="card-text bold-text mb-1">Status: {{ post.status }}</p>
-                            </strong>
-                            <p class="card-text mb-3">{{ post.body|truncatechars:50 }}</p>
+                            <h5 class="card-title">{{ post.title }}</h5>
+
+                            <p class="card-text mb-3">{{ post.body|truncatechars:100 }}</p>
                             <p class="card-text">
                                 <a href="{% url 'blog_post_detail' post.slug %}"
                                     class="btn btn-outline-secondary btn-sm">Read
                                     More</a>
                                 {% if user.id == post.author.id %}
-                                <a href="{% url 'edit_blog_post' post.slug %}"
-                                    class=" btn btn-outline-info btn-sm">Edit</a>
+                                <a href="{% url 'edit_blog_post' post.slug %}" class=" btn btn-danger btn-sm">Edit</a>
                                 {% endif %}
                             </p>
                             <hr>
+                            <p class="small mt-1 mb-1 text-muted card-text">
+                                <i class="fa-solid fa-tag fa-fw">
+                                </i>{{ post.category }}</p>
+                            <br>
                             <p class="card-text text-muted text-center">
                                 By {{ post.author }} |
                                 {{ post.date_created_on|date:"Y-m-d" }}
