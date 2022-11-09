@@ -16,8 +16,8 @@ class CreateBlogPostForm(forms.ModelForm):
         """
 
         model = Post
-        fields = ('title', 'featured_image', 'body',
-                  'category', 'status',)
+        fields = ('title', 'blog_headline', 'body',
+                  'category', 'featured_image', 'status',)
 
         widgets = {
                         'category': forms.Select(

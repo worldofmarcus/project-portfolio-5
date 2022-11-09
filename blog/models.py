@@ -41,6 +41,7 @@ class Post(models.Model):
     """
 
     title = models.CharField(max_length=255, unique=True)
+    blog_headline = models.CharField(max_length=255, null=True, blank=True)
     featured_image = models.ImageField(null=True, blank=True)
     slug = models.SlugField(max_length=255, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE,
