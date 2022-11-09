@@ -19,6 +19,7 @@ class ProductAdmin(admin.ModelAdmin):
 
 class TagAdmin(admin.ModelAdmin):
     list_display = (
+        'view_name',
         'name',
     )
 

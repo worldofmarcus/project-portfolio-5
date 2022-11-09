@@ -89,7 +89,7 @@
                             <p class="small mt-3 text-muted card-text">
                                 {% for tag in product.tags.all %} <i class="fa-solid fa-tag">
                                 </i><a class="text-muted"
-                                    href="{% url 'list_all_products' %}?tag={{ tag }}">{{ tag }}</a>{% endfor %}
+                                    href="{% url 'list_all_products' %}?tag={{ tag }}">{{ tag.view_name }}</a>{% endfor %}
                             </p>
                             <p class="card-text">
                                 <a href="{% url 'product_detail' product.id %}"
