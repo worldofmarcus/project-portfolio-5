@@ -84,12 +84,11 @@ h6 {
 
 .carousel-item {
     height: 32rem;
-    background: #7e7e7e;
+    background: #000000;
     position: relative;
     color: #000000;
     background-position: center;
     background-size: cover;
-
 }
 
 .slide-1 {
@@ -108,10 +107,19 @@ h6 {
     top: 0;
     background-position: center;
     background-size: cover;
-    opacity: 0.8;
+    opacity: 0.5;
+}
+
+.carousel-text-box-headline {
+    font-size: 4rem;
+    font-weight: 700;
 }
 
 .carousel-text-box {
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #fff4d2;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -121,14 +129,24 @@ h6 {
 
 .carousel-button {
     font-family: 'Poppins', sans-serif;
-    color: #ce8147;
+    color: #fff4d2;
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 700;
-    background-color: rgba(1, 2, 1, 0.2);
-    border-radius: 25px;
-    border: 2px solid #ce8147;
-    padding: 20px;
+
+    background-color: #ce8147;
+}
+
+.carousel-search-box,
+.news-letter-envelope {
+    background-color: #fff4d2;
+}
+
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 48px;
+    height: 48px;
 }
 
 /* ==============
@@ -142,11 +160,20 @@ input[type=search] {
     font-size: 1rem;
 }
 
-input[type=sign-up] {
+input[type=search]:focus {
+    background-color: #fff4d2;
+}
+
+
+input[type=submit] {
     border: none;
     border-bottom: 1px solid #000000;
     background-color: #fff4d2;
     font-size: 1rem;
+}
+
+input[type=submit]:focus {
+    background-color: #fff4d2;
 }
 
 .nav-search-btn {
@@ -156,12 +183,7 @@ input[type=sign-up] {
     border: none;
 }
 
-.footer-search-btn {
-    color: #000;
-    font-size: 12px;
-    background-color: #ce8147;
-    border: none;
-}
+
 
 /* ==============
    footer
