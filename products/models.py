@@ -4,6 +4,7 @@ from django.db import models
 class Tag(models.Model):
     """ Tag model """
     name = models.CharField(max_length=200, null=True)
+    view_name = models.CharField(max_length=254, null=True, blank=True)
 
     def __str__(self):
         return self.name

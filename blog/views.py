@@ -20,7 +20,6 @@ def list_all_posts(request):
 
         if 'category' in request.GET:
             category = request.GET['category']
-            print(category)
             posts = posts.filter(category=category)
 
     # Pagination code
