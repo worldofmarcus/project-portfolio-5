@@ -170,6 +170,19 @@ h6 {
     text-align: center;
 }
 
+.blog-detail-headline {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.blog-detail-body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.1rem;
+}
+
+
+
 /* ==============
    input fields
    ============== */
