@@ -37,10 +37,6 @@
 
     <p class="lead mb-0 font-weight-bold">€{{ product.price }}</p>
 
-
-
-
-
     <form class="form mb-5" action="{% url 'add_to_bag' product.id %}" method="POST">
         {% csrf_token %}
 
