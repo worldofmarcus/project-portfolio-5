@@ -16,7 +16,7 @@ h5,
 h6 {
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
-
+    text-align: center;
 }
 
 .btn-black {
@@ -30,7 +30,6 @@ h6 {
 }
 
 .product-description {
-
     font-family: 'Cousine', monospace;
     font-size: 15px;
 }
@@ -47,30 +46,36 @@ h6 {
     transform: scale(1.2);
 }
 
-
 /* ==================
    top bar & nav bar
    ================== */
 
 #topContent {
-    background-color: orange;
+    background-color: #ce8147;
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
     height: 3rem;
 }
 
 .navbar-brand {
     font-family: 'Poppins', sans-serif;
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 700;
+    color: #561d25;
+}
+
+.navbar {
+    background-color: #fff4d2;
 }
 
 .navbar,
 .dropdown-item,
-.button-text,
-#topContent {
-
+.button-text {
     font-family: 'Nunito Sans', sans-serif;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 1rem;
 }
 
 /* ==============
@@ -79,9 +84,9 @@ h6 {
 
 .carousel-item {
     height: 32rem;
-    background: rgb(126, 126, 126);
+    background: #7e7e7e;
     position: relative;
-    color: black;
+    color: #000000;
     background-position: center;
     background-size: cover;
 
@@ -104,8 +109,6 @@ h6 {
     background-position: center;
     background-size: cover;
     opacity: 0.8;
-
-
 }
 
 .carousel-text-box {
@@ -118,15 +121,14 @@ h6 {
 
 .carousel-button {
     font-family: 'Poppins', sans-serif;
-    color: orange;
+    color: #ce8147;
     text-transform: uppercase;
     font-size: 4rem;
     font-weight: 700;
     background-color: rgba(1, 2, 1, 0.2);
     border-radius: 25px;
-    border: 2px solid orange;
+    border: 2px solid #ce8147;
     padding: 20px;
-
 }
 
 /* ==============
@@ -136,28 +138,28 @@ h6 {
 input[type=search] {
     border: none;
     border-bottom: 1px solid #dfe2e6;
-    background-color: #f8f9fa;
-    font-size: 12px;
+    background-color: #fff4d2;
+    font-size: 1rem;
 }
 
 input[type=sign-up] {
     border: none;
     border-bottom: 1px solid #000000;
-    background-color: orange;
-    font-size: 12px;
+    background-color: #fff4d2;
+    font-size: 1rem;
 }
 
 .nav-search-btn {
     color: #707071;
     font-size: 12px;
-    background-color: #f8f9fa;
+    background-color: #fff4d2;
     border: none;
 }
 
 .footer-search-btn {
     color: #000;
     font-size: 12px;
-    background-color: orange;
+    background-color: #ce8147;
     border: none;
 }
 
@@ -166,8 +168,7 @@ input[type=sign-up] {
    ============== */
 
 .footer-bg {
-    background-color: orange;
-    ;
+    background-color: #ce8147;
 }
 
 .footer-text {
@@ -181,9 +182,9 @@ input[type=sign-up] {
     overflow-y: auto;
 }
 
-/* ==============
+/* ============================
    Image field in product form
-   ============== */
+   ============================ */
 
 .btn-file {
     position: relative;

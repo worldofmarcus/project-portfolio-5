@@ -1,12 +1,13 @@
-<nav class="navbar navbar-expand-lg bg-light navbar-light">
+<nav class="navbar navbar-expand-xxl">
     <div class="container-fluid">
-        <a class="navbar-brand" href="{% url 'home' %}">KFEM.</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
+        <a class="navbar-brand ml-4" href="{% url 'home' %}">KFEM.</a>
+        <button class="navbar-toggler mr-4" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'home' %}">Home</a>
                 </li>
@@ -65,13 +66,13 @@
                     </ul>
                 </li>
             </ul>
-            <ul class="navbar-nav d-flex flex-row me-1 text-center">
+            <ul class="navbar-nav d-flex flex-row me-1 justify-content-center">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMyAccount" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-user"></i>
                         My Account
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownSpecialOffers">
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMyAccount">
                         {% if request.user.is_authenticated %}
                         {% if request.user.is_superuser %}
                         <li>
@@ -101,7 +102,7 @@
                     </ul>
                 </li>
                 <li class="nav-item me-3 me-lg-0">
-                    <a class="nav-link" href="{% url 'view_bag' %}"><i class="fa-solid fa-cart-shopping"></i>
+                    <a class="nav-link ml-2" href="{% url 'view_bag' %}"><i class="fa-solid fa-cart-shopping fa-fw"></i>
                         {% if grand_total %}
                         €{{ grand_total|floatformat:2 }}
                         {% else %}
@@ -110,17 +111,11 @@
                     </a>
                 </li>
             </ul>
-
-
-
-
-
             <form method="GET" action="{% url 'list_all_products' %}" class="w-auto mx-4">
                 <div class="input-group">
-                    <button class="btn btn-link nav-search-btn" type="submit"><i class="fa fa-search"
+                    <button class="btn btn-link nav-search-btn" type="submit"><i class="fa fa-search fa-fw"
                             aria-hidden="true"></i></button>
-                    <input class="form-control input-sm me-2" type="search" name="q" placeholder="Search"
-                        aria-label="Search">
+                    <input class="form-control me-2" type="search" name="q" placeholder="SEARCH" aria-label="Search">
                 </div>
             </form>
         </div>
