@@ -137,8 +137,7 @@ h6 {
     background-color: #ce8147;
 }
 
-.carousel-search-box,
-.news-letter-envelope {
+.carousel-search-box {
     background-color: #fff4d2;
 }
 
@@ -182,14 +181,13 @@ input[type=search]:focus {
 }
 
 
-input[type=submit] {
-    border: none;
-    border-bottom: 1px solid #000000;
+input[type=email] {
+    border: 1px solid #000000;
     background-color: #fff4d2;
     font-size: 1rem;
 }
 
-input[type=submit]:focus {
+input[type=email]:focus {
     background-color: #fff4d2;
 }
 
@@ -198,6 +196,11 @@ input[type=submit]:focus {
     font-size: 12px;
     background-color: #fff4d2;
     border: none;
+}
+
+.news-letter-envelope {
+    border: 1px solid #000000;
+    background-color: #fff4d2;
 }
 
 
@@ -212,14 +215,9 @@ input[type=submit]:focus {
 
 .footer-text {
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 12px;
+    font-size: 1.2rem;
 }
 
-.bag-notification-wrapper {
-    height: 100px;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
 
 /* ============================
    Image field in product form
@@ -238,4 +236,14 @@ input[type=submit]:focus {
     min-height: 100%;
     opacity: 0;
     cursor: pointer;
+}
+
+
+/* ============================
+   bag
+   ============================ */
+.bag-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
