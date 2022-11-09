@@ -88,7 +88,11 @@
                             <hr>
                             <p class="small mt-1 mb-1 text-muted card-text">
                                 <i class="fa-solid fa-tag fa-fw">
-                                </i>{{ post.category }}</p>
+
+
+                                </i><a class="text-muted"
+                                    href="{% url 'home' %}?category={{ post.category }}">{{ post.category }}</a>
+                            </p>
                             <br>
                             <p class="card-text text-muted text-center">
                                 By {{ post.author }} |

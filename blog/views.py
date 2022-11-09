@@ -14,6 +14,14 @@ def list_all_posts(request):
     """ A view that lists all blog posts """
 
     posts = Post.objects.filter(status=1)
+    post_category = None
+
+    if request.GET:
+
+        if 'category' in request.GET:
+            category = request.GET['category']
+            print(category)
+            posts = posts.filter(category=category)
 
     # Pagination code
     p = Paginator(posts, 3)
