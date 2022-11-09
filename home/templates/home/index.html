@@ -14,7 +14,6 @@
             <div class="carousel-item active" data-bs-interval="8000">
                 <div class="overlay-image slide-1"></div>
                 <div class="container carousel-text-box w-50 text-center">
-
                     <h1 class="carousel-text-box-headline">Welcome to Kollektiv Fem!</h1>
                     <br>
                     <a href="{% url 'list_all_products' %}" class="btn carousel-button">
@@ -22,9 +21,9 @@
                     </a>
                 </div>
             </div>
-            <div class="carousel-item" data-bs-interval="6000">
+            <div class="carousel-item" data-bs-interval="8000">
                 <div class="overlay-image slide-2"></div>
-                <div class="container carousel-text-box w-50">
+                <div class="container carousel-text-box w-75">
                     <h1 class="carousel-text-box-headline">Join us on our adventure!</h1>
                     <p>Kollektiv Fem is like a big family who loves experience cool stuff together.
                         Join our journey by subscribing to our newsletter that will be sent out two times
@@ -115,19 +114,22 @@
 
     <ul class="pagination pagination-sm justify-content-center">
         {% if blog_posts.has_previous %}
-        <li class="page-item"><a class="page-link" href="?page=1">&laquo;
+        <li class="page-item"><a class="page-link link-secondary" href="?page=1">&laquo;
                 First</a></li>
-        <li class="page-item"><a class="page-link" href="?page={{ product_list.previous_page_number }}">Previous</a>
+        <li class="page-item"><a class="page-link link-secondary"
+                href="?page={{ product_list.previous_page_number }}">Previous</a>
         </li>
         {% endif %}
-        <li class="page-item disabled"><a class="page-link" href="?page={{ product_list.number }}">Page
+        <li class="page-item disabled"><a class="page-link text-light bg-dark"
+                href="?page={{ product_list.number }}">Page
                 {{ blog_posts.number }} of {{ blog_posts.paginator.num_pages }}</a></li>
         {% if blog_posts.has_next %}
-        <li class="page-item"><a class="page-link" href="?page={{ blog_posts.next_page_number }}">Next</a>
+        <li class="page-item"><a class="page-link link-secondary"
+                href="?page={{ blog_posts.next_page_number }}">Next</a>
 
             <br>
         </li>
-        <li class="page-item"><a class="page-link" href="?page={{ blog_posts.paginator.num_pages }}">Last
+        <li class="page-item"><a class="page-link link-secondary" href="?page={{ blog_posts.paginator.num_pages }}">Last
                 &raquo;</a></li>
         {% endif %}
     </ul>
