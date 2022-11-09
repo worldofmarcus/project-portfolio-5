@@ -23,15 +23,12 @@ def list_all_products(request):
     total_products = Product.objects.all().count()
 
     if request.GET:
-
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
             sort = sortkey
             if sortkey == 'name':
                 sortkey = 'lower_name'
                 products = products.annotate(lower_name=Lower('name'))
-                # if sortkey == 'category':
-                #     sortkey = 'category__name'
 
             if 'direction' in request.GET:
                 direction = request.GET['direction']
@@ -49,6 +46,7 @@ def list_all_products(request):
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
+
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
@@ -58,19 +56,17 @@ def list_all_products(request):
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
-    # # Pagination code
-    # p = Paginator(products, 6)
-    # page = request.GET.get('page')
-    # product_list = p.get_page(page)
-    # # End of Pagination code
-
-    product_list = products
+    # Pagination code
+    p = Paginator(products, 9)
+    page = request.GET.get('page')
+    products = p.get_page(page)
+    # End of Pagination code
 
     current_sorting = f'{sort}_{direction}'
 
     context = {
         'total_products': total_products,
-        'product_list': product_list,
+        'products': products,
         'search_term': query,
         'current_categories': categories,
         'category': category,

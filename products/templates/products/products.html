@@ -11,7 +11,6 @@
         <p class=body-text>
             {% for category in current_categories %}<i class=" fa-solid fa-list mr-1"></i> {{ category.view_name }}
             {% endfor %}
-
         </p>
         {% endif  %}
     </div>
@@ -49,7 +48,7 @@
         <!-- All Products -->
         <div class="col-12 mt-3 left">
             <div class="row">
-                {% for product in product_list %}
+                {% for product in products %}
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <div class="card mb-4 border-0 shadow p-3 bg-white rounded body-text">
                         <div class="card-body">
@@ -66,17 +65,20 @@
                                 </a>
                                 {% endif %}
                             </div>
-                            <p class="mt-1 mb-1 small text-muted">{{ product.name }}</p>
+                            <h5 class="card-title mt-3">{{ product.name }}</h5>
                             {% if product.rating %}
-                            <p class="mb-1 small text-muted"><i class="fa-solid fa-star"></i> {{ product.rating }}</p>
+                            <p class="mb-1 small text-muted card-text"><i class="fa-solid fa-star"></i>
+                                {{ product.rating }}</p>
                             {% else %}
-                            <p class="mb-1 small text-muted"><i class="fa-solid fa-star"></i> No rating yet</p>
+                            <p class="mb-1 small text-muted card-text"><i class="fa-solid fa-star"></i> No rating yet
+                            </p>
                             {% endif %}
-                            <p class="mb-1 small text-muted"><i class="fa-solid fa-euro-sign"></i> {{ product.price }}
+                            <p class="mb-1 small text-muted card-text"><i class="fa-solid fa-euro-sign"></i>
+                                {{ product.price }}
                             </p>
                             <hr>
                             {% if product.category %}
-                            <p class="small mt-1 mb-0 text-muted">
+                            <p class="mt-1 small text-muted card-text">
                                 <i class="fa-solid fa-list mr-1"> </i>
                                 <a class="text-muted"
                                     href="{% url 'list_all_products' %}?category={{ product.category.name }}">
@@ -84,18 +86,18 @@
                                 </a>
                             </p>
                             {% endif %}
-                            <p class="small mt-1 mb-0 mb-0 text-muted">
+                            <p class="small mt-3 text-muted card-text">
                                 {% for tag in product.tags.all %} <i class="fa-solid fa-tag">
                                 </i><a class="text-muted"
                                     href="{% url 'list_all_products' %}?tag={{ tag }}">{{ tag }}</a>{% endfor %}
                             </p>
-                            {% if request.user.is_superuser %}
-                            <p class="small mt-1 mb-0 mb-0 text-muted">
-                                <a class="btn btn-outline-secondary btn-sm"
-                                    href="{% url 'edit_product' product.id %}">Edit</a>
+                            <p class="card-text">
+                                <a href="{% url 'product_detail' product.id %}"
+                                    class="btn btn-outline-secondary btn-sm">Read
+                                    More</a>
+                                {% if request.user.is_superuser %}
+                                <a href="{% url 'edit_product' product.id %}" class=" btn btn-danger btn-sm">Edit</a>
                             </p>
-
-
                             {% endif %}
                         </div>
                     </div>
@@ -110,41 +112,33 @@
         </div>
     </div>
 
-
-    <!-- Pagination Area
+    <!-- Pagination Area -->
     <nav aria-label="Page Navigation">
 
         <ul class="pagination pagination-sm justify-content-center">
-            {% if product_list.has_previous %}
-            <li class="page-item"><a class="page-link"
-                    href="{% if current_categories %}?page=1&category={{ category }}{% else %}?page=1{% endif %}">&laquo;
+            {% if products.has_previous %}
+            <li class="page-item"><a class="page-link link-secondary" href="?page=1">&laquo;
                     First</a></li>
-            <li class="page-item"><a class="page-link"
-                    href="{% if current_categories %}?page={{ product_list.previous_page_number }}&category={{ category }}{% else %}?page={{ product_list.previous_page_number }}{% endif %}">Previous</a>
+            <li class="page-item"><a class="page-link link-secondary"
+                    href="?page={{ products.previous_page_number }}">Previous</a>
             </li>
             {% endif %}
-            <li class=" page-item disabled"><a class="page-link" href="?page={{ product_list.number }}">Page
-                    {{ product_list.number }} of {{ product_list.paginator.num_pages }}</a></li>
-            {% if product_list.has_next %}
-            <li class="page-item"><a class="page-link" href="
-                    {% if current_sorting == 'None_None' %}?page={{ product_list.next_page_number }}
-                    {% elif current_sorting == 'None_None' and current_categories %}?page={{ product_list.next_page_number }}&category={{ category }}
-                    {% elif search_term %}?page={{ product_list.next_page_number }}??page={{ product_list.next_page_number }}&q= {{ search_term }}
-                    {% elif current_sorting %}?page={{ product_list.next_page_number }}&sort={{ sort }}&direction={{ direction }}
-                    {% elif current_sorting %}?page={{ product_list.next_page_number }}&sort={{ sort }}&direction={{ direction }}
-                    {% else %}?page={{ product_list.next_page_number }}
-                    {% endif %}">Next</a>
+            <li class="page-item disabled"><a class="page-link text-light bg-dark"
+                    href="?page={{ products.number }}">Page
+                    {{ products.number }} of {{ products.paginator.num_pages }}</a></li>
+            {% if products.has_next %}
+            <li class="page-item"><a class="page-link link-secondary"
+                    href="?page={{ products.next_page_number }}">Next</a>
 
                 <br>
             </li>
-            <li class="page-item"><a class="page-link"
-                    href="{% if current_categories %}?page={{ product_list.paginator.num_pages }}&category={{ category }}{% else %}?page={{ product_list.paginator.num_pages }}{% endif %}">Last
+            <li class="page-item"><a class="page-link link-secondary"
+                    href="?page={{ products.paginator.num_pages }}">Last
                     &raquo;</a></li>
             {% endif %}
         </ul>
     </nav>
-    End Of Pagination Area -->
-
+    <!-- End Of Pagination Area -->
 </div>
 {% endblock%}
 
@@ -172,8 +166,4 @@
         }
     })
 </script>
-
-
-
-
 {% endblock %}
