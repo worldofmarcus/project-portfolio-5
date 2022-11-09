@@ -67,11 +67,15 @@
                         <div class="card-body">
                             <div class="image-container">
                                 {% if post.featured_image %}
-                                <img class="card-img-top img-fluid rounded-circle mb-3" width="150" height="150"
-                                    src="{{ post.featured_image.url }}" alt="{{ post.name }}">
+                                <a href="{% url 'blog_post_detail' post.slug %}">
+                                    <img class="card-img-top img-fluid img-thumbnail mb-3" width="150" height="150"
+                                        src="{{ post.featured_image.url }}" alt="{{ post.name }}">
+                                </a>
                                 {% else %}
-                                <img class="card-img-top img-fluid rounded-circle mb-3" width="150" height="150" src="
+                                <a href="{% url 'blog_post_detail' post.slug %}">
+                                    <img class="card-img-top img-fluid img-thumbnail mb-3" width="150" height="150" src="
                                     {{ MEDIA_URL }}noimage.png" alt="{{ post.name }}">
+                                </a>
                                 {% endif %}
                             </div>
                             <h5 class="card-title">{{ post.title }}</h5>
