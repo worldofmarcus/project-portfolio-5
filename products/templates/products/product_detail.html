@@ -19,13 +19,13 @@
     {% endif %}
 
 
-    <div class="image-container img-zoom my-5">
+    <div class="image-container my-5">
         {% if product.image %}
         <a href="{{ product.image.url }}" data-bs-toggle="modal" data-bs-target="#imageModal">
-            <img class="img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+            <img class="img-fluid rounded" src="{{ product.image.url }}" alt="{{ product.name }}">
         </a>
         {% else %}
-        <img class="img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+        <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
         {% endif %}
     </div>
     <p class="product-description">{{ product.description }}</p>
@@ -105,10 +105,4 @@
 </div>
 <!-- End of Image Modal -->
 
-
-{% endblock %}
-
-{% block postloadjs %}
-{{ block.super }}
-{% include 'products/includes/quantity_input_script.html' %}
 {% endblock %}

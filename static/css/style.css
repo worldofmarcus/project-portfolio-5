@@ -24,6 +24,11 @@ h6 {
     color: white;
 }
 
+.dropdown {
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+
 .body-text {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 15px;
