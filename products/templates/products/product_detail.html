@@ -3,138 +3,112 @@
 
 {% block content %}
 
-<div class="container-fluid flex-grow-1">
-    <div class="row">
-        <div class="col-12 col-md-6 col-lg-4 offset-lg-2 align-items-center d-flex">
-            <div class="image-container img-zoom my-5">
+<div class="container text-center">
+    <h1 class="mt-5">{{ product.name }}</h1>
+
+    {% if product.category %}
+    <p class="small mt-1 mb-0">
+        <a class="text-muted" href="{% url 'list_all_products' %}?category={{ product.category.name }}">
+            <i class="fa-solid fa-list mr-1"></i> {{ product.category.view_name }}
+        </a>
+    </p>
+    <p class="small mt-1 mb-0 mb-0 text-muted">
+        {% for tag in product.tags.all %} <i class="fa-solid fa-tag">
+        </i><a class="text-muted" href="{% url 'list_all_products' %}?tag={{ tag }}">{{ tag }}</a>{% endfor %}
+    </p>
+    {% endif %}
+
+
+    <div class="image-container img-zoom my-5">
+        {% if product.image %}
+        <a href="{{ product.image.url }}" data-bs-toggle="modal" data-bs-target="#imageModal">
+            <img class="img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+        </a>
+        {% else %}
+        <img class="img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+        {% endif %}
+    </div>
+    <p class="product-description">{{ product.description }}</p>
+    {% if product.rating %}
+    <p class="mb-1 text-muted smallcard-text"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</p>
+    {% else %}
+    <p class="text-muted small">No Rating</p>
+    {% endif %}
+
+    <p class="lead mb-0 font-weight-bold">€{{ product.price }}</p>
+
+
+
+
+
+    <form class="form mb-5" action="{% url 'add_to_bag' product.id %}" method="POST">
+        {% csrf_token %}
+
+        {% with product.product_size as s %}
+        {% if s %}
+        <div class="row justify-content-center">
+            <p><strong>Size: </strong></p>
+            <select class="form-control form-select rounded-0 w-25" name="product_size" id="'product_size">
+                <option value="xs">XS</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+            </select>
+        </div>
+        {% endif%}
+        <div class="row justify-content-center">
+            <p class="mt-3"><strong>Quantity:</strong></p>
+            <div class="form w-25">
+
+                <input class="form-control" type="number" name="quantity" value="1" min="1" max="99"
+                    data-item_id="{{ product.id }}">
+            </div>
+        </div>
+        <div>
+            <a href="{% url 'list_all_products' %}" class="btn btn-sm btn-outline-secondary rounded mt-5">
+                <span class="icon">
+                    <i class="fas fa-chevron-left"></i>
+                </span>
+                <span class="text-uppercase">Keep Shopping</span>
+            </a>
+            <input type="submit" class="btn btn-sm btn-outline-secondary rounded mt-5 text-uppercase" id="liveToastBtn"
+                value="Add to Bag">
+            {% if request.user.is_superuser %}
+            <a class="btn btn-danger btn-sm rounded mt-5 text-uppercase"
+                href="{% url 'edit_product' product.id %}">Edit</a>
+            {% endif %}
+        </div>
+        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+        {% endwith %}
+    </form>
+</div>
+
+<!-- Image Modal -->
+<div class=" modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModal" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel">{{ product.name }}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
                 {% if product.image %}
                 <a href="{{ product.image.url }}" data-bs-toggle="modal" data-bs-target="#imageModal">
                     <img class="card-img-top rounded" src="{{ product.image.url }}" alt="{{ product.name }}">
                 </a>
                 {% else %}
-                <img class="card-img-top rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                <img class="card-img-top img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                 {% endif %}
             </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="product-details-container mb-5 mt-md-5 body-text">
-                <h4 class="mb-0">{{ product.name }}</h4>
-                {% if product.rating %}
-                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
-                {% else %}
-                <small class="text-muted">No Rating</small>
-                {% endif %}
-                {% if request.user.is_superuser %}
-                <p class="small mt-1 mb-0 mb-0 text-muted">
-                    <a class="btn btn-outline-secondary btn-sm" href="{% url 'edit_product' product.id %}">Edit</a>
-                </p>
-                {% endif %}
-                <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
-                {% if product.category %}
-                <p class="small mt-1 mb-0">
-                    <a class="text-muted" href="{% url 'list_all_products' %}?category={{ product.category.name }}">
-                        <i class="fa-solid fa-list mr-1"></i> {{ product.category.view_name }}
-                    </a>
-                </p>
-                <p class="small mt-1 mb-0 mb-0 text-muted">
-                    {% for tag in product.tags.all %} <i class="fa-solid fa-tag">
-                    </i><a class="text-muted"
-                        href="{% url 'list_all_products' %}?tag={{ tag }}">{{ tag }}</a>{% endfor %}
-                </p>
-                {% endif %}
-                <p class="product-description">{{ product.description }}</p>
-                <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
-                    {% csrf_token %}
-                    <div class="form-row">
-                        {% with product.product_size as s %}
-                        {% if s %}
-                        <div class="col-12">
-                            <p><strong>Size: </strong></p>
-                            <select class="form-control form-select rounded-0 w-50" name="product_size"
-                                id="'product_size">
-                                <option value="xs">XS</option>
-                                <option value="s">S</option>
-                                <option value="m">M</option>
-                                <option value="l">L</option>
-                                <option value="xl">XL</option>
-                            </select>
-                        </div>
-                        {% endif%}
-                        <div class="col-12">
-                            <p class="mt-3"><strong>Quantity:</strong></p>
-                            <div class="form-group w-50">
-                                <div class="input-group input-group-{{ product.id }}">
-                                    <div class="input-group-prepend">
-                                        <button
-                                            class="decrement-qty btn btn-black rounded-0 decrement-qty_{{ product.id }}"
-                                            data-item_id="{{ product.id }}">
-                                            <span class="icon">
-                                                <i class="fas fa-minus"></i>
-                                            </span>
-                                        </button>
-                                    </div>
-                                    <input class="form-control qty_input id_qty_{{ product.id }}" type="number"
-                                        name="quantity" value="1" min="1" max="99" data-item_id="{{ product.id }}">
-                                    <div class="input-group-append">
-                                        <button
-                                            class="increment-qty btn btn-black rounded-0 increment-qty_{{ product.id }}"
-                                            data-item_id="{{ product.id }}">
-                                            <span class="icon">
-                                                <i class="fas fa-plus"></i>
-                                            </span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col{% if s %}-12 mt-2{% endif %}">
-                            <a href="{% url 'list_all_products' %}"
-                                class="btn btn-sm btn-outline-secondary rounded-0 mt-5">
-                                <span class="icon">
-                                    <i class="fas fa-chevron-left"></i>
-                                </span>
-                                <span class="text-uppercase">Keep Shopping</span>
-                            </a>
-                            <input type="submit" class="btn btn-sm btn-outline-secondary rounded-0 mt-5 text-uppercase"
-                                id="liveToastBtn" value="Add to Bag">
-                        </div>
-                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                        {% endwith %}
-                    </div>
-                </form>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>
         </div>
-        <!-- Image Modal -->
-        <div class=" modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModal" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="imageModalLabel">{{ product.name }}</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        {% if product.image %}
-                        <a href="{{ product.image.url }}" data-bs-toggle="modal" data-bs-target="#imageModal">
-                            <img class="card-img-top rounded" src="{{ product.image.url }}" alt="{{ product.name }}">
-                        </a>
-                        {% else %}
-                        <img class="card-img-top img-fluid rounded" src="{{ MEDIA_URL }}noimage.png"
-                            alt="{{ product.name }}">
-                        {% endif %}
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End of Image Modal -->
-
-
-
-
     </div>
 </div>
+<!-- End of Image Modal -->
+
 
 {% endblock %}
 
