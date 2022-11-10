@@ -1,23 +1,31 @@
 from django import forms
 from .models import Product, Category
-from .widgets import CustomClearableFileInput
-
 
 class ProductForm(forms.ModelForm):
-
+    """
+    This class creates the product form.
+    """
     class Meta:
-        model = Product
-        fields = '__all__'
+        """
+        This meta class adds the fields to the form
+        based on the product model. It also adds a number
+        of widgets to customize and add functionality
+        to the form.
+        """
 
-    image = forms.ImageField(label='Image', required=False, widget=CustomClearableFileInput)
+        model = Product
+        fields = ('category', 'name', 'price', 'product_size', 'description',
+                  'image', 'tags', 'status',)
+        widgets = {
+                    'category': forms.Select(
+                        attrs={'class': 'form-select'}),
+                    'status': forms.Select(attrs={'class': 'form-select'}),
+                    'product_size': forms.Select(attrs={'class': 'form-select'}),
+                    }
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         categories = Category.objects.all()
-        friendly_names = [(c.id, c.get_view_name()) for c in categories]
+        category_view_name = [(c.id, c.get_view_name()) for c in categories]
 
-        self.fields['category'].choices = friendly_names
-        for field_name, field in self.fields.items():
-                field.widget.attrs['class'] = 'rounded-0'
-
-
+        self.fields['category'].choices = category_view_name

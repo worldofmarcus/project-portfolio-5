@@ -93,6 +93,8 @@ def product_detail(request, product_id):
 def add_product(request):
     """ This view adds a product to the site """
 
+    products = Product.objects.all()
+
     if not request.user.is_superuser:
         messages.error(request, 'You do not have access to this page!')
         return redirect(reverse('home'))
@@ -111,6 +113,7 @@ def add_product(request):
     template = 'products/add_product.html'
     context = {
         'form': form,
+        'products': products,
     }
     return render(request, template, context)
 
@@ -118,6 +121,8 @@ def add_product(request):
 def edit_product(request, product_id):
     """ This view makes it possible to edit a product
     on the site """
+
+    products = Product.objects.all()
 
     if not request.user.is_superuser:
         messages.error(request, 'You do not have access to this page!')
@@ -140,6 +145,7 @@ def edit_product(request, product_id):
     context = {
         'form': form,
         'product': product,
+        'products': products,
     }
 
     return render(request, template, context)

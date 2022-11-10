@@ -1,29 +1,14 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block page_header %}
-<div class="container header-container">
-    <div class="row">
-        <div class="col"></div>
-    </div>
-</div>
-{% endblock %}
-
 {% block content %}
-<div class="overlay"></div>
-<div class="container">
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <hr>
-            <h2 class="logo-font mb-4">Product Management</h2>
-            <h5 class="text-muted">Edit a Product</h5>
-            <hr>
-        </div>
-    </div>
 
-    <div class="row">
+<div class="container">
+    <h2 class="my-4">Product Management</h2>
+    <div class="row justify-content-center">
         <div class="col-12 col-md-6">
-            <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-2"
+            <h5 class="text-muted">Edit a product</h5>
+            <form method="POST" class="form-text mb-2" action="{% url 'edit_product' product.id %}"
                 enctype="multipart/form-data">
                 {% csrf_token %}
                 {% for field in form %}
@@ -33,51 +18,64 @@
                 {{ field }}
                 {% endif %}
                 {% endfor %}
-                <div class="text-right">
-
-                    <a href="#" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal"
-                        data-bs-target="#warningModal">Delete Product</a>
-                    <a class="btn btn-outline-secondary btn-sm" href="{% url 'list_all_products' %}">Cancel</a>
-                    <button class="btn btn-outline-secondary btn-sm" type="submit">Update Product</button>
+                <div class="text-right mb-4">
+                    <a class="btn btn-sm btn-outline-secondary rounded" href="{% url 'add_product' %}">Cancel</a>
+                    <button class="btn btn-sm btn-outline-secondary rounded" type="submit">Update Product</button>
                 </div>
             </form>
         </div>
-    </div>
-</div>
+        <div class="col">
+            <h5 class="text-muted mb-5">Product List</h5>
+            <div class="product-list-wrapper">
+                <table class="table table-sm table-text">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Image</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for p in products %}
+                        <tr>
+                            <td class="align-middle">{{ p.id }}</td>
+                            <td class="align-middle">
+                                {% if p.image %}
+                                <a href="{% url 'product_detail' p.id %}">
+                                    <img class="card-img-top img-fluid img-thumbnail image-table-admin" width="150"
+                                        height="150" src="{{ p.image.url }}" alt="{{ product.name }}">
+                                </a>
+                                {% else %}
+                                <a href="{% url 'product_detail' p.id %}">
+                                    <img class="card-img-top img-fluid img-thumbnail image-table-admin" width="150"
+                                        height="150" src="
+                                {{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                </a>
+                                {% endif %}
+                            </td>
+                            <td class="align-middle">{{ p.name }}</td>
+                            <td class="align-middle">{{ p.date|date:"Y-m-d" }}</td>
+                            <td class="align-middle">{% if p.status == 1 %}Published {% else%}Not
+                                Published{% endif %}</td>
+                            <td class="align-middle">
 
-<!-- Warning Modal -->
-<div class=" modal fade" id="warningModal" tabindex="-1" aria-labelledby="imageModal" aria-hidden="true">
-    <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title text-upper" id="imageModalLabel">Delete product</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                {% if p.id == product.id %}
+                                You are editing this post
+                                {% else %}
+                                <a href="{% url 'edit_product' p.id %}" class=" btn btn-danger btn-sm">Edit</a>
+                                {% endif %}
+                            </td>
+                        </tr>
+                    </tbody>
+                    {% endfor %}
+                </table>
             </div>
-            <div class="modal-body">
-                <p class="alert alert-danger">Are you sure that you want to delete the product <span
-                        class="fw-bold">'{{ product.name }}'?</span></p>
-            </div>
-            <div class="modal-footer">
 
-                {{ post.slug }}
 
-                <a href="{% url 'delete_product' product.id %}" class="btn btn-outline-danger btn-sm">Delete</a>
-
-                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
-            </div>
         </div>
     </div>
 </div>
-<!-- End of Warning Modal -->
-
-{% endblock %}
-
-{% block postloadjs %}
-{{ block.super }}
-<script type="text/javascript">
-    $('#new-image').change(function () {
-        var file = $('#new-image')[0].files[0];
-        $('#filename').text(`Image will be set to: ${file.name}`);
-    });
-</script>
 {% endblock %}
