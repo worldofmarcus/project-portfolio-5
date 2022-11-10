@@ -24,6 +24,10 @@ class ProductForm(forms.ModelForm):
                     }
 
     def __init__(self, *args, **kwargs):
+        """
+        This method returns a friendly category
+        view name.
+        """
         super().__init__(*args, **kwargs)
         categories = Category.objects.all()
         category_view_name = [(c.id, c.get_view_name()) for c in categories]

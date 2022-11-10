@@ -11,13 +11,7 @@
             <form method="POST" class="form-text mb-2" action="{% url 'edit_product' product.id %}"
                 enctype="multipart/form-data">
                 {% csrf_token %}
-                {% for field in form %}
-                {% if field.name != 'image' %}
-                {{ field | as_crispy_field }}
-                {% else %}
-                {{ field }}
-                {% endif %}
-                {% endfor %}
+                {{ form|crispy }}
                 <div class="text-right mb-4">
                     <a class="btn btn-sm btn-outline-secondary rounded" href="{% url 'add_product' %}">Cancel</a>
                     <button class="btn btn-sm btn-outline-secondary rounded" type="submit">Update Product</button>
