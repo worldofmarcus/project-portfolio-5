@@ -43,8 +43,8 @@
                 <tbody>
                     {% for post in posts %}
                     <tr>
-                        <td class="align-middle" scope="row">{{ post.id }}</td>
-                        <td class="align-middle" scope="row">
+                        <td class="align-middle">{{ post.id }}</td>
+                        <td class="align-middle">
                             {% if post.featured_image %}
                             <a href="{% url 'blog_post_detail' post.slug %}">
                                 <img class="card-img-top img-fluid img-thumbnail image-table-admin" width="150"
@@ -58,13 +58,13 @@
                             </a>
                             {% endif %}
                         </td>
-                        <td class="align-middle" scope="row">{{ post.title }}</td>
-                        <td class="align-middle" scope="row">{{ post.date_created_on|date:"Y-m-d" }}</td>
-                        <td class="align-middle" scope="row">{{ post.author }}</td>
-                        <td class="align-middle" scope="row">{% if post.status == 1 %}Published {% else%}Not
+                        <td class="align-middle">{{ post.title }}</td>
+                        <td class="align-middle">{{ post.date_created_on|date:"Y-m-d" }}</td>
+                        <td class="align-middle">{{ post.author }}</td>
+                        <td class="align-middle">{% if post.status == 1 %}Published {% else%}Not
                             Published{% endif %}</td>
-                        <td class="align-middle" scope="row">
-                            {% if post.slug in request.get_full_path %}
+                        <td class="align-middle">
+                            {% if blog_post.slug == post.slug %}
                             You are editing this post
                             {% else %}
                             <a href="{% url 'edit_blog_post' post.slug %}" class=" btn btn-danger btn-sm">Edit</a>
@@ -78,10 +78,8 @@
     </div>
 </div>
 
-
-
 <!-- Warning Modal -->
-<div class=" modal fade" id="warningModal" tabindex="-1" aria-labelledby="imageModal" aria-hidden="true">
+<div class="modal fade" id="warningModal" tabindex="-1" aria-labelledby="warningModal" aria-hidden="true">
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
             <div class="modal-header">
