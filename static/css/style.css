@@ -232,7 +232,6 @@ input[type=email]:focus {
 .allauth-text {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1rem;
-    text-align: center;
 }
 
 
