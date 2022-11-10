@@ -67,7 +67,7 @@
                         {% endfor %}
                 </tbody>
             </table>
-            <div class="row text-right body-text">
+            <div class="row text-right body-text mb-4">
                 <div class="col">
                     <p><strong>Bag Total: €{{ total|floatformat:2 }}</strong></p>
                     Delivery: €{{ delivery|floatformat:2 }}
@@ -94,7 +94,7 @@
 
                 {% else %}
                 <h1 class="lead mb-5">Your bag is empty.</h1>
-                <div class="text-center">
+                <div class="text-center mb-4">
                     <a href="{% url 'list_all_products' %}" class="btn btn-outline-secondary rounded btn-sm">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
@@ -112,11 +112,8 @@
 </div>
 {% endblock %}
 
-
 {% block postloadjs %}
 {{ block.super }}
-
-
 
 <script type="text/javascript">
     // Update quantity on click
