@@ -226,6 +226,14 @@ input[type=email]:focus {
     background-color: #fff4d2;
 }
 
+/* ==============
+   allauth
+   ============== */
+.allauth-text {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
 
 
 /* ==============
