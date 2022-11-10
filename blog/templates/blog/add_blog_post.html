@@ -43,12 +43,12 @@
                         <td class="align-middle" scope="row">
                             {% if post.featured_image %}
                             <a href="{% url 'blog_post_detail' post.slug %}">
-                                <img class="card-img-top img-fluid img-thumbnail mb-3 image-table-admin" width="150"
+                                <img class="card-img-top img-fluid img-thumbnail image-table-admin" width="150"
                                     height="150" src="{{ post.featured_image.url }}" alt="{{ post.name }}">
                             </a>
                             {% else %}
                             <a href="{% url 'blog_post_detail' post.slug %}">
-                                <img class="card-img-top img-fluid img-thumbnail mb-3 image-table-admin" width="150"
+                                <img class="card-img-top img-fluid img-thumbnail image-table-admin" width="150"
                                     height="150" src="
                                 {{ MEDIA_URL }}noimage.png" alt="{{ post.name }}">
                             </a>

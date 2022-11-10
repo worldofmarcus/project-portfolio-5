@@ -48,7 +48,7 @@ h6 {
 }
 
 .img-zoom:hover img {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 /* ==============
@@ -239,6 +239,7 @@ input[type=email]:focus {
 .image-table-admin {
     width: 50px;
     height: 50px;
+    vertical-align: middle;
 }
 
 

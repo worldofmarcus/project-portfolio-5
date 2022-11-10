@@ -63,7 +63,7 @@ def add_blog_post(request):
             form.instance.slug = slugify(form.instance.title)
             post = form.save()
             messages.success(request, 'Successfully added blog post!')
-            return redirect(reverse('add_blog_post'))
+            return redirect(reverse('blog_post_detail', args=[form.instance.slug]))
 
         else:
             messages.error(request, 'Failed to add blog post. Please ensure the form is valid.')
@@ -81,6 +81,8 @@ def add_blog_post(request):
 def edit_blog_post(request, slug):
     """ This view makes it possible to edit a blog post
     on the site """
+
+    posts = Post.objects.all()
 
     if not request.user.is_superuser:
         messages.error(request, 'You do not have access to this page!')
@@ -105,6 +107,7 @@ def edit_blog_post(request, slug):
     context = {
         'form': form,
         'blog_post': blog_post,
+        'posts': posts,
     }
 
     return render(request, template, context)
