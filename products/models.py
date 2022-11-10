@@ -12,6 +12,7 @@ class Tag(models.Model):
 
 
 class Category(models.Model):
+
     """ Category model """
     class Meta:
         verbose_name_plural = 'Categories'  # Fix plural bug in admin area
@@ -28,7 +29,16 @@ class Category(models.Model):
 
 
 class Product(models.Model):
+
     """ Product model """
+
+    class Meta:
+        """
+        This meta class orders the model by date.
+        """
+
+        ordering = ['-date']
+
 
     category = models.ForeignKey('Category', null=True, blank=True,
                                  on_delete=models.SET_NULL)
