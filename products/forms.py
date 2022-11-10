@@ -20,7 +20,6 @@ class ProductForm(forms.ModelForm):
                     'category': forms.Select(
                         attrs={'class': 'form-select'}),
                     'status': forms.Select(attrs={'class': 'form-select'}),
-                    'product_size': forms.Select(attrs={'class': 'form-select'}),
                     }
 
     def __init__(self, *args, **kwargs):
