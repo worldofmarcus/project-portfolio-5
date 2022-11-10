@@ -15,8 +15,6 @@ import json
 
 
 def checkout(request):
-
-
     if request.method == 'POST':
         bag = request.session.get('bag', {})
 
