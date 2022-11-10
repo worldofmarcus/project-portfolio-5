@@ -5,11 +5,10 @@
 
 <!-- Blog post detail -->
 <div class="container">
-    {% if blog_post.status is 0 %}
+    {% if not request.user.is_superuser and blog_post.status is 0 %}
     <h1 class="mt-5">This blog post is not published yet</h1>
     {% else %}
     <h1 class="mt-5">{{ blog_post.title }}</h1>
-
     <div class="image-container">
         {% if blog_post.featured_image %}
         <img class="mb-3 img-fluid" src="{{ blog_post.featured_image.url }}" alt="{{ post.name }}">
@@ -24,13 +23,13 @@
     <p class="blog-detail-body">
         {{ blog_post.body|linebreaksbr }}
     </p>
-    {% endif %}
-
     <p class="text-center mb-4">
         <a href="{% url 'home' %}" class="btn btn-outline-secondary btn-sm">Back to home</a>
         <a href="{% url 'edit_blog_post' blog_post.slug %}" class="btn btn-danger btn-sm">Edit</a>
     </p>
+    {% endif %}
 </div>
+
 <!-- End of blog post detail -->
 
 {% endblock %}

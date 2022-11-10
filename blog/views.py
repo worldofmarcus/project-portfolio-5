@@ -50,6 +50,8 @@ def blog_post_detail(request, slug):
 def add_blog_post(request):
     """ This view adds a blog post to the site """
 
+    posts = Post.objects.all()
+
     if not request.user.is_superuser:
         messages.error(request, 'You do not have access to this page!')
         return redirect(reverse('home'))
@@ -71,6 +73,7 @@ def add_blog_post(request):
     template = 'blog/add_blog_post.html'
     context = {
         'form': form,
+        'posts': posts,
     }
     return render(request, template, context)
 
