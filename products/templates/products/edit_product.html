@@ -13,7 +13,7 @@
                 {% csrf_token %}
                 {{ form|crispy }}
                 <div class="text-right mb-4">
-                    <a href="#" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal"
+                    <a href="#" class="btn btn-danger btn-sm" data-bs-toggle="modal"
                         data-bs-target="#warningModal">Delete Post</a>
                     <a class="btn btn-sm btn-outline-secondary rounded" href="{% url 'add_product' %}">Cancel</a>
                     <button class="btn btn-sm btn-outline-secondary rounded" type="submit">Update Product</button>
@@ -91,7 +91,7 @@
 
                 {{ post.slug }}
 
-                <a href="{% url 'delete_product' product.id %}" class="btn btn-outline-danger btn-sm">Delete</a>
+                <a href="{% url 'delete_product' product.id %}" class="btn btn-danger btn-sm">Delete</a>
                 <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
             </div>
         </div>
