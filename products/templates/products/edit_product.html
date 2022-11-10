@@ -13,6 +13,8 @@
                 {% csrf_token %}
                 {{ form|crispy }}
                 <div class="text-right mb-4">
+                    <a href="#" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#warningModal">Delete Post</a>
                     <a class="btn btn-sm btn-outline-secondary rounded" href="{% url 'add_product' %}">Cancel</a>
                     <button class="btn btn-sm btn-outline-secondary rounded" type="submit">Update Product</button>
                 </div>
@@ -72,4 +74,28 @@
         </div>
     </div>
 </div>
+
+<!-- Warning Modal -->
+<div class="modal fade" id="warningModal" tabindex="-1" aria-labelledby="warningModal" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-upper" id="imageModalLabel">Delete product</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="alert alert-danger">Are you sure that you want to delete the post <span
+                        class="fw-bold">'{{ product.title }}'?</span></p>
+            </div>
+            <div class="modal-footer">
+
+                {{ post.slug }}
+
+                <a href="{% url 'delete_product' product.id %}" class="btn btn-outline-danger btn-sm">Delete</a>
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Warning Modal -->
 {% endblock %}
