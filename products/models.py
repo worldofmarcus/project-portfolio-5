@@ -3,12 +3,24 @@ from django.db import models
 STATUS = ((0, 'Draft'), (1, 'Published'))
 
 class Tag(models.Model):
+
     """ Tag model """
     name = models.CharField(max_length=200, null=True)
     view_name = models.CharField(max_length=254, null=True, blank=True)
 
     def __str__(self):
         return self.name
+
+# class Rating(models.Model):
+
+#     """ Rating model """
+#     rating = models.DecimalField(max_digits=6, decimal_places=2, blank=True, null=True)
+#     product = models.ForeignKey('Product', null=True, blank=True,
+#                                 on_delete=models.SET_NULL)
+#     user = models.ForeignKey('User', on_delete=models.SET_NULL)
+
+#     def __str__(self):
+#         return self.name
 
 
 class Category(models.Model):
@@ -27,7 +39,6 @@ class Category(models.Model):
         return self.view_name
 
 
-
 class Product(models.Model):
 
     """ Product model """
@@ -38,7 +49,6 @@ class Product(models.Model):
         """
 
         ordering = ['-date']
-
 
     category = models.ForeignKey('Category', null=True, blank=True,
                                  on_delete=models.SET_NULL)
@@ -53,7 +63,6 @@ class Product(models.Model):
     product_size = models.BooleanField(default=False, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
     status = models.IntegerField(choices=STATUS, default=0)
-
 
     def __str__(self):
         return self.name

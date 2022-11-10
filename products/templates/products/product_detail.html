@@ -16,7 +16,7 @@
     </p>
     <p class="small mt-1 mb-0 mb-0 text-muted">
         {% for tag in product.tags.all %} <i class="fa-solid fa-tag">
-        </i><a class="text-muted" href="{% url 'list_all_products' %}?tag={{ tag }}">{{ tag }}</a>{% endfor %}
+        </i><a class="text-muted" href="{% url 'list_all_products' %}?tag={{ tag }}">{{ tag.view_name }}</a>{% endfor %}
     </p>
     {% endif %}
 
@@ -46,7 +46,7 @@
         {% if s %}
         <div class="row justify-content-center">
             <p><strong>Size: </strong></p>
-            <select class="form-control form-select rounded-0 w-25" name="product_size" id="'product_size">
+            <select class="form-control form-select rounded-0 w-25" name="product_size" id="product_size">
                 <option value="xs">XS</option>
                 <option value="s">S</option>
                 <option value="m">M</option>
