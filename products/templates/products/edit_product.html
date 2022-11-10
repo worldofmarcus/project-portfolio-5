@@ -12,7 +12,7 @@
                 enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ form|crispy }}
-                <div class="text-right mb-4">
+                <div class="text-center mb-4">
                     <a href="#" class="btn btn-danger btn-sm" data-bs-toggle="modal"
                         data-bs-target="#warningModal">Delete Post</a>
                     <a class="btn btn-sm btn-outline-secondary rounded" href="{% url 'add_product' %}">Cancel</a>
@@ -20,7 +20,7 @@
                 </div>
             </form>
         </div>
-        <div class="col">
+        <div class="col ml-lg-5">
             <h5 class="text-muted mb-5">Product List</h5>
             <div class="product-list-wrapper">
                 <table class="table table-sm table-text">
@@ -69,8 +69,6 @@
                     {% endfor %}
                 </table>
             </div>
-
-
         </div>
     </div>
 </div>
