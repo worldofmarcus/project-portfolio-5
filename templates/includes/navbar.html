@@ -104,7 +104,7 @@
                 <li class="nav-item me-3 me-lg-0">
                     <a class="nav-link ml-2" href="{% url 'view_bag' %}"><i class="fa-solid fa-cart-shopping fa-fw"></i>
                         {% if grand_total %}
-                        €{{ grand_total|floatformat:2 }}
+                        <strong>€{{ grand_total|floatformat:2 }}</strong>
                         {% else %}
                         €0.00
                         {% endif %}
