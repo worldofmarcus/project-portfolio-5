@@ -22,7 +22,14 @@
         </div>
         <div class="col ml-lg-5">
             <h5 class="text-muted mb-5">Product List</h5>
-            <div class="product-list-wrapper">
+            <form method="GET" action="{% url 'add_product' %}" class="w-auto mx-4">
+                <div class="input-group">
+                    <button class="btn btn-link nav-search-btn" type="submit"><i class="fa fa-search fa-fw"
+                            aria-hidden="true"></i></button>
+                    <input class="form-control me-2" type="search" name="q" placeholder="Search" aria-label="Search">
+                </div>
+            </form>
+            <div class="product-list-wrapper mt-3">
                 <table class="table table-sm table-text">
                     <thead>
                         <tr>

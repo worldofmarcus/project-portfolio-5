@@ -8,7 +8,7 @@
     <div class="row justify-content-center">
         <div class="col-12 col-md-6">
             <h5 class="text-muted">Add a product</h5>
-            <form method="POST" class="form-text mb-2" action="{% url 'add_product' %}" enctype="multipart/form-data">
+            <form method="POST" class="form-text" action="{% url 'add_product' %}" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ form|crispy }}
                 <div class="text-center mb-4">
@@ -19,7 +19,14 @@
         </div>
         <div class="col ml-lg-5">
             <h5 class="text-muted mb-5">Product List</h5>
-            <div class="product-list-wrapper">
+            <form method="GET" action="{% url 'add_product' %}" class="w-auto mx-4">
+                <div class="input-group">
+                    <button class="btn btn-link nav-search-btn" type="submit"><i class="fa fa-search fa-fw"
+                            aria-hidden="true"></i></button>
+                    <input class="form-control me-2" type="search" name="q" placeholder="Search" aria-label="Search">
+                </div>
+            </form>
+            <div class="product-list-wrapper mt-3">
                 <table class="table table-sm table-text">
                     <thead>
                         <tr>

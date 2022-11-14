@@ -94,6 +94,16 @@ def add_product(request):
     """ This view adds a product to the site """
 
     products = Product.objects.all()
+    query = None
+
+    if request.GET:
+        if 'q' in request.GET:
+            query = request.GET['q']
+            if not query:
+                messages.error(request, 'You did not enter any search criteria!')
+                return redirect(reverse('add_product'))
+            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            products = products.filter(queries)
 
     if not request.user.is_superuser:
         messages.error(request, 'You do not have access to this page!')
