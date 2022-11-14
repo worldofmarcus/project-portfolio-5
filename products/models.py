@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 STATUS = ((0, 'Draft'), (1, 'Published'))
 
@@ -41,7 +42,8 @@ class Category(models.Model):
 
 class Product(models.Model):
 
-    """ Product model """
+    """ Product model that will provide all the products
+    that are for sale in the store. """
 
     class Meta:
         """
@@ -63,6 +65,7 @@ class Product(models.Model):
     product_size = models.BooleanField(default=False, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
     status = models.IntegerField(choices=STATUS, default=0)
+    users_wishlist = models.ManyToManyField(User, related_name='user_wishlist', blank=True)
 
     def __str__(self):
         return self.name
