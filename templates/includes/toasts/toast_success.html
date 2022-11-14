@@ -8,10 +8,10 @@
             <div class="row">
                 <div class="col">
                     {{ message }}
-
+                    {{ from_wishlist }}
                 </div>
             </div>
-            {% if grand_total and not on_profile_page %}
+            {% if grand_total and not on_profile_page and not from_wishlist %}
             <p class="bg-white text-black py-1"><strong>Your Bag ({{ product_count }} items)</strong></p>
             <div>
                 {% for item in bag_items %}
