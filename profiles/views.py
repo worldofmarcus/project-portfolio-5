@@ -62,11 +62,7 @@ def add_to_wishlist(request, id):
         product.users_wishlist.add(request.user)
         messages.success(request, 'Added ' + product.name + ' to your wishlist')
 
-    context = {
-        'from_wishlist': True,
-    }
-
-    return HttpResponseRedirect(request.META['HTTP_REFERER'], context)
+    return HttpResponseRedirect(request.META['HTTP_REFERER'])
 
 @login_required
 def wishlist(request):
