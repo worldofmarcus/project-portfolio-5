@@ -72,8 +72,15 @@
             </a>
             <input type="submit" class="btn btn-sm btn-outline-secondary rounded mt-5 text-uppercase" id="liveToastBtn"
                 value="Add to Bag">
+
+            {% if request.user not in product.users_wishlist.all %}
             <a class="btn btn-outline-secondary btn-sm rounded mt-5 text-uppercase"
                 href="{% url 'add_to_wishlist' product.id %}">Add To Wishlist</a>
+            {% else %}
+            <a class="btn btn-outline-secondary disabled btn-sm rounded mt-5 text-uppercase"
+                href="{% url 'add_to_wishlist' product.id %}">In your wishlist</a>
+            {% endif %}
+
             {% if request.user.is_superuser %}
             <a class="btn btn-danger btn-sm rounded mt-5 text-uppercase"
                 href="{% url 'edit_product' product.id %}">Edit</a>

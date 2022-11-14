@@ -65,7 +65,7 @@ class Product(models.Model):
     product_size = models.BooleanField(default=False, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
     status = models.IntegerField(choices=STATUS, default=0)
-    users_wishlist = models.ManyToManyField(User, related_name='user_wishlist', blank=True)
+    users_wishlist = models.ManyToManyField(User)
 
     def __str__(self):
         return self.name
