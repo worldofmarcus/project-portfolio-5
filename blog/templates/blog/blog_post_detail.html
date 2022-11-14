@@ -6,7 +6,10 @@
 <!-- Blog post detail -->
 <div class="container">
     {% if not request.user.is_superuser and blog_post.status is 0 %}
-    <h1 class="mt-5">This blog post is not published yet</h1>
+    <h1 class="mt-5">There is nothing here</h1>
+    <p class="text-center mb-4">
+        <a href="{% url 'home' %}" class="btn btn-outline-secondary btn-sm">Back to home</a>
+    </p>
     {% else %}
     <h1 class="mt-5">{{ blog_post.title }}</h1>
     <div class="image-container">
