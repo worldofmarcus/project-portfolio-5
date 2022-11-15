@@ -125,46 +125,46 @@ Below the user stories for the project are listed to clarify why particular feat
 
 |  | | |
 |:-------:|:--------|:--------|
-| As a Customer | I can view a list of products so that I can read more about it and purchase it | &check; |
-| As a Customer | I can click on a specific product so that I view its details like price, description, product rating, sizes and image | &check; |
-| As a Customer | I can read the reviews that are connected to a specific product so that I can base my purchase decision on that | &check; |
-| As a Customer | I can view the total of my purchases at any time so that I can keep track of my expenses | &check; |
-| As a Site User | I can navigate easy on the site through paginated list of products and posts so that I feel comfortable using the site | &check; |
-| As a Site User | I can view the site owners blog post so that I can get the latest information | &check; |
-| As a Site User | I can contact Kollektiv Fem in an easy way so that I can interact with them if I have a need for it | &check; |
-| As a Customer | I can like and unlike a review on a product I have purchased so that it is possible for me to raise my opinion | &check; |
-| As a Site User | I can get visual feedback when interacting with the content so that I can be sure how I have interacted with the page | &check; |
+| As a Customer | I can view a list of products so that I can read more about it and purchase it | &#9745; |
+| As a Customer | I can click on a specific product so that I view its details like price, description, product rating, sizes and image | &#9745; |
+| As a Customer | I can read the reviews that are connected to a specific product so that I can base my purchase decision on that | &#9745; |
+| As a Customer | I can view the total of my purchases at any time so that I can keep track of my expenses | &#9745; |
+| As a Site User | I can navigate easy on the site through paginated list of products and posts so that I feel comfortable using the site | &#9745; |
+| As a Site User | I can view the site owners blog post so that I can get the latest information | &#9745; |
+| As a Site User | I can contact Kollektiv Fem in an easy way so that I can interact with them if I have a need for it | &#9745; |
+| As a Customer | I can like and unlike a review on a product I have purchased so that it is possible for me to raise my opinion | &#9746; |
+| As a Site User | I can get visual feedback when interacting with the content so that I can be sure how I have interacted with the page | &#9745; |
 
 
 ### Registration And User Accounts
 |  | | |
 |:-------:|:--------|:--------|
-| As a Site User | I can register an account so that I have a personal account and get access to my profile| &check; |
-| As a Site User | I can have my own user profile so that I can view my personal order history, write reviews and update my contact / payment information| &check; |
-| As a Site User | I can log out from the site so that I can feel safe that nobody can access my information | &check; |
+| As a Site User | I can register an account so that I have a personal account and get access to my profile| &#9745; |
+| As a Site User | I can have my own user profile so that I can view my personal order history, write reviews and update my contact / payment information| &#9745; |
+| As a Site User | I can log out from the site so that I can feel safe that nobody can access my information | &#9745; |
 
 
 ### Sorting And Searching
 |  | | |
 |:-------:|:--------|:--------|
-| As a Customer | I can sort the list of all products in different ways so that I can identify the best rated, best prices and products based on category| &check; |
-| As a Customer | I can sort a specific category of products so that I can identify the best rated, best prices or just sort the products by name. | &check; |
-| As a Customer | I can sort the list of products by using a single or multiple tags so that I can i.e. see all ’analog’ or ’ambient’ related products. | &check; |
-| As a Customer | I can easily get information about what I have searched for and how many results the search generated so that I can see if the product is available.| &check; |
+| As a Customer | I can sort the list of all products in different ways so that I can identify the best rated, best prices and products based on category| &#9745; |
+| As a Customer | I can sort a specific category of products so that I can identify the best rated, best prices or just sort the products by name. | &#9745; |
+| As a Customer | I can sort the list of products by using a single or multiple tags so that I can i.e. see all ’analog’ or ’ambient’ related products. | &#9745; |
+| As a Customer | I can easily get information about what I have searched for and how many results the search generated so that I can see if the product is available.| &#9745; |
 
 ### Purchasing And Checkout
 |  | | |
 |:-------:|:--------|:--------|
-| As a Customer | I can easily choose the quantity of a product and size if applicable when purchasing it so that that I ensure I get the correct product | &check; |
-| As a Customer | I can easily view the items in my cart to be purchased so that I can see the total cost and all the items I am about to receive  .| &check; |
-| As a Customer | I can easily adjust the amount of products in my cart so that I can change the cart before checking out | &check; |
-| As a Customer | I can give my payment information in an easy way so that the checkout-process is quick and easy| &check; |
-| As a Customer | I need to feel safe and secure when interacting with the site so that I feel comfortable to provide all necessary information needed for purchase | &check; |
-| As a Customer | I view an order confirmation after checkout so that I can secure I have purchased the correct items and everything is ok | &check; |
-| As a Customer | I will receive an email confirmation after the checkout process is done so that I can keep the information for future use if needed | &check; |
-| As a Customer | I can receive an email confirmation when my order changes so that I get relevant information about my order | &check; |
-| As a Customer | I can create a wishlist so that I can come back later to purchase the products | &check; |
-| As a Customer | I can use a promotion code so that I can get a better deal | &check; |
+| As a Customer | I can easily choose the quantity of a product and size if applicable when purchasing it so that that I ensure I get the correct product | &#9745; |
+| As a Customer | I can easily view the items in my cart to be purchased so that I can see the total cost and all the items I am about to receive  .| &#9745; |
+| As a Customer | I can easily adjust the amount of products in my cart so that I can change the cart before checking out | &#9745; |
+| As a Customer | I can give my payment information in an easy way so that the checkout-process is quick and easy| &#9745; |
+| As a Customer | I need to feel safe and secure when interacting with the site so that I feel comfortable to provide all necessary information needed for purchase | &#9745; |
+| As a Customer | I view an order confirmation after checkout so that I can secure I have purchased the correct items and everything is ok | &#9745; |
+| As a Customer | I will receive an email confirmation after the checkout process is done so that I can keep the information for future use if needed | &#9745; |
+| As a Customer | I can receive an email confirmation when my order changes so that I get relevant information about my order | &#9746; |
+| As a Customer | I can create a wishlist so that I can come back later to purchase the products | &#9745; |
+| As a Customer | I can use a promotion code so that I can get a better deal | &#9746; |
 
 ### Site Admin
 
@@ -228,11 +228,9 @@ The top bar is always visible and includes information about free shipping. The 
 </details><br/>
 
 ### **Navigation**
-
 The navigation bar is includes the same basic options for the user (logged in or not logged in). If the user is logged in och logged in as an administrator the sub-menus look different.
 
 **Navigation - User Not Logged In**
-
 * Home - Shows the user a carousel with two images and the latest blog posts
 * Products - Lets the user sort/view the products by **added date**, **price**, **rating**, **name** and **all products**
 * Categories - Lets the user sort/view the products by the categories **tapes**, **cds**, **posters**, **pins**, **t-shirts**, **tank tops**, **tote bags** and **vinyls**
@@ -258,15 +256,26 @@ The navigation bar is includes the same basic options for the user (logged in or
 **Navigation - User Logged In**
 When an ordinary user is logged in the **my account** gets more available options, **my profile** and **my wishlist**.
 
-<details><summary><b>Navigation - Logged In</b></summary>
+* My Profile - On the profile page the user can change delivery information and see the order history (and confirmations from earlier purchases)
+* My Wishlist - On the wishlist page the user can find their wishlist that is populated when the user adds itemt to the wishlist from the product detail area.
+
+<details><summary><b>Navigation - My Account - User Logged In</b></summary>
 
 ![Navigation - My Account - User Logged In](readme/assets/images/menu_my_account_user.png)
 
 </details><br/>
 
+**Navigation - Admin Logged In**
+When a superuser / administrator is logged in the **my account** gets more avilable options, **manage products** and **manage blog**
 
+* Manage Products - On this page the administrator can add, edit, remove and search for products.
+* Manage Blog - On this page the administrator can add, edit, remove blog posts.
 
+<details><summary><b>Navigation - My Account - Admin Logged In</b></summary>
 
+![Navigation - My Account - Admin Logged In](readme/assets/images/menu_my_account_admin.png)
+
+</details><br/>
 
 
 
