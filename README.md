@@ -97,17 +97,11 @@ Models used (besides standard user model) in this project are:
 
 **App: Products**
 * **Tag** - I created a specific tag model to be able to add multiple tags to each product (i.e. Birthday, Fun, and so on).
-
 * **Category** - Handles product categories.
-
 * **Product** - Handles all products in the database, i.e. price, name, category and users_wishlist. The model has a ManyToMany connection to the User model to keep track of users wishlist.
 
-
-
-* **Genre** - Handles genres. I made a specific model to be able to add more dynamics (create / remove genres going forward in the admin backend instead of 'hard code' it in the code).
-* **Post** - Handles all the reviews
-* **Comment** - Handles all the comments
-* **UserProfile** - Handles the user profile information (first name, last name, presentation and featured image for the specific user/reviewer). There is a one-to-one relation to the user model to connect it to the standard user model.
+**App: Profiles**
+* **UserProfile** - Keeps track of all information connected to delivery information and order history. Also includes a method to create or update the user profile depending of if it exists or not.
 
 <details><summary><b>Database Schema</b></summary>
 
@@ -117,7 +111,7 @@ Models used (besides standard user model) in this project are:
 # **User Experience (UX)**
 
 ## Wireframes
-The wireframes for the site were created in the software [Balsamiq](https://balsamiq.com). The wireframes have been created for desktop, tablet and mobile devices. The text content wasn't finalized during the wireframe process. It's worth mentioning that there are visual differences compared to the wireframes, the reason being design choices that was made during the creation process.
+The wireframes for the site were created in the software [Balsamiq](https://balsamiq.com). The wireframes have been created for desktop, tablet and mobile devices. The text content wasn't finalized during the wireframe process. It's also worth mentioning that there are some visual differences in the deployed version compared to the original wireframes, the reason being design choices that was made during the creation process.
 
 <details><summary><b>Wireframes</b></summary>
 
@@ -127,45 +121,65 @@ The wireframes for the site were created in the software [Balsamiq](https://bals
 ## User Stories
 Below the user stories for the project are listed to clarify why particular feature matters. These will then be tested and confirmed in the [Testing](<#testing>) section.
 
-### Site User
+### Viewing And Navigation
+
 |  | | |
 |:-------:|:--------|:--------|
-| As a Site User | I can view a list of the music reviews so that I can select one to read | &check; |
-| As a Site User | I can view a list of the concert reviews so that I can select one to read | &check; |
-| As a Site User | I can click on a specific review so that I can read it in detail | &check; |
-| As a Site User | I can like and unlike a review so that it is possible for me to interact with the review | &check; |
-| As a Site User | I can view the number of likes on each review so that I can see how popular a specific review is | &check; |
-| As a Site User | I can contact Review Alliance in an easy way so that I can interact with them if I have a need for it | &check; |
-| As a Site User | I can navigate easy on the site through paginated list of posts so that I feel comfortable using the site | &check; |
-| As a Site User | I can view comments on a specific review so that I can read the conversations between different users on the site | &check; |
-| As a Site User | I can sign up an account so that I can like and comment on reviews, create a profile page, create own reviews and edit / remove my reviews | &check; |
-| As a Site User | I can create a profile page so that other reviewers can read about who I am | &check; |
-| As a Site User | I can comment on a review so that I can be involved in the conversation | &check; |
-| As a Site User | I can edit my comment so that I can change the content if needed | &check; |
-| As a Site User | I can remove my review so that I have full control of my reviews | &check; |
-| As a Site User | I can choose to see my own reviews so that I can find them easily | &check; |
-| As a Site User | I can create a new review so that I can contribute to with new content to Review Alliance | &check; |
+| As a Customer | I can view a list of products so that I can read more about it and purchase it | &check; |
+| As a Customer | I can click on a specific product so that I view its details like price, description, product rating, sizes and image | &check; |
+| As a Customer | I can read the reviews that are connected to a specific product so that I can base my purchase decision on that | &check; |
+| As a Customer | I can view the total of my purchases at any time so that I can keep track of my expenses | &check; |
+| As a Site User | I can navigate easy on the site through paginated list of products and posts so that I feel comfortable using the site | &check; |
+| As a Site User | I can view the site owners blog post so that I can get the latest information | &check; |
+| As a Site User | I can contact Kollektiv Fem in an easy way so that I can interact with them if I have a need for it | &check; |
+| As a Customer | I can like and unlike a review on a product I have purchased so that it is possible for me to raise my opinion | &check; |
+| As a Customer | I can create a wishlist so that I can come back later to purchase the products | &check; |
+| As a Customer | I can use a promotion code so that I can get a better deal | &check; |
+
+
+### Registration And User Accounts
+|  | | |
+|:-------:|:--------|:--------|
+| As a Site User | I can register an account so that I have a personal account and get access to my profile| &check; |
+| As a Site User | I can have my own user profile so that I can view my personal order history, write reviews and update my contact / payment information| &check; |
 | As a Site User | I can log out from the site so that I can feel safe that nobody can access my information | &check; |
-| As a Site User | I can create draft reviews so that I can finish writing the content later | &check; |
 | As a Site User | I can get visual feedback when interacting with the content so that I can be sure how I have interacted with the page | &check; |
+
+### Sorting And Searching
+|  | | |
+|:-------:|:--------|:--------|
+| As a Customer | I can sort the list of all products in different ways so that I can identify the best rated, best prices and products based on category| &check; |
+| As a Customer | I can sort a specific category of products so that I can identify the best rated, best prices or just sort the products by name. | &check; |
+| As a Customer | I can sort the list of products by using a single or multiple tags so that I can i.e. see all ’analog’ or ’ambient’ related products. | &check; |
+| As a Customer | I can easily get information about what I have searched for and how many results the search generated so that I can see if the product is available.| &check; |
+
+### Purchasing And Checkout
+|  | | |
+|:-------:|:--------|:--------|
+| As a Customer | I can easily choose the quantity of a product and size if applicable when purchasing it so that that I ensure I get the correct product | &check; |
+| As a Customer | I can easily view the items in my cart to be purchased so that I can see the total cost and all the items I am about to receive  .| &check; |
+| As a Customer | I can easily adjust the amount of products in my cart so that I can change the cart before checking out | &check; |
+| As a Customer | I can give my payment information in an easy way so that the checkout-process is quick and easy| &check; |
+| As a Customer | I need to feel safe and secure when interacting with the site so that I feel comfortable to provide all necessary information needed for purchase | &check; |
+| As a Customer | I view an order confirmation after checkout so that I can secure I have purchased the correct items and everything is ok | &check; |
+| As a Customer | I will receive an email confirmation after the checkout process is done so that I can keep the information for future use if needed | &check; |
+| As a Customer | I can receive an email confirmation when my order changes so that I get relevant information about my order | &check; |
 
 ### Site Admin
 
 |  | | |
 |:-------:|:--------|:--------|
+| As a Site Admin | I can create, update and delete product posts so that I can manage my review content | &check;
 | As a Site Admin | I can log out from the site so that I can feel safe that nobody can access my information | &check; |
-| As a Site Admin | I can create, read, update and delete reviews so that I can manage my review content | &check; |
-| As a Site Admin | I can approve reviews so that I can secure high quality of the content | &check; |
-| As a Site Admin | I can approve and disapprove comments so that I can secure a safe environment for the Site Users | &check; |
-| As a Site Admin | I can create draft reviews so that I can finish writing the content later | &check; |
-| As a Site Admin | I can access an admin area so that I can get a general understanding of logged in users, number of likes and number of posts | &check; |
+| As a Site Admin | I can create draft product posts so that I can finish writing the content later | &check; |
+| As a Site Admin | I can access an admin area so that I can get a general understanding of i.e. number of users, number of products| &check; |
 | As a Site Admin | I can get visual feedback when interacting with the content so that I can be sure how I have interacted with the page | &check; |
 
 [Back to top](<#table-of-content>)
 
 ## Site Structure
 
-The Review | Alliance site is split up in two parts: **when the user is logged out** and **when the user is logged in**. Depending on login status different pages is available for the user. When the user is logged out the pages: *about*, *all*, *albums*, *concerts* are avaliable. When the user is logged in *about*, *all*, *albums*, *concerts*, *create review*, *view my reviews* and *show profile page* are available. If you are logged in as an administrator an *admin area* is available. The site has an minimalistic, clean and intuitive design that makes the site easy to navigate for the user.
+The Kollektiv Fem Site can be used in a *logged in* and *logged out* mode. Depending on the login status different pages are available for the user. When the user is logged out  the pages *home*, *products*, *categories*, *special offers*, *my account (register and login)* are available. When the user is logged in *my profile*, *my wishlist* and *logout* also is available. If you are logged in as an administrator an *admin area* is available. The site has an minimalistic, clean and intuitive design that makes the site easy to navigate for the user.
 
 Read more about the different choices in the [Features](<#features>) section.
 
