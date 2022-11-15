@@ -5,7 +5,7 @@ Even though this is a fictional size that most likely never will be published to
 
 [View live website here](https://project-portfolio-5.herokuapp.com/)
 
-![Review | Alliance responsive design](readme/assets/images/responsive.png)
+![Kollektiv Fem](readme/assets/images/responsive.png)
 
 # Table of Content
 
@@ -59,18 +59,18 @@ Even though this is a fictional size that most likely never will be published to
 # **Project**
 
 ## Objective
-I absolutely love music, both listening to it at home but going to live concerts as well. Therefore I have decided to do a review site that is as authentic and useful as possible. I also want to demonstrate my knowledge within the area of HTML, CSS, JavaScript, Python and the Django Framework.
+As I mentioned in the Portfolio Project I absolutely love music, well actually all kinds of art. Therefore I have decided to make my existing Kollektiv Fem DIY business come to life in this project. I have decided to create a site as authentic I can and at the same time demonstrate my knowledge within the Django Framework, Python, JavaScript, CSS and HTML.
 
 ## Site Users Goal
-The user of 'Record | Alliance' loves music, to interact with others and to contribute with their knowledge to like minded.
+The user of 'Kollektiv Fem' loves art of all forms and is excited to listen to and buy high quality art for a reasonable price.
 
 ## Site Owners Goal
-The goal of the site owner is to deliver a site where the users in an intuitive way can read about the latest albums and concerts and contribute with their own reviews.
+The goal of the site owner is to deliver a site where the users in an intuitive way can buy Kollektiv Fems art and get relevant information of what is happening at Kollektiv Fem.
 
 ## Project Management
 
 ### Trello & Github Board
-I've been using the application [Trello](https://trello.com/) and the project board in GitHub to keep my project together. It has been working really well and has helped me structure up my work a lot. Trello was used on a more general plan and GitHub was used to plan and organize my user stories.
+For this project I have used the applicatio [Trello](https://trello.com/) and the project board in GitHub to have control over my project. I just this setup on Project Portfolio 4 and it has worked really well this time also. Github was use to plan, create and organise my user stories whilst Trello was used from a more general perspective.
 
 <details><summary><b>Trello & Github Board</b></summary>
 
@@ -86,7 +86,19 @@ I have used a modelling tool called [Graph Models](https://django-extensions.rea
 
 Models used (besides standard user model) in this project are:
 
-* **Category** - Handles categories. I made a specific model to be able to add more dynamics (create / remove categories going forward in the admin backend instead of 'hard code' it in the code).
+**App: Blog**
+
+* **Category** - Handles blog categories. I made this specific model to have a more dynamic handling of adding blog categorys.
+* **Post** - Handles all the post blogs and also has a ForeignKey to the category which feed in the categories to the post model.
+
+**App: Checkout**
+* **Order** - Handles all customer orders. Holds delivery information but also generates i.e. order numbers and update totals. Has a foreign connection to the user_profile model.
+* **OrderLineItem** - Keeps track of each order item in each order the customer with ForeignKeys to the Order and Product model.
+
+
+
+
+
 * **Genre** - Handles genres. I made a specific model to be able to add more dynamics (create / remove genres going forward in the admin backend instead of 'hard code' it in the code).
 * **Post** - Handles all the reviews
 * **Comment** - Handles all the comments
