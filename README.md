@@ -198,15 +198,19 @@ The color scheme chosen for the 'Kollektiv Fem' site was based around the color 
 ![Color Palette image](readme/assets/images/coolors_palette.png)
 
 * ### Typography
-The fonts used for the site are 'Roboto' and 'Tinos'. Fallback font for both of them is sans-serif.
+The fonts used for the site are **Nunito**, **Poppins'** and **Cousine**. Fallback font for Nunito and Poppins is **sans-serif** and fallback font for Cousine is **monospace**.
 
-* 'Roboto' is used on all headlines including the brand logo. It's a very clean font that works really well for headlines and logos. It's easy to read and matches the minimalistic style that I wanted the site to 'breath'.
+* 'Nunito' is used on more or less all body text on the site. It has quite a warm and nice look which I think worked really well on the bigger chunks of text on the site.
 
-* 'Tinos' was chosen for the review excerpt and the review full text. It has a nice serif design and works really well for longer paragraphs of text.
+* 'Poppins' is used on the logo in the navigation bar and on all headlines (h1 - h6). It has a really clean look and works really well as header text.
 
-![Google Fonts Impact](readme/assets/images/google_fonts_roboto.png)
+* 'Cousine' is used on all product descriptions. Maybe a little bold decision to use this font but I think its 'alternative' look works really well in the context.
 
-![Google Fonts Tinos](readme/assets/images/google_fonts_tinos.png)
+![Google Fonts Nunito](readme/assets/images/google_fonts_nunito.png)
+
+![Google Fonts Poppins](readme/assets/images/google_fonts_poppins.png)
+
+![Google Fonts Cousine](readme/assets/images/google_fonts_cousine.png)
 
 [Back to top](<#table-of-content>)
 
