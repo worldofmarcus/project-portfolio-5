@@ -133,8 +133,7 @@ Below the user stories for the project are listed to clarify why particular feat
 | As a Site User | I can view the site owners blog post so that I can get the latest information | &check; |
 | As a Site User | I can contact Kollektiv Fem in an easy way so that I can interact with them if I have a need for it | &check; |
 | As a Customer | I can like and unlike a review on a product I have purchased so that it is possible for me to raise my opinion | &check; |
-| As a Customer | I can create a wishlist so that I can come back later to purchase the products | &check; |
-| As a Customer | I can use a promotion code so that I can get a better deal | &check; |
+| As a Site User | I can get visual feedback when interacting with the content so that I can be sure how I have interacted with the page | &check; |
 
 
 ### Registration And User Accounts
@@ -143,7 +142,7 @@ Below the user stories for the project are listed to clarify why particular feat
 | As a Site User | I can register an account so that I have a personal account and get access to my profile| &check; |
 | As a Site User | I can have my own user profile so that I can view my personal order history, write reviews and update my contact / payment information| &check; |
 | As a Site User | I can log out from the site so that I can feel safe that nobody can access my information | &check; |
-| As a Site User | I can get visual feedback when interacting with the content so that I can be sure how I have interacted with the page | &check; |
+
 
 ### Sorting And Searching
 |  | | |
@@ -164,6 +163,8 @@ Below the user stories for the project are listed to clarify why particular feat
 | As a Customer | I view an order confirmation after checkout so that I can secure I have purchased the correct items and everything is ok | &check; |
 | As a Customer | I will receive an email confirmation after the checkout process is done so that I can keep the information for future use if needed | &check; |
 | As a Customer | I can receive an email confirmation when my order changes so that I get relevant information about my order | &check; |
+| As a Customer | I can create a wishlist so that I can come back later to purchase the products | &check; |
+| As a Customer | I can use a promotion code so that I can get a better deal | &check; |
 
 ### Site Admin
 
@@ -174,6 +175,9 @@ Below the user stories for the project are listed to clarify why particular feat
 | As a Site Admin | I can create draft product posts so that I can finish writing the content later | &check; |
 | As a Site Admin | I can access an admin area so that I can get a general understanding of i.e. number of users, number of products| &check; |
 | As a Site Admin | I can get visual feedback when interacting with the content so that I can be sure how I have interacted with the page | &check; |
+| As a Site Admin | I can I can create, update and delete blog posts so that I can manage my blog content | &check; |
+| As a Site Admin | I can create draft blog posts so that I can finish writing the content later | &check; |
+
 
 [Back to top](<#table-of-content>)
 
