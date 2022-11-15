@@ -231,7 +231,7 @@ The top bar is always visible and includes information about free shipping. The 
 
 The navigation bar is includes the same basic options for the user (logged in or not logged in). If the user is logged in och logged in as an administrator the sub-menus look different.
 
-*Basic Navigation*
+**Navigation - User Not Logged In**
 
 * Home - Shows the user a carousel with two images and the latest blog posts
 * Products - Lets the user sort/view the products by **added date**, **price**, **rating**, **name** and **all products**
@@ -241,29 +241,27 @@ The navigation bar is includes the same basic options for the user (logged in or
 * Cart - Views the total cost of the cart when the user starts adding to it. When the user clicks on it the **bag** template opens up.
 * Search Box - Lets the user search for products on the page
 
-<details><summary><b>Navigation</b></summary>
+<details><summary><b>Navigation - User Not Logged In</b></summary>
 
 ![Navigation](readme/assets/images/menu.png)
-</details><br/>
-
-<details><summary><b>Navigation - Products</b></summary>
 
 ![Navigation - Products](readme/assets/images/menu_products.png)
-</details><br/>
-
-<details><summary><b>Navigation - Categories</b></summary>
 
 ![Navigation - Categories](readme/assets/images/menu_categories.png)
-</details><br/>
-
-<details><summary><b>Navigation - Special Offers</b></summary>
 
 ![Navigation - Special Offers](readme/assets/images/menu_special_offers.png)
-</details><br/>
-
-<details><summary><b>Navigation - My Account</b></summary>
 
 ![Navigation - My Account](readme/assets/images/menu_my_account.png)
+
+</details><br/>
+
+**Navigation - User Logged In**
+When an ordinary user is logged in the **my account** gets more available options, **my profile** and **my wishlist**.
+
+<details><summary><b>Navigation - Logged In</b></summary>
+
+![Navigation - My Account - User Logged In](readme/assets/images/menu_my_account_user.png)
+
 </details><br/>
 
 
@@ -271,62 +269,7 @@ The navigation bar is includes the same basic options for the user (logged in or
 
 
 
-*Links that are visible to logged out users*
 
-* About - Includes information about Review | Alliance and presents the reviewers that are registered.
-* All - Lists all reviews on the site independent of category type of review.
-* Albums - Lists all album reviews.
-* Concerts - Lists all concert reviews.
-* Login / Sign Up - Gives the user the opportunity to log in or sign up if not ready a registered user at Review | Alliance.
-
-
-
-<details><summary><b>Navigation Small - User Not Logged In</b></summary>
-
-![Navigation Small - User Not Logged In](readme/assets/images/navbar_small_not_logged_in.png)
-</details><br/>
-
-*Links that are visible to logged in users*
-
-All of the links that are visible to a not logged in user plus the ones below.
-
-* Create New Review - Lets the user create a new review.
-* View My Reviews - Lists all reviews created by the logged in user.
-* Show Profile Page - Shows logged in users profile page.
-* Log Out - Logs out the user.
-
-<details><summary><b>Navigation Large - User Logged In</b></summary>
-
-![Navigation Large - User Logged In](readme/assets/images/navbar_large_logged_in.png)
-</details><br/>
-
-<details><summary><b>Navigation Small - User Logged In</b></summary>
-
-![Navigation Small - User Logged In](readme/assets/images/navbar_small_logged_in.png)
-</details><br/>
-
-*Link that is visible if user is administrator*
-
-All of the links above plus the one below.
-* Admin Area - Gives the administrator a view with information about i.e. total number of users, number of comments and number of posts. In this view the administrator also can publish / unpublish / approve / unapprove reviews and approve / unapprove comments.
-
-<details><summary><b>Navigation Large - Admin Logged In</b></summary>
-
-![Navigation Large - Admin Logged In](readme/assets/images/navbar_large_admin_logged_in.png)
-</details><br/>
-
-<details><summary><b>Navigation Small - Admin Logged In</b></summary>
-
-![Navigation Small - Admin Logged In](readme/assets/images/navbar_small_admin_logged_in.png)
-</details><br/>
-
-### **About**
-In the about section the user can read about both who Review | Alliance are but also about all reviewers that are registered on the site.
-
-<details><summary><b>About Section</b></summary>
-
-![About](readme/assets/images/about.png)
-</details><br/>
 
 ### **All**
 This page lists all the reviews that has been made at Review | Alliance. If the user is not logged in there is only a "read more" option visible for the user on each review card. If the user is logged in an *update* and *delete* option gets visible on the reviews that the user has written. The page shows 6 cards on bigger screens before a pagination mechanism kicks in. On smaller screens the cards are stacked vertically.
