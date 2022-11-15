@@ -62,12 +62,13 @@
                                 {% if post.featured_image %}
                                 <a href="{% url 'blog_post_detail' post.slug %}">
                                     <img class="card-img-top img-fluid img-thumbnail mb-3" width="150" height="150"
-                                        src="{{ post.featured_image.url }}" alt="{{ post.name }}">
+                                        src="{{ post.featured_image.url }}" alt="{{ post.featured_image }}">
                                 </a>
+
                                 {% else %}
                                 <a href="{% url 'blog_post_detail' post.slug %}">
                                     <img class="card-img-top img-fluid img-thumbnail mb-3" width="150" height="150" src="
-                                    {{ MEDIA_URL }}noimage.png" alt="{{ post.name }}">
+                                    {{ MEDIA_URL }}noimage.png" alt="{{ post.featured_image }}">
                                 </a>
                                 {% endif %}
                             </div>
