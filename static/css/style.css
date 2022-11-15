@@ -144,7 +144,6 @@ h6 {
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: 700;
-
     background-color: #ce8147;
 }
 
@@ -299,6 +298,23 @@ input[type=email]:focus {
     overflow-x: hidden;
     overflow-y: auto;
 
+}
+
+/* ==============
+   mail chimp
+   ============== */
+
+
+#mc_embed_signup {
+    background: #ce8147;
+}
+
+#mc_embed_signup .button {
+    background: #000000;
+}
+
+#mc_embed_signup #mce-success-response {
+    color: #ffffff;
 }
 
 /* ==============
