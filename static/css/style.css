@@ -56,7 +56,6 @@ h6 {
    ============== */
 
 
-
 /* ==================
    top bar & nav bar
    ================== */
@@ -135,7 +134,7 @@ h6 {
     bottom: 0;
     left: 0;
     right: 0;
-    padding-bottom: 100px;
+    padding-bottom: 130px;
 }
 
 .carousel-button {
@@ -304,7 +303,6 @@ input[type=email]:focus {
    mail chimp
    ============== */
 
-
 #mc_embed_signup {
     background: #ce8147;
 }
@@ -314,7 +312,11 @@ input[type=email]:focus {
 }
 
 #mc_embed_signup #mce-success-response {
-    color: #ffffff;
+    color: #000000;
+}
+
+#mc_embed_signup #mce-error-response {
+    color: #000000;
 }
 
 /* ==============
