@@ -95,7 +95,12 @@ Models used (besides standard user model) in this project are:
 * **Order** - Handles all customer orders. Holds delivery information but also generates i.e. order numbers and update totals. Has a foreign connection to the user_profile model.
 * **OrderLineItem** - Keeps track of each order item in each order the customer with ForeignKeys to the Order and Product model.
 
+**App: Products**
+* **Tag** - I created a specific tag model to be able to add multiple tags to each product (i.e. Birthday, Fun, and so on).
 
+* **Category** - Handles product categories.
+
+* **Product** - Handles all products in the database, i.e. price, name, category and users_wishlist. The model has a ManyToMany connection to the User model to keep track of users wishlist.
 
 
 
