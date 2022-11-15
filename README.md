@@ -219,8 +219,57 @@ The features of the site are listed below.
 
 ## **Existing Features**
 
+### **Top Bar**
+The top bar is always visible and includes information about free shipping. The free shipping level is connected to a variable in settings.py.
+
+<details><summary><b>Top Bar</b></summary>
+
+![Top Bar](readme/assets/images/topbar.png)
+</details><br/>
+
 ### **Navigation**
-The navigation bar is very clean and straight forward. Depending if you  are logged in or not different menus are visible for the site user. An extra menu item is visible if you are logged in as an administrator.
+
+The navigation bar is includes the same basic options for the user (logged in or not logged in). If the user is logged in och logged in as an administrator the sub-menus look different.
+
+*Basic Navigation*
+
+* Home - Shows the user a carousel with two images and the latest blog posts
+* Products - Lets the user sort/view the products by **added date**, **price**, **rating**, **name** and **all products**
+* Categories - Lets the user sort/view the products by the categories **tapes**, **cds**, **posters**, **pins**, **t-shirts**, **tank tops**, **tote bags** and **vinyls**
+* Special Offers -Lets the user sort/view the products by the tags **new arrivals** and **product of the month**
+* My Account - Lets the user either **register an account** or **login**
+* Cart - Views the total cost of the cart when the user starts adding to it. When the user clicks on it the **bag** template opens up.
+* Search Box - Lets the user search for products on the page
+
+<details><summary><b>Navigation</b></summary>
+
+![Navigation](readme/assets/images/menu.png)
+</details><br/>
+
+<details><summary><b>Navigation - Products</b></summary>
+
+![Navigation - Products](readme/assets/images/menu_products.png)
+</details><br/>
+
+<details><summary><b>Navigation - Categories</b></summary>
+
+![Navigation - Categories](readme/assets/images/menu_categories.png)
+</details><br/>
+
+<details><summary><b>Navigation - Special Offers</b></summary>
+
+![Navigation - Special Offers](readme/assets/images/menu_special_offers.png)
+</details><br/>
+
+<details><summary><b>Navigation - My Account</b></summary>
+
+![Navigation - My Account](readme/assets/images/menu_my_account.png)
+</details><br/>
+
+
+
+
+
 
 *Links that are visible to logged out users*
 
@@ -230,10 +279,7 @@ The navigation bar is very clean and straight forward. Depending if you  are log
 * Concerts - Lists all concert reviews.
 * Login / Sign Up - Gives the user the opportunity to log in or sign up if not ready a registered user at Review | Alliance.
 
-<details><summary><b>Navigation Large - User Not Logged In</b></summary>
 
-![Navigation Large - User Not Logged In](readme/assets/images/navbar_large_not_logged_in.png)
-</details><br/>
 
 <details><summary><b>Navigation Small - User Not Logged In</b></summary>
 
