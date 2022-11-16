@@ -34,14 +34,7 @@ class ProductForm(forms.ModelForm):
 
         self.fields['category'].choices = category_view_name
 
-    def __init__(self, *args, **kwargs):
-        """
-        This method returns a friendly tags
-        view name.
-        """
-        super().__init__(*args, **kwargs)
         tags = Tag.objects.all()
         tag_view_name = [(t.id, t.get_view_name()) for t in tags]
 
         self.fields['tags'].choices = tag_view_name
-
