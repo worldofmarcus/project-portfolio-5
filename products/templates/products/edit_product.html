@@ -29,6 +29,12 @@
                     <input class="form-control me-2" type="search" name="q" placeholder="Search" aria-label="Search">
                 </div>
             </form>
+            <div>
+                <p class="text-muted mt-3 text-center body-text">
+                    {{ products|length }} Products{% if search_term %} found for
+                    <strong>"{{ search_term }}"</strong>{% endif %}
+                </p>
+            </div>
             <div class="product-list-wrapper mt-3">
                 <table class="table table-sm table-text">
                     <thead>

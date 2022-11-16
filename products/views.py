@@ -124,6 +124,7 @@ def add_product(request):
     context = {
         'form': form,
         'products': products,
+        'search_term': query,
     }
     return render(request, template, context)
 

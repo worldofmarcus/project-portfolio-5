@@ -237,7 +237,7 @@ The navigation bar is includes the same basic options for the user (logged in or
 * **Special Offers** -Lets the user sort/view the products by the tags **new arrivals** and **product of the month**
 * **My Account** - Lets the user either **register an account** or **login**
 * **Cart** - Views the total cost of the cart when the user starts adding to it. When the user clicks on it the **bag** template opens up.
-* **Search Box** - Lets the user search for products on the page
+* **Search Box** - Lets the user search for products on the page.
 
 <details><summary><b>Navigation - User Not Logged In</b></summary>
 
@@ -251,7 +251,12 @@ The navigation bar is includes the same basic options for the user (logged in or
 
 ![Navigation - My Account](readme/assets/images/menu_my_account.png)
 
+![Navigation - Search](readme/assets/images/menu_search.png)
+
+![Navigation - Search Results](readme/assets/images/menu_search_results.png)
+
 ![Navigation - Cart With Products](readme/assets/images/cart_products.png)
+
 
 </details><br/>
 
@@ -430,9 +435,8 @@ If everything goes according to plan and the webhooks between Stripe and the sit
 ![Order Confirmation](readme/assets/images/order_confirmation.png)
 </details><br/>
 
-
-
-
+### **Confirmation Emails**
+TBD After deployment
 
 ### **Sign Up**
 If the site visitor has no registered user at Review | Alliance they can sign up. They can also add a presentation and upload a featured image that will be used on the users profile page.
