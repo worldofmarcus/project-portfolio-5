@@ -32,12 +32,14 @@ class ProductAdmin(admin.ModelAdmin):
 
         queryset.update(status=0)
 
+
 @admin.register(Tag)
 class TagAdmin(admin.ModelAdmin):
     list_display = (
         'view_name',
         'name',
     )
+
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
