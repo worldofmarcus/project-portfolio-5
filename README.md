@@ -490,14 +490,17 @@ The footer area includes short information about Kollektiv Fem, links to relevan
 ![Newsletter Error 2](readme/assets/images/newsletter_error_2.png)
 </details><br/>
 
-
-### **Flash Messages and confirmation pages to the user**
-The sites incorporates flash messages and confirmation pages when an action has been performed (i.e. delete/update actions). Examples of this in the screenshots below.
+### **Visual Feedback To The User**
+The sites incorporates flash messages when an action has been performed (i.e. delete/update/add to bag/ actions). Examples of this in the screenshots below.
 
 <details><summary><b>Confirmation Messages</b></summary>
 
-![Review Created Success](readme/assets/images/review_created_success.png)
-![Review Deleted Success](readme/assets/images/review_deleted_success.png)
+![Message 1](readme/assets/images/message_1.png)
+![Message 2](readme/assets/images/message_2.png)
+![Message 3](readme/assets/images/message_3.png)
+![Message 4](readme/assets/images/message_4.png)
+![Message 5](readme/assets/images/message_5.png)
+
 </details><br/>
 
 ### Features Left to Implement
