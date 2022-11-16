@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import Post, Category
 
+
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
     """
@@ -10,6 +11,7 @@ class CategoryAdmin(admin.ModelAdmin):
 
     list_display = ('name', )
     list_filter = ('name', )
+
 
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
