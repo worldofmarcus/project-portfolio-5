@@ -9,7 +9,6 @@ from checkout.models import Order
 from products.models import Product
 
 
-
 @login_required
 def profile(request):
     """ This view displays the users profile. """
@@ -35,6 +34,7 @@ def profile(request):
 
     return render(request, template, context)
 
+
 @login_required
 def order_history(request, order_number):
     order = get_object_or_404(Order, order_number=order_number)
@@ -51,6 +51,7 @@ def order_history(request, order_number):
 
     return render(request, template, context)
 
+
 @login_required
 def add_to_wishlist(request, id):
     product = get_object_or_404(Product, id=id)
@@ -59,12 +60,12 @@ def add_to_wishlist(request, id):
         messages.success(request, 'Removed ' + product.name + ' from your wishlist')
         return redirect(reverse('wishlist'))
 
-
     else:
         product.users_wishlist.add(request.user)
         messages.success(request, 'Added ' + product.name + ' to your wishlist')
 
     return HttpResponseRedirect(request.META['HTTP_REFERER'])
+
 
 @login_required
 def wishlist(request):
