@@ -18,6 +18,7 @@ class Tag(models.Model):
     def get_view_name(self):
         return self.view_name
 
+
 class Category(models.Model):
 
     """ Category model """
@@ -50,7 +51,7 @@ class Product(models.Model):
                                  on_delete=models.SET_NULL)
     date = models.DateTimeField(auto_now_add=True)
     name = models.CharField(max_length=200, null=True)
-    price = models.DecimalField(max_digits=6, decimal_places=2, validators=[MinValueValidator(0.0, message=None)])
+    price = models.DecimalField(max_digits=15, decimal_places=2, validators=[MinValueValidator(0.0, message=None)])
     tags = models.ManyToManyField(Tag)
     description = models.TextField()
     rating = models.DecimalField(max_digits=6, decimal_places=2, blank=True, null=True)
