@@ -64,9 +64,8 @@
                             <td class="align-middle">{% if p.status == 1 %}Published {% else%}Not
                                 Published{% endif %}</td>
                             <td class="align-middle">
-
                                 {% if p.id == product.id %}
-                                You are editing this post
+                                You are editing this product
                                 {% else %}
                                 <a href="{% url 'edit_product' p.id %}" class=" btn btn-danger btn-sm">Edit</a>
                                 {% endif %}

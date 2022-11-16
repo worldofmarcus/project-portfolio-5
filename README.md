@@ -251,6 +251,8 @@ The navigation bar is includes the same basic options for the user (logged in or
 
 ![Navigation - My Account](readme/assets/images/menu_my_account.png)
 
+![Navigation - Cart With Products](readme/assets/images/cart_products.png)
+
 </details><br/>
 
 **Navigation - User Logged In**
@@ -292,15 +294,63 @@ When an ordinary user is logged in the **my account** gets more available option
 **Navigation - Admin Logged In**
 When a superuser / administrator is logged in the **my account** gets more avilable options, **manage products** and **manage blog**
 
-* Manage Products - On this page the administrator can add, edit, remove and search for products.
-* Manage Blog - On this page the administrator can add, edit, remove blog posts.
-
 <details><summary><b>Navigation - My Account - Admin Logged In</b></summary>
 
 ![Navigation - My Account - Admin Logged In](readme/assets/images/menu_my_account_admin.png)
 
 </details><br/>
 
+* Manage Products - On this page the administrator can add, edit, remove and search for products. The page consists of two columns. The left one is the add, edit, remove area. Here admin can add all product information including i.e. multiple tags for a product. The right column views the products in the database. Here the admin i.e. can see if the product is published or not. If the admin clicks edit on a product the form is pre-filled with all the product information (and a 'You are editing this product' gets visible in the action column). If the admin chooses to delete a product a confirmation/warning modal will be triggered. There is also possible for admin to do a search within the product management area which can be very convinient if there are a lot of products in the store. If the product is not published it will not be shown to the site users.
+
+<details><summary><b>Navigation - Admin Logged In - Product Management</b></summary>
+
+![Navigation - My Account - Product Management](readme/assets/images/admin_product_management.png)
+
+</details><br/>
+
+<details><summary><b>Navigation - Admin Logged In - Product Management - Edit</b></summary>
+
+![Navigation - My Account - Product Management - Edit](readme/assets/images/admin_product_management_edit.png)
+
+</details><br/>
+
+<details><summary><b>Navigation - Admin Logged In - Product Management - Delete</b></summary>
+
+![Navigation - My Account - Product Management - Delete](readme/assets/images/admin_product_management_delete.png)
+
+</details><br/>
+
+<details><summary><b>Navigation - Admin Logged In - Product Management - Search</b></summary>
+
+![Navigation - My Account - Product Management - Search](readme/assets/images/admin_product_management_search.png)
+
+</details><br/>
+
+<details><summary><b>Navigation - Admin Logged In - Product Management - Search Results</b></summary>
+
+![Navigation - My Account - Product Management - Search Results](readme/assets/images/admin_product_management_search_results.png)
+
+</details><br/>
+
+* Manage Blog - On this page the administrator can add, edit, remove blog posts. The page consists of two columns. The left one is the add, edit, remove area. Here admin can add all blog information. The right column views the blog posts in the database. Here the admin i.e. can see if the blog post is published or not. If the admin clicks edit on a blog post the form is pre-filled with all the blog post information (and a 'You are editing this post' gets visible in the action column). If the admin chooses to delete a blog post a confirmation/warning modal will be triggered. If the blog post is not published it will not be shown to the site users.
+
+<details><summary><b>Navigation - Admin Logged In - Blog Management</b></summary>
+
+![Navigation - My Account - Blog Management](readme/assets/images/admin_blog_management.png)
+
+</details><br/>
+
+<details><summary><b>Navigation - Admin Logged In - Product Management - Edit</b></summary>
+
+![Navigation - My Account - Blog Management - Edit](readme/assets/images/admin_blog_management_edit.png)
+
+</details><br/>
+
+<details><summary><b>Navigation - Admin Logged In - Blog Management - Delete</b></summary>
+
+![Navigation - My Account - Blog Management - Delete](readme/assets/images/admin_blog_management_delete.png)
+
+</details><br/>
 
 
 
