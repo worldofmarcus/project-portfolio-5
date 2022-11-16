@@ -2,8 +2,6 @@
 {% load static %}
 
 {% block content %}
-
-<!-- Blog post detail -->
 <div class="container">
     {% if not request.user.is_superuser and blog_post.status is 0 %}
     <h1 class="mt-5">There is nothing here</h1>
@@ -34,7 +32,4 @@
     {% endif %}
 
 </div>
-
-<!-- End of blog post detail -->
-
 {% endblock %}
