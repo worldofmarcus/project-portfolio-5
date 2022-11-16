@@ -436,39 +436,60 @@ If everything goes according to plan and the webhooks between Stripe and the sit
 </details><br/>
 
 ### **Confirmation Emails**
-TBD After deployment
+TO BE UPDATED AFTER DEPLOYMENT
 
 ### **Sign Up**
-If the site visitor has no registered user at Review | Alliance they can sign up. They can also add a presentation and upload a featured image that will be used on the users profile page.
+If the site visitor has no registered user at Kollektiv Fem they can sign up.
 
 <details><summary><b>Sign Up</b></summary>
 
-![Sign Up](readme/assets/images/sign_up.png)
+![Sign Up](readme/assets/images/allauth_sign_up.png)
 </details><br/>
 
 ### **Sign In**
-On this page the user can sign in to Review | Alliance
+On this page the user can sign in to Kollektiv Fem.
 
 <details><summary><b>Sign In</b></summary>
 
-![Sign In](readme/assets/images/sign_in.png)
+![Sign In](readme/assets/images/allauth_sign_in.png)
 </details><br/>
+
+### **Password Reset**
+If the user has forgotten the password they can ask for a password reset through this page.
+
+<details><summary><b>Password Reset</b></summary>
+
+![Password Reset](readme/assets/images/allauth_sign_password_reset.png)
+</details><br/>
+
+![Password Reset Success](readme/assets/images/allauth_sign_password_success.png)
+</details><br/>
+
 
 ### **Sign Out**
 When the user clicks sign out in the menu bar a confirmation page is being showed so that the user don't accidently sign out.
 
 <details><summary><b>Sign Out</b></summary>
 
-![Member Reviews](readme/assets/images/sign_out.png)
+![Member Reviews](readme/assets/images/allauth_sign_out.png)
 </details><br/>
 
 ### **Footer**
-The footer area includes short information about Review | Alliance, contact information and links to relevant social media.
+The footer area includes short information about Kollektiv Fem, links to relevant social media and a newsletter signup form (through MailChimp).
 
 <details><summary><b>Footer</b></summary>
 
 ![Footer](readme/assets/images/footer.png)
 </details><br/>
+
+<details><summary><b>Newsletter</b></summary>
+
+![Newsletter Registration](readme/assets/images/newsletter.png)
+![Newsletter Success](readme/assets/images/newsletter_success.png)
+![Newsletter Error 1](readme/assets/images/newsletter_error_1.png)
+![Newsletter Error 2](readme/assets/images/newsletter_error_2.png)
+</details><br/>
+
 
 ### **Flash Messages and confirmation pages to the user**
 The sites incorporates flash messages and confirmation pages when an action has been performed (i.e. delete/update actions). Examples of this in the screenshots below.
