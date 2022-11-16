@@ -46,7 +46,6 @@ def list_all_products(request):
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
-
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
@@ -89,6 +88,7 @@ def product_detail(request, product_id):
 
     return render(request, 'products/product_detail.html', context)
 
+
 @login_required
 def add_product(request):
     """ This view adds a product to the site """
@@ -128,6 +128,7 @@ def add_product(request):
     }
     return render(request, template, context)
 
+
 @login_required
 def edit_product(request, product_id):
     """ This view makes it possible to edit a product
@@ -160,6 +161,7 @@ def edit_product(request, product_id):
     }
 
     return render(request, template, context)
+
 
 @login_required
 def delete_product(request, product_id):
