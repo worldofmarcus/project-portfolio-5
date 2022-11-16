@@ -16,7 +16,7 @@ import dj_database_url
 
 
 if os.path.isfile("env.py"):
-   import env
+    import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -32,7 +32,7 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['project-portfolio-5.herokuapp.com', 'localhost']
 CSRF_TRUSTED_ORIGINS = ['https://8000-worldofmarc-projectport-pfzlly4vy23.ws-eu75.gitpod.io']
@@ -96,8 +96,8 @@ TEMPLATES = [
                 'bag.contexts.bag_contents',
             ],
             'builtins': [
-            'crispy_forms.templatetags.crispy_forms_tags',
-            'crispy_forms.templatetags.crispy_forms_field',
+                'crispy_forms.templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
             ]
         },
     },
