@@ -170,7 +170,7 @@ Below the user stories for the project are listed to clarify why particular feat
 
 |  | | |
 |:-------:|:--------|:--------|
-| As a Site Admin | I can create, update and delete product posts so that I can manage my review content | &#9745;
+| As a Site Admin | I can create, update and delete product posts so that I can manage my product content | &#9745;
 | As a Site Admin | I can log out from the site so that I can feel safe that nobody can access my information | &#9745; |
 | As a Site Admin | I can create draft product posts so that I can finish writing the content later | &#9745; |
 | As a Site Admin | I can access an admin area so that I can get a general understanding of i.e. number of users, number of products| &#9745; |
@@ -613,7 +613,6 @@ The libraries used in this project are located in the requirements.txt file and 
     * In the footer there is clear information about how to contact Kollektiv Fem.
 
 * As a Customer I can like and unlike a review on a product I have purchased so that it is possible for me to raise my opinion
-
     * Not implemented yet
 
 * As a Site User I can get visual feedback when interacting with the content so that I can be sure how I have interacted with the page
@@ -648,41 +647,57 @@ The libraries used in this project are located in the requirements.txt file and 
 ### Purchasing And Checkout
 
 * As a Customer I can easily choose the quantity of a product and size if applicable when purchasing it so that that I ensure I get the correct product
+    * On the product detail page the user can choose the quantity of a product and size.
 
 * As a Customer I can easily view the items in my cart to be purchased so that I can see the total cost and all the items I am about to receive
+    * The user can easily view the cart by clicking the cart icon in the top navigation bar.
 
 * As a Customer I can easily adjust the amount of products in my cart so that I can change the cart before checking out
+    * In the shopping bag that the user can reach by clicking the cart icon in the top navigation bar, it is easy to adjust the amount of products before checking out.
 
 * As a Customer I can give my payment information in an easy way so that the checkout-process is quick and easy
+    * In the secure checkout page the user can in an easy way give the payment information needed for an easy checkout process.
 
 * As a Customer I need to feel safe and secure when interacting with the site so that I feel comfortable to provide all necessary information needed for purchase
+    * This is somehow subjective but the site has been build to 'radiate' a sense of professionality and stability.
 
 * As a Customer I view an order confirmation after checkout so that I can secure I have purchased the correct items and everything is ok
+    * When the checkout process is completed the user is taken to a confirmation success page with information about which products that have been purchased.
 
 * As a Customer I will receive an email confirmation after the checkout process is done so that I can keep the information for future use if needed
+    * When the checkout process is completed the user recieves a confirmation e-mail to the e-mail that has been registered in the checkout process.
 
 * As a Customer I can receive an email confirmation when my order changes so that I get relevant information about my order
+    * Not implemented yet
 
 * As a Customer I can create a wishlist so that I can come back later to purchase the products
+    * On the product detail page the logged in user can add the specific product to their whislist and then access the wishlist from the 'my account' menu.
 
 * As a Customer I can use a promotion code so that I can get a better deal
+    * Not implemented yet
 
 ### Site Admin
 
-* As a Site Admin I can create, update and delete product posts so that I can manage my review content
+* As a Site Admin I can create, update and delete product posts so that I can manage my product content
+    * When admin is logged the product management page can be reached through the 'my account'-menu.
 
 * As a Site Admin I can log out from the site so that I can feel safe that nobody can access my information
     * When admin is logged in it is possible to choose the 'Log Out'-option in the navigation menu.
 
 * As a Site Admin I can create draft product posts so that I can finish writing the content later
+    * In the product management page the administrator can choose to put the product in 'draft'-mode before publishing it.
 
 * As a Site Admin I can access an admin area so that I can get a general understanding of i.e. number of users, number of products
+    * Not implemented yet
 
 * As a Site Admin I can get visual feedback when interacting with the content so that I can be sure how I have interacted with the page
+    * When the site user performs actions on the sites flash messages shows (i.e. delete/update/add to bag/ actions).
 
 * As a Site Admin I can I can create, update and delete blog posts so that I can manage my blog content
+    * When admin is logged the blog management page can be reached through the 'my account'-menu.
 
 * As a Site Admin I can create draft blog posts so that I can finish writing the content later
+    * In the blog management page the administrator can choose to put the blog post in 'draft'-mode before publishing it.
 
 ## Code Validation
 The code on the 'Review | Alliance' site has been tested through W3C Markup Validation Service, W3C CSS Validation Service and JSHint. Errors were at first found on the site in the W3C Markup Validation Service but could quite easily be fixed (see bugs section). One error appeared as well in the W3C CSS Validation but that was connected to Font Awesome and not to the site code itself (see bugs section).
