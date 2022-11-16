@@ -508,6 +508,7 @@ The sites incorporates flash messages when an action has been performed (i.e. de
 * Add seach function in the blog management section
 * Fix the pagination bug (described in the bug section)
 * Give the logged in site user the possibility to add a promotion code
+* Give the user the possibility to sort on multiple tags
 * Give the logged in site user the possibility to rate a product
 * Give the logged in site user the possibility to write a product review
 * Add an admin area with general information (like number of logged in users, number of products and so on)
@@ -633,21 +634,37 @@ The libraries used in this project are located in the requirements.txt file and 
 ### Sorting And Searching
 
 * As a Customer I can sort the list of all products in different ways so that I can identify the best rated, best prices and products based on category
+    * At the top of the site there is a navigation bar with links that lists products based on categories, sorting or through a search query.
+
 * As a Customer I can sort a specific category of products so that I can identify the best rated, best prices or just sort the products by name.
+    * At the top of the site there is a navigation bar with links that lists products based on categories, sorting or through a search query.
+
 * As a Customer I can sort the list of products by using a single or multiple tags so that I can i.e. see all ’analog’ or ’ambient’ related products.
+    * When the user has listed the products the tags is visible in the product cards. When the user clicks the card it is possible to choose a single tag. Multiple choice of tags not implemented yet.
+
 * As a Customer I can easily get information about what I have searched for and how many results the search generated so that I can see if the product is available.
+    *  At the top of the site there is a navigation bar with a search field that lists the searched products.
 
 ### Purchasing And Checkout
 
 * As a Customer I can easily choose the quantity of a product and size if applicable when purchasing it so that that I ensure I get the correct product
+
 * As a Customer I can easily view the items in my cart to be purchased so that I can see the total cost and all the items I am about to receive
+
 * As a Customer I can easily adjust the amount of products in my cart so that I can change the cart before checking out
+
 * As a Customer I can give my payment information in an easy way so that the checkout-process is quick and easy
+
 * As a Customer I need to feel safe and secure when interacting with the site so that I feel comfortable to provide all necessary information needed for purchase
+
 * As a Customer I view an order confirmation after checkout so that I can secure I have purchased the correct items and everything is ok
+
 * As a Customer I will receive an email confirmation after the checkout process is done so that I can keep the information for future use if needed
+
 * As a Customer I can receive an email confirmation when my order changes so that I get relevant information about my order
+
 * As a Customer I can create a wishlist so that I can come back later to purchase the products
+
 * As a Customer I can use a promotion code so that I can get a better deal
 
 ### Site Admin
@@ -658,9 +675,13 @@ The libraries used in this project are located in the requirements.txt file and 
     * When admin is logged in it is possible to choose the 'Log Out'-option in the navigation menu.
 
 * As a Site Admin I can create draft product posts so that I can finish writing the content later
+
 * As a Site Admin I can access an admin area so that I can get a general understanding of i.e. number of users, number of products
+
 * As a Site Admin I can get visual feedback when interacting with the content so that I can be sure how I have interacted with the page
+
 * As a Site Admin I can I can create, update and delete blog posts so that I can manage my blog content
+
 * As a Site Admin I can create draft blog posts so that I can finish writing the content later
 
 ## Code Validation
