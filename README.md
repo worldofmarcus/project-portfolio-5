@@ -384,8 +384,30 @@ Depending on what the site user chooses in the submenus in the menus **products*
 ![Product View](readme/assets/images/product_view.png)
 </details><br/>
 
+In the product detail view the user can **add the product** to the bag, add the product to the **wishlist**. If the user add the product to the wishlist the wishlist button changes to **in your wishlist**. I the product contains a size, a size option will appear on the product detail page as well.
 
+<details><summary><b>Product Detail</b></summary>
 
+![Product Detail](readme/assets/images/product_detail.png)
+</details><br/>
+
+<details><summary><b>Product Detail - Added To Wishlist</b></summary>
+
+![Product Detail - Added To Wishlist](readme/assets/images/wishlist_added.png)
+</details><br/>
+
+<details><summary><b>Product Detail - Size</b></summary>
+
+![Product Detail - Size](readme/assets/images/product_detail_size.png)
+</details><br/>
+
+### **Shopping Bag**
+When the site user had added products by pressing the **add to bag** button the products are being stored in the shopping bag that can be accessed via the 'cart'-button in the navigation menu.
+
+<details><summary><b>Shopping Bag</b></summary>
+
+![Shopping Bag](readme/assets/images/shopping_bag.png)
+</details><br/>
 
 ### **Sign Up**
 If the site visitor has no registered user at Review | Alliance they can sign up. They can also add a presentation and upload a featured image that will be used on the users profile page.
