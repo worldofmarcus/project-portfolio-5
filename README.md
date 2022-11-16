@@ -475,19 +475,20 @@ When the user clicks sign out in the menu bar a confirmation page is being showe
 </details><br/>
 
 ### **Footer**
-The footer area includes short information about Kollektiv Fem, links to relevant social media and a newsletter signup form (through MailChimp).
+The footer area includes short information about Kollektiv Fem, links to relevant social media, a newsletter signup form (through MailChimp), a link to Kollektiv Fem on the web and a link to Kollektiv Fems privacy policy.
 
 <details><summary><b>Footer</b></summary>
 
 ![Footer](readme/assets/images/footer.png)
 </details><br/>
 
-<details><summary><b>Newsletter</b></summary>
+<details><summary><b>Newsletter & Privacy Policy</b></summary>
 
 ![Newsletter Registration](readme/assets/images/newsletter.png)
 ![Newsletter Success](readme/assets/images/newsletter_success.png)
 ![Newsletter Error 1](readme/assets/images/newsletter_error_1.png)
 ![Newsletter Error 2](readme/assets/images/newsletter_error_2.png)
+![Privacy Policy](readme/assets/images/privacy_policy.png)
 </details><br/>
 
 ### **Visual Feedback To The User**
@@ -845,6 +846,8 @@ In addition to tests stated above I have performed a series of manual tests. Bel
 | &check; | Register a valid e-mail address in the e-mail signup in the footer is working
 | &check; | Register a non-valid e-mail address in the e-mail signup in the footer triggers an error message
 | &check; | Register a non-valid e-mail address in the e-mail signup in the footer triggers an error message
+| &check; | Clicking the Kollektiv Fem link in the footer area opens the Kollektiv Fem site in a new window
+| &check; | Clicking the Privacy Policy link in the footer area opens loads the privacy policy page
 
 | Status | **Main Website - User Logged In - Navigation**
 |:-------:|:--------|
@@ -940,6 +943,8 @@ In addition to tests stated above I have performed a series of manual tests. Bel
 | &check; | Register a valid e-mail address in the e-mail signup in the footer is working
 | &check; | Register a non-valid e-mail address in the e-mail signup in the footer triggers an error message
 | &check; | Register a non-valid e-mail address in the e-mail signup in the footer triggers an error message
+| &check; | Clicking the Kollektiv Fem link in the footer area opens the Kollektiv Fem site in a new window
+| &check; | Clicking the Privacy Policy link in the footer area opens loads the privacy policy page
 
 | Status | **Main Website - Admin Logged In - Navigation**
 |:-------:|:--------|
@@ -1010,7 +1015,6 @@ In addition to tests stated above I have performed a series of manual tests. Bel
 | &check; | When clicking on the product image on the product detail page a modal opens with the image
 | &check; | When clicking the Edit button to the right of the Add To The Wishlist button below the product the product management edit page is loaded
 
-
 | Status | **Main Website - Admin Logged In - Product Management - Add Product**
 |:-------:|:--------|
 | &check; | The form validation is working and does not accept negative numbers on price field
@@ -1073,6 +1077,8 @@ In addition to tests stated above I have performed a series of manual tests. Bel
 | &check; | Register a valid e-mail address in the e-mail signup in the footer is working
 | &check; | Register a non-valid e-mail address in the e-mail signup in the footer triggers an error message
 | &check; | Register a non-valid e-mail address in the e-mail signup in the footer triggers an error message
+| &check; | Clicking the Kollektiv Fem link in the footer area opens the Kollektiv Fem site in a new window
+| &check; | Clicking the Privacy Policy link in the footer area opens loads the privacy policy page
 
 ### Automated Testing
 Some automated testing has been done during this project. Due to prioritization of other tasks I only could provide 34% coverage. See screenshot below. Automated tests can be run by typing the command - *python3 manage.py test*
