@@ -231,13 +231,13 @@ The top bar is always visible and includes information about free shipping. The 
 The navigation bar is includes the same basic options for the user (logged in or not logged in). If the user is logged in och logged in as an administrator the sub-menus look different.
 
 **Navigation - User Not Logged In**
-* Home - Shows the user a carousel with two images and the latest blog posts
-* Products - Lets the user sort/view the products by **added date**, **price**, **rating**, **name** and **all products**
-* Categories - Lets the user sort/view the products by the categories **tapes**, **cds**, **posters**, **pins**, **t-shirts**, **tank tops**, **tote bags** and **vinyls**
-* Special Offers -Lets the user sort/view the products by the tags **new arrivals** and **product of the month**
-* My Account - Lets the user either **register an account** or **login**
-* Cart - Views the total cost of the cart when the user starts adding to it. When the user clicks on it the **bag** template opens up.
-* Search Box - Lets the user search for products on the page
+* **Home** - Shows the user a carousel with two images and the latest blog posts
+* **Products** - Lets the user sort/view the products by **added date**, **price**, **rating**, **name** and **all products**
+* **Categories** - Lets the user sort/view the products by the categories **tapes**, **cds**, **posters**, **pins**, **t-shirts**, **tank tops**, **tote bags** and **vinyls**
+* **Special Offers** -Lets the user sort/view the products by the tags **new arrivals** and **product of the month**
+* **My Account** - Lets the user either **register an account** or **login**
+* **Cart** - Views the total cost of the cart when the user starts adding to it. When the user clicks on it the **bag** template opens up.
+* **Search Box** - Lets the user search for products on the page
 
 <details><summary><b>Navigation - User Not Logged In</b></summary>
 
@@ -258,8 +258,8 @@ The navigation bar is includes the same basic options for the user (logged in or
 **Navigation - User Logged In**
 When an ordinary user is logged in the **my account** gets more available options, **my profile** and **my wishlist**.
 
-* My Profile - On the profile page the user can change delivery information and see the order history (and confirmations from earlier purchases)
-* My Wishlist - On the wishlist page the user can find their wishlist that is populated when the user adds itemt to the wishlist from the product detail area. From this view the user also can remove products from the wishlist (after being promted an 'are you sure'-confirmation message)
+* **My Profile** - On the profile page the user can change delivery information and see the order history (and confirmations from earlier purchases)
+* **My Wishlist** - On the wishlist page the user can find their wishlist that is populated when the user adds itemt to the wishlist from the product detail area. From this view the user also can remove products from the wishlist (after being promted an 'are you sure'-confirmation message)
 
 <details><summary><b>Navigation - My Account - User Logged In</b></summary>
 
@@ -300,7 +300,7 @@ When a superuser / administrator is logged in the **my account** gets more avila
 
 </details><br/>
 
-* Manage Products - On this page the administrator can add, edit, remove and search for products. The page consists of two columns. The left one is the add, edit, remove area. Here admin can add all product information including i.e. multiple tags for a product. The right column views the products in the database. Here the admin i.e. can see if the product is published or not. If the admin clicks edit on a product the form is pre-filled with all the product information (and a 'You are editing this product' gets visible in the action column). If the admin chooses to delete a product a confirmation/warning modal will be triggered. There is also possible for admin to do a search within the product management area which can be very convinient if there are a lot of products in the store. If the product is not published it will not be shown to the site users.
+* **Manage Products** - On this page the administrator can add, edit, remove and search for products. The page consists of two columns. The left one is the add, edit, remove area. Here admin can add all product information including i.e. multiple tags for a product. The right column views the products in the database. Here the admin i.e. can see if the product is published or not. If the admin clicks edit on a product the form is pre-filled with all the product information (and a 'You are editing this product' gets visible in the action column). If the admin chooses to delete a product a confirmation/warning modal will be triggered. There is also possible for admin to do a search within the product management area which can be very convinient if there are a lot of products in the store. If the product is not published it will not be shown to the site users.
 
 <details><summary><b>Navigation - Admin Logged In - Product Management</b></summary>
 
@@ -332,7 +332,7 @@ When a superuser / administrator is logged in the **my account** gets more avila
 
 </details><br/>
 
-* Manage Blog - On this page the administrator can add, edit, remove blog posts. The page consists of two columns. The left one is the add, edit, remove area. Here admin can add all blog information. The right column views the blog posts in the database. Here the admin i.e. can see if the blog post is published or not. If the admin clicks edit on a blog post the form is pre-filled with all the blog post information (and a 'You are editing this post' gets visible in the action column). If the admin chooses to delete a blog post a confirmation/warning modal will be triggered. If the blog post is not published it will not be shown to the site users.
+* **Manage Blog** - On this page the administrator can add, edit, remove blog posts. The page consists of two columns. The left one is the add, edit, remove area. Here admin can add all blog information. The right column views the blog posts in the database. Here the admin i.e. can see if the blog post is published or not. If the admin clicks edit on a blog post the form is pre-filled with all the blog post information (and a 'You are editing this post' gets visible in the action column). If the admin chooses to delete a blog post a confirmation/warning modal will be triggered. If the blog post is not published it will not be shown to the site users.
 
 <details><summary><b>Navigation - Admin Logged In - Blog Management</b></summary>
 
@@ -352,41 +352,39 @@ When a superuser / administrator is logged in the **my account** gets more avila
 
 </details><br/>
 
+### **Home**
+The home page contains a carousel with two images and the latest blog posts.
 
+**Carousel Area** - The carousel loops through two images with information and call to action buttons to shop and subscribe to the Kollektiv Fem newsletter
 
-### **All**
-This page lists all the reviews that has been made at Review | Alliance. If the user is not logged in there is only a "read more" option visible for the user on each review card. If the user is logged in an *update* and *delete* option gets visible on the reviews that the user has written. The page shows 6 cards on bigger screens before a pagination mechanism kicks in. On smaller screens the cards are stacked vertically.
+<details><summary><b>Carousel Area</b></summary>
 
-<details><summary><b>All Reviews - User Logged Out</b></summary>
+![Carousel 1](readme/assets/images/carousel_1.png)
 
-![All Reviews - User Logged Out](readme/assets/images/all_reviews_logged_out.png)
+![Carousel 2](readme/assets/images/carousel_2.png)
 </details><br/>
 
-<details><summary><b>All Reviews - User Logged In</b></summary>
+**Blog Area** - The blog area shows the three latest blog posts. When there are more than three blog posts it's possible for the user to use the pagination option to switch to the next three blog posts. When a site user clicks on the blog post a blog detail view is being shown. If admin is logged in there is a possibility to go to the edit blog management page from the blog area and the blog detail view (via the edit button)
 
-![All Reviews - User Logged In](readme/assets/images/all_reviews_logged_in.png)
+<details><summary><b>Blog Area</b></summary>
+
+![Blog Area](readme/assets/images/blog_area.png)
 </details><br/>
 
-### **Albums**
-This page lists all the album reviews that has been made at Review | Alliance. If the user is not logged in there is only a "read more" option visible for the user on each review card. If the user is logged in an *update* and *delete* option gets visible on the reviews that the user has written. No screenshots for this view due to the fact it's the same concept as in the all reviews section except that the review cards are filtered on the category 'album'.
+<details><summary><b>Blog Detail</b></summary>
 
-### **Create Review**
-On this page the registered and logged in user can create their own review. When they have sent it in Review | Alliance needs to approve it, until it's approved it will not be visible for the public.
+![Blog Area](readme/assets/images/blog_detail.png)
+</details><br/>
 
-<details><summary><b>Create Review</b></summary>
+### **Products**
+Depending on what the site user chooses in the submenus in the menus **products**, **categories** or **special offers** the page lists different views. I will only show one view due to the fact it's the same visual design but just with different products being showed. In the example the products are being sorted on name (A-Z). When a site user clicks on the product a product detail page is being shown. If admin is logged in there is a possibility to go to the edit product management page from the product overview and product detail page.
 
-![Create Review](readme/assets/images/create_review.png)
+<details><summary><b>Product View</b></summary>
+
+![Product View](readme/assets/images/product_view.png)
 </details><br/>
 
 
-
-### **Profile Page**
-On this page the user can view and update their own profile page. The profile is visible in the about section.
-
-<details><summary><b>Profile Page</b></summary>
-
-![Profile Page](readme/assets/images/update_profile.png)
-</details><br/>
 
 
 ### **Sign Up**
