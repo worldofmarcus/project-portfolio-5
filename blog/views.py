@@ -46,6 +46,7 @@ def blog_post_detail(request, slug):
 
     return render(request, 'blog/blog_post_detail.html', context)
 
+
 @login_required
 def add_blog_post(request):
     """ This view adds a blog post to the site """
@@ -75,6 +76,7 @@ def add_blog_post(request):
         'posts': posts,
     }
     return render(request, template, context)
+
 
 @login_required
 def edit_blog_post(request, slug):
@@ -108,8 +110,8 @@ def edit_blog_post(request, slug):
         'blog_post': blog_post,
         'posts': posts,
     }
-
     return render(request, template, context)
+
 
 @login_required
 def delete_blog_post(request, slug):
