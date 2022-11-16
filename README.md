@@ -789,20 +789,18 @@ CI Python Linter [Code Institute Linter](https://pep8ci.herokuapp.com/) was used
 **other**
 * custom_storages.py - No errors reported
 
-
-
-
 [Back to top](<#table-of-content>)
 
 ### JavaScript Validation
-The JSHint validator results can be seen below:
+The [JSHint](https://jshint.com/) validator results can be seen below:
 
-No errors were returned when passing through JSHint (script.js) but the test reported one undefined variable connected to Bootstrap which is no problem.
+No errors were returned when passing through JSHint but the test with no errors.
 
-<details><summary><b>JSHint Validation Result</b></summary>
-
-![JSHint Validation](readme/assets/images/js_hint_validation.png)
-</details><br/>
+* stripe_elements.js in checkout app - No errors reported
+* inline jscript in bag.html in bag app - No errors reported
+* inline jscript in products.html in products app - No errors reported
+* inline jscript in base.html in root templates - No errors reported
+* inline jscript in footer.html in root templates - No errors reported
 
 [Back to top](<#table-of-content>)
 
