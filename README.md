@@ -584,80 +584,55 @@ The libraries used in this project are located in the requirements.txt file and 
 
 ## Testing User Stories
 
-* As a Site User | I can view a list of the music reviews so that I can select one to read
-    * At the top of the site there is a navigation bar with a link that lists all reviews when the user clicks on it.
+### Viewing And Navigation
 
-* As a Site User | I can view a list of the concert reviews so that I can select one to read
-   * At the top of the site there is a navigation bar with a link that lists all concert reviews when the user clicks on it.
+* As a Customer I can view a list of products so that I can read more about it and purchase it
 
-* As a Site User | I can click on a specific review so that I can read it in detail
-   * At the top of the site there is a navigation bar with a link that lists all album reviews when the user clicks on it.
+    *
+* As a Customer I can click on a specific product so that I view its details like price, description, product rating, sizes and image
+* As a Customer I can read the reviews that are connected to a specific product so that I can base my purchase decision on that
+* As a Customer I can view the total of my purchases at any time so that I can keep track of my expenses
+* As a Site User I can navigate easy on the site through paginated list of products and posts so that I feel comfortable using the site
+* As a Site User I can view the site owners blog post so that I can get the latest information
+* As a Site User I can contact Kollektiv Fem in an easy way so that I can interact with them if I have a need for it
+* As a Customer I can like and unlike a review on a product I have purchased so that it is possible for me to raise my opinion
+* As a Site User I can get visual feedback when interacting with the content so that I can be sure how I have interacted with the page
 
-* As a Site User | I can like and unlike a review so that it is possible for me to interact with the review
-    * When the user is logged it is possible to click on a heart on the review detail page to like / unlike a review.
+### Registration And User Accounts
 
-* As a Site User | I can view the number of likes on each review so that I can see how popular a specific review is
-    * On the review detail page the user can see how many likes the specific review has.
+* As a Site User I can register an account so that I have a personal account and get access to my profile
+* As a Site User I can have my own user profile so that I can view my personal order history, write reviews and update my contact / payment information
+* As a Site User I can log out from the site so that I can feel safe that nobody can access my information
 
-* As a Site User | I can contact Review Alliance in an easy way so that I can interact with them if I have a need for it
-    * In the footer there is clear information about how to contact Review | Alliance.
+### Sorting And Searching
 
-* As a Site User | I can navigate easy on the site through paginated list of posts so that I feel comfortable using the site
-    * On the review pages the pagination is activated when there are more than 6 reviews on a page.
+* As a Customer I can sort the list of all products in different ways so that I can identify the best rated, best prices and products based on category
+* As a Customer I can sort a specific category of products so that I can identify the best rated, best prices or just sort the products by name.
+* As a Customer I can sort the list of products by using a single or multiple tags so that I can i.e. see all ’analog’ or ’ambient’ related products.
+* As a Customer I can easily get information about what I have searched for and how many results the search generated so that I can see if the product is available.
 
-* As a Site User | I can view comments on a specific review so that I can read the conversations between different users on the site
-    * When the user clicks on a specific review the comment section can, in an easily way, be viewed.
+### Purchasing And Checkout
 
-* As a Site User | I can sign up an account so that I can like and comment on reviews, create a profile page, create own reviews and edit / remove my reviews
-    * In the navigation bar the user can click the Login / Sign up link to either login or sign up for a new account. When this is done the user can interact on the page as stated in the user story).
+* As a Customer I can easily choose the quantity of a product and size if applicable when purchasing it so that that I ensure I get the correct product
+* As a Customer I can easily view the items in my cart to be purchased so that I can see the total cost and all the items I am about to receive
+* As a Customer I can easily adjust the amount of products in my cart so that I can change the cart before checking out
+* As a Customer I can give my payment information in an easy way so that the checkout-process is quick and easy
+* As a Customer I need to feel safe and secure when interacting with the site so that I feel comfortable to provide all necessary information needed for purchase
+* As a Customer I view an order confirmation after checkout so that I can secure I have purchased the correct items and everything is ok
+* As a Customer I will receive an email confirmation after the checkout process is done so that I can keep the information for future use if needed
+* As a Customer I can receive an email confirmation when my order changes so that I get relevant information about my order
+* As a Customer I can create a wishlist so that I can come back later to purchase the products
+* As a Customer I can use a promotion code so that I can get a better deal
 
-* As a Site User | I can create a profile page so that other reviewers can read about who I am
-    * If a user is registered and logged in there is a 'Show Profile'-page in the navigation menu where the user can fill in profile details. The profile is shown for the site users in the about section.
+### Site Admin
 
-* As a Site User | I can comment on a review so that I can be involved in the conversation
-    * When the user is logged in they can write a comment on a specific review on the review detail page.
-
-* As a Site User | I can edit my comment so that I can change the content if needed
-    * When the user is logged in an edit button appears on the all comments that the specific user has written. When the user clicks the edit button they can change the content in the comment.
-
-* As a Site User | I can remove my review so that I have full control of my reviews
-    * When the user is logged in a delete button appears on the all comments that the specific user has written. When the user clicks the delete button they get the option to delete the comment.
-
-* As a Site User | I can choose to see my own reviews so that I can find them easily
-    * When a user is logged in they can choose to view their own reviews through the link 'My Reviews'.
-
-* As a Site User | I can create a new review so that I can contribute to with new content to Review Alliance
-    * When a user is logged in they can create a new review through the 'Create New Review'-link in the navigation bar.
-
-* As a Site User | I can log out from the site so that I can feel safe that nobody can access my information
-    * When the user is logged in it is possible to choose the 'Log Out'-option in the navigation menu.
-
-* As a Site User | I can create draft reviews so that I can finish writing the content later
-    * When a logged in user creates a review they have the possibility to set the status on the review either on published or draft.
-
-* As a Site User | I can get visual feedback when interacting with the content so that I can be sure how I have interacted with the page
-    * When the user sign in, sign out, create / update / deletes reviews and comments they always get a confirmation message to secure visual feedback.
-
-* As a Site Admin | I can log out from the site so that I can feel safe that nobody can access my information
-   * When the admin is logged in it is possible to choose the 'Log Out'-option in the navigation menu.
-
-* As a Site Admin | I can create, read, update and delete reviews so that I can manage my review content
-    * When the user is logged in as an administrator / superuser a new item show up in the navigation menu called 'Admin Area'. In this area the user can read, update and delete reviews. Creation of reviews can be made the same way as any logged in user. Updating reviews can only be made if the administrator has written the original review.
-
-* As a Site Admin | I can approve reviews so that I can secure high quality of the content
-    * When the user is logged in as an administrator / superuser a new item show up in the navigation menu called 'Admin Area'. In this area the user can approve / unapprove / publish / unpublish reviews.
-
-* As a Site Admin | I can approve and disapprove comments so that I can secure a safe environment for the Site Users
-    * When the user is logged in as an administrator / superuser a new item show up in the navigation menu called 'Admin Area'. In this area the user can approve / unapprove comments.
-
-* As a Site Admin | I can create draft reviews so that I can finish writing the content later
-    * When a user is logged in as an administrator they have the possibility to create a review they and set the status to published or draft.
-
-* As a Site Admin | I can access an admin area so that I can get a general understanding of logged in users, number of likes and number of posts
-    * In the admin area there is an summary area in the top with general information about the site (i.e. number of users, number of reviews / comments that need approval)
-
-* As a Site Admin | I can get visual feedback when interacting with the content so that I can be sure how I have interacted with the page
-    * When the admin signs in, signs out, create / update / deletes reviews and comments they always get a confirmation message to secure visual feedback.
+* As a Site Admin I can create, update and delete product posts so that I can manage my review content
+* As a Site Admin I can log out from the site so that I can feel safe that nobody can access my information
+* As a Site Admin I can create draft product posts so that I can finish writing the content later
+* As a Site Admin I can access an admin area so that I can get a general understanding of i.e. number of users, number of products
+* As a Site Admin I can get visual feedback when interacting with the content so that I can be sure how I have interacted with the page
+* As a Site Admin I can I can create, update and delete blog posts so that I can manage my blog content
+* As a Site Admin I can create draft blog posts so that I can finish writing the content later
 
 ## Code Validation
 The code on the 'Review | Alliance' site has been tested through W3C Markup Validation Service, W3C CSS Validation Service and JSHint. Errors were at first found on the site in the W3C Markup Validation Service but could quite easily be fixed (see bugs section). One error appeared as well in the W3C CSS Validation but that was connected to Font Awesome and not to the site code itself (see bugs section).
