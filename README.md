@@ -700,7 +700,7 @@ The libraries used in this project are located in the requirements.txt file and 
     * In the blog management page the administrator can choose to put the blog post in 'draft'-mode before publishing it.
 
 ## Code Validation
-The code on the 'Review | Alliance' site has been tested through W3C Markup Validation Service, W3C CSS Validation Service and JSHint. Errors were at first found on the site in the W3C Markup Validation Service but could quite easily be fixed (see bugs section). One error appeared as well in the W3C CSS Validation but that was connected to Font Awesome and not to the site code itself (see bugs section).
+The code on the Kollektiv Fem site has been tested through W3C Markup Validation Service, W3C CSS Validation Service, CI Python Linter and JSHint. Errors were at first found on the site in the W3C Markup Validation Service but could quite easily be fixed (see bugs section). One error appeared as well in the W3C CSS Validation but that was connected to Font Awesome and not to the site code itself (see bugs section).
 
 ### Markup Validation
 After fixing the inital errors that W3C Markup Validation Service reported, no errors were returned.
