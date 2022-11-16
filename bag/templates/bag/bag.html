@@ -77,7 +77,6 @@
                         You could get free delivery by spending just <strong>€{{ free_delivery_delta }}</strong> more!
                     </p>
                     {% endif %}
-
                     <a href="{% url 'list_all_products' %}" class="btn btn-outline-secondary rounded btn-sm">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
@@ -91,7 +90,6 @@
                         </span>
                     </a>
                 </div>
-
                 {% else %}
                 <h1 class="lead mb-5">Your bag is empty.</h1>
                 <div class="text-center mb-4">
@@ -104,10 +102,7 @@
                 </div>
                 {% endif %}
             </div>
-
         </div>
-
-
     </div>
 </div>
 {% endblock %}
