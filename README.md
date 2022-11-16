@@ -701,10 +701,10 @@ The libraries used in this project are located in the requirements.txt file and 
     * In the blog management page the administrator can choose to put the blog post in 'draft'-mode before publishing it.
 
 ## Code Validation
-The code on the Kollektiv Fem site has been tested through W3C Markup Validation Service, W3C CSS Validation Service, CI Python Linter and JSHint. Errors were at first found on the site in the W3C Markup Validation Service but could quite easily be fixed (see bugs section). One error appeared as well in the W3C CSS Validation but that was connected to Font Awesome and not to the site code itself (see bugs section).
+The code on the Kollektiv Fem site has been tested through W3C Markup Validation Service, W3C CSS Validation Service, CI Python Linter and JSHint.
 
 ### Markup Validation
-After fixing the inital errors that W3C Markup Validation Service reported, no errors were returned.
+ Errors were at first found on the site in the W3C Markup Validation Service but could quite easily be fixed (see bugs section). After fixing the inital errors that W3C Markup Validation Service reported, no errors were returned except 1 connected to a form on the profile page (more information about that in the bugs section).
 
 <details><summary><b>HTML Validation Result</b></summary>
 
@@ -714,24 +714,83 @@ After fixing the inital errors that W3C Markup Validation Service reported, no e
 [Back to top](<#table-of-content>)
 
 ### CSS Validaton
-When validating my own code the W3C CSS Validator reports no errors.
+When validating my own code the W3C CSS Validator reports no errors but 16 errors connected to Bootstrap were reported.
 
 <details><summary><b>CSS Validation Result</b></summary>
 
-![CSS Result](readme/assets/images/css_validation_no_error.png)
+**Main CSS**
+![CSS Result - Main](readme/assets/images/css_validator_main.png)
+
+**Profile CSS**
+![CSS Result - Profile](readme/assets/images/css_validator_profile.png)
+
+**Checkout CSS**
+![CSS Result - Checkout](readme/assets/images/css_validator_checkout.png)
+
 </details><br/>
 
 [Back to top](<#table-of-content>)
 
 ### PEP Validation
-At the time of this project the website [pep8online](http://pep8online.com/) is currently offline. Usually I'm using that site to validate my Python code. Due to the site being offline I have followed Code Institutes workaround to add the PEP8 validator 'pycodestyle' to the Gitpod Workspace. I have tested the following Python files:
+CI Python Linter [Code Institute Linter](https://pep8ci.herokuapp.com/) was used to validate the Python code in the project. Following files have been validated:
 
-* admin.py - No errors or warnings reported
-* forms.py - No errors or warnings reported
-* models.py - No errors or warnings reported
-* test_forms.py - No errors or warnings reported
-* urls.py - No errors or warnings reported
-* views.py - No errors or warnings reported
+**App Bag**
+* admin.py -  No errors reported
+* apps.py -  No errors or warnings reported
+* contexts.py -  No errors or warnings reported
+* urls.py -  No errors or warnings reported
+* views.py -  No errors or warnings reported
+* bag_tools.py - No errors or warnings reported
+
+**App Blog**
+* admin.py - No errors reported
+* apps.py - No errors reported
+* forms.py - No errors reported
+* models.py - No errors reported
+* urls.py - No errors reported
+* views.py - No errors reported
+
+**App Checkout**
+* __init__.py - No errors reported
+* admin.py - No errors reported
+* apps.py - No errors reported
+* forms.py - No errors reported
+* models.py - No errors reported
+* signals.py - No errors reported
+* urls.py - No errors reported
+* views.py - No errors reported
+* webhook_handler.py - No errors reported
+* webhooks.py - No errors reported
+
+**App Home**
+* apps.py - No errors reported
+* urls.py - No errors reported
+* views.py - No errors reported
+
+**App Products**
+* admin.py - No errors reported
+* apps.py - No errors reported
+* forms.py - No errors reported
+* models.py - No errors reported
+* urls.py - No errors reported
+* views.py - No errors reported
+
+**App Profiles**
+* apps.py - No errors reported
+* forms.py - No errors reported
+* models.py - No errors reported
+* urls.py - No errors reported
+* views.py - No errors reported
+
+**kollektiv_fem**
+* urls.py - No errors reported
+* views.py - No errors reported
+
+**other**
+* custom_storages.py - No errors reported
+
+
+
 
 [Back to top](<#table-of-content>)
 

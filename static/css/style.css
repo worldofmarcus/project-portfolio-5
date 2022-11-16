@@ -51,11 +51,6 @@ h6 {
     transform: scale(1.1);
 }
 
-/* ==============
-   links
-   ============== */
-
-
 /* ==================
    top bar & nav bar
    ================== */
@@ -96,7 +91,6 @@ h6 {
     height: 32rem;
     background: #000000;
     position: relative;
-    color: #000000;
     background-position: center;
     background-size: cover;
 }
@@ -246,7 +240,6 @@ input[type=email]:focus {
     font-size: 1rem;
 }
 
-
 /* ==============
    footer
    ============== */
@@ -259,7 +252,6 @@ input[type=email]:focus {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1.2rem;
 }
-
 
 /* ============================
    Image field in product form
@@ -291,16 +283,14 @@ input[type=email]:focus {
     overflow-y: auto;
 }
 
-
 .product-list-wrapper {
     height: 1000px;
     overflow-x: hidden;
     overflow-y: auto;
-
 }
 
 /* ==============
-   mail chimp
+   mailchimp
    ============== */
 
 #mc_embed_signup {
