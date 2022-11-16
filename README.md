@@ -127,7 +127,7 @@ Below the user stories for the project are listed to clarify why particular feat
 |:-------:|:--------|:--------|
 | As a Customer | I can view a list of products so that I can read more about it and purchase it | &#9745; |
 | As a Customer | I can click on a specific product so that I view its details like price, description, product rating, sizes and image | &#9745; |
-| As a Customer | I can read the reviews that are connected to a specific product so that I can base my purchase decision on that | &#9745; |
+| As a Customer | I can read the reviews that are connected to a specific product so that I can base my purchase decision on that | &#9746; |
 | As a Customer | I can view the total of my purchases at any time so that I can keep track of my expenses | &#9745; |
 | As a Site User | I can navigate easy on the site through paginated list of products and posts so that I feel comfortable using the site | &#9745; |
 | As a Site User | I can view the site owners blog post so that I can get the latest information | &#9745; |
@@ -170,13 +170,13 @@ Below the user stories for the project are listed to clarify why particular feat
 
 |  | | |
 |:-------:|:--------|:--------|
-| As a Site Admin | I can create, update and delete product posts so that I can manage my review content | &check;
-| As a Site Admin | I can log out from the site so that I can feel safe that nobody can access my information | &check; |
-| As a Site Admin | I can create draft product posts so that I can finish writing the content later | &check; |
-| As a Site Admin | I can access an admin area so that I can get a general understanding of i.e. number of users, number of products| &check; |
-| As a Site Admin | I can get visual feedback when interacting with the content so that I can be sure how I have interacted with the page | &check; |
-| As a Site Admin | I can I can create, update and delete blog posts so that I can manage my blog content | &check; |
-| As a Site Admin | I can create draft blog posts so that I can finish writing the content later | &check; |
+| As a Site Admin | I can create, update and delete product posts so that I can manage my review content | &#9745;
+| As a Site Admin | I can log out from the site so that I can feel safe that nobody can access my information | &#9745; |
+| As a Site Admin | I can create draft product posts so that I can finish writing the content later | &#9745; |
+| As a Site Admin | I can access an admin area so that I can get a general understanding of i.e. number of users, number of products| &#9745; |
+| As a Site Admin | I can get visual feedback when interacting with the content so that I can be sure how I have interacted with the page | &#9745;; |
+| As a Site Admin | I can I can create, update and delete blog posts so that I can manage my blog content | &#9745; |
+| As a Site Admin | I can create draft blog posts so that I can finish writing the content later | &#9745; |
 
 
 [Back to top](<#table-of-content>)
@@ -588,21 +588,47 @@ The libraries used in this project are located in the requirements.txt file and 
 
 * As a Customer I can view a list of products so that I can read more about it and purchase it
 
-    *
+    * At the top of the site there is a navigation bar with links that lists products based on categories, sorting or through a search query.
+
 * As a Customer I can click on a specific product so that I view its details like price, description, product rating, sizes and image
+
+    * At the top of the site there is a navigation bar with links that lists products based on categories, sorting or through a search query. When a user clicks on a product a detail view of the product opens.
+
 * As a Customer I can read the reviews that are connected to a specific product so that I can base my purchase decision on that
+
+    * Not implemented yet
+
 * As a Customer I can view the total of my purchases at any time so that I can keep track of my expenses
+
+    * At the top of the screen the user can see the total amount of the current purchases beside the cart icon. The user can also click the cart icon to open the shopping bag page where the totals of the purchases also can be viewed.
+
 * As a Site User I can navigate easy on the site through paginated list of products and posts so that I feel comfortable using the site
+    * On the blog posts in the home page the pagination is activated when there are more than three posts. On the product pages the pagination is activated when there are more than nine products.
+
 * As a Site User I can view the site owners blog post so that I can get the latest information
+    * On the home page there are three blog posts visable that can be clicked on. When clicked on a blog detail page opens.
+
 * As a Site User I can contact Kollektiv Fem in an easy way so that I can interact with them if I have a need for it
+    * In the footer there is clear information about how to contact Kollektiv Fem.
+
 * As a Customer I can like and unlike a review on a product I have purchased so that it is possible for me to raise my opinion
+
+    * Not implemented yet
+
 * As a Site User I can get visual feedback when interacting with the content so that I can be sure how I have interacted with the page
+    * When the site user performs actions on the sites flash messages shows (i.e. delete/update/add to bag/ actions).
 
 ### Registration And User Accounts
 
 * As a Site User I can register an account so that I have a personal account and get access to my profile
+    * In the navigation bar the user can click the Register link in the My Account menu sign up for a new account. When this is done the user can access the personal account.
+
 * As a Site User I can have my own user profile so that I can view my personal order history, write reviews and update my contact / payment information
+
+    * When the user has created an account and is logged in the menu My Profile in the menu takes them to a profile page were they can access personal information and order history. The write reviews function is not implemented yet.
+
 * As a Site User I can log out from the site so that I can feel safe that nobody can access my information
+    * When the user is logged in it is possible to choose the 'Log Out'-option in the navigation menu.
 
 ### Sorting And Searching
 
@@ -627,7 +653,10 @@ The libraries used in this project are located in the requirements.txt file and 
 ### Site Admin
 
 * As a Site Admin I can create, update and delete product posts so that I can manage my review content
+
 * As a Site Admin I can log out from the site so that I can feel safe that nobody can access my information
+    * When admin is logged in it is possible to choose the 'Log Out'-option in the navigation menu.
+
 * As a Site Admin I can create draft product posts so that I can finish writing the content later
 * As a Site Admin I can access an admin area so that I can get a general understanding of i.e. number of users, number of products
 * As a Site Admin I can get visual feedback when interacting with the content so that I can be sure how I have interacted with the page
