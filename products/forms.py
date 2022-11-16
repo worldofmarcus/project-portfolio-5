@@ -1,5 +1,5 @@
 from django import forms
-from .models import Product, Category
+from .models import Product, Category, Tag
 
 
 class ProductForm(forms.ModelForm):
@@ -33,3 +33,15 @@ class ProductForm(forms.ModelForm):
         category_view_name = [(c.id, c.get_view_name()) for c in categories]
 
         self.fields['category'].choices = category_view_name
+
+    def __init__(self, *args, **kwargs):
+        """
+        This method returns a friendly tags
+        view name.
+        """
+        super().__init__(*args, **kwargs)
+        tags = Tag.objects.all()
+        tag_view_name = [(t.id, t.get_view_name()) for t in tags]
+
+        self.fields['tags'].choices = tag_view_name
+

@@ -15,6 +15,8 @@ class Tag(models.Model):
     def __str__(self):
         return self.name
 
+    def get_view_name(self):
+        return self.view_name
 
 class Category(models.Model):
 
