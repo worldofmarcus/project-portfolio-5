@@ -19,7 +19,6 @@
         </i><a class="text-muted" href="{% url 'list_all_products' %}?tag={{ tag }}">{{ tag.view_name }}</a>{% endfor %}
     </p>
     {% endif %}
-
     <div class="image-container my-5">
         {% if product.image %}
         <a href="{{ product.image.url }}" data-bs-toggle="modal" data-bs-target="#imageModal">
@@ -35,12 +34,9 @@
     {% else %}
     <p class="text-muted small">No Rating</p>
     {% endif %}
-
     <p class="lead mb-0 font-weight-bold">€{{ product.price }}</p>
-
     <form class="form mb-5" action="{% url 'add_to_bag' product.id %}" method="POST">
         {% csrf_token %}
-
         {% with product.product_size as s %}
         {% if s %}
         <div class="row justify-content-center">
@@ -71,7 +67,6 @@
             </a>
             <input type="submit" class="btn btn-sm btn-outline-secondary rounded mt-5 text-uppercase" id="liveToastBtn"
                 value="Add to Bag">
-
             {% if request.user not in product.users_wishlist.all %}
             <a class="btn btn-outline-secondary btn-sm rounded mt-5 text-uppercase"
                 href="{% url 'add_to_wishlist' product.id %}">Add To Wishlist</a>
@@ -79,7 +74,6 @@
             <a class="btn btn-outline-secondary disabled btn-sm rounded mt-5 text-uppercase"
                 href="{% url 'add_to_wishlist' product.id %}">In your wishlist</a>
             {% endif %}
-
             {% if request.user.is_superuser %}
             <a class="btn btn-danger btn-sm rounded mt-5 text-uppercase"
                 href="{% url 'edit_product' product.id %}">Edit</a>
