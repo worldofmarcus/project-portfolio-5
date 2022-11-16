@@ -402,12 +402,37 @@ In the product detail view the user can **add the product** to the bag, add the 
 </details><br/>
 
 ### **Shopping Bag**
-When the site user had added products by pressing the **add to bag** button the products are being stored in the shopping bag that can be accessed via the 'cart'-button in the navigation menu.
+When the site user had added products by pressing the **add to bag** button the products are being stored in the shopping bag that can be accessed via the 'cart'-button in the navigation menu. In the shopping bag area the user can update and delete the products they have added and get an understandig about the total cost for the products incl. and excl. delivery cost. From this view the user can either continue to shop or go to the secure checkout page.
 
 <details><summary><b>Shopping Bag</b></summary>
 
 ![Shopping Bag](readme/assets/images/shopping_bag.png)
 </details><br/>
+
+### **Secure Checkout**
+On the secure checkout page the user fills out a form with delivery details, card details to be able to complete the order. On the page there is a order summary as well. If something doesn't look right the user has a possibility to adjust the bag. If the user is happy with the order summary they can use the **complete order** button to send the order for processing.
+
+<details><summary><b>Secure Checkout</b></summary>
+
+![Secure Checkout](readme/assets/images/secure_checkout.png)
+</details><br/>
+
+<details><summary><b>Order Processing</b></summary>
+
+![Order Processing](readme/assets/images/order_processing.png)
+</details><br/>
+
+### **Order Confirmation**
+If everything goes according to plan and the webhooks between Stripe and the site is OK an order confirmation page will be shown to the user (and a confirmation e-mail will be sent to the users registered e-mail address).
+
+<details><summary><b>Order Confirmation</b></summary>
+
+![Order Confirmation](readme/assets/images/order_confirmation.png)
+</details><br/>
+
+
+
+
 
 ### **Sign Up**
 If the site visitor has no registered user at Review | Alliance they can sign up. They can also add a presentation and upload a featured image that will be used on the users profile page.
