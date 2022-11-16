@@ -752,26 +752,84 @@ No errors were returned when passing through JSHint (script.js) but the test rep
 
 In addition to tests stated above I have performed a series of manual tests. Below the list of tests that has been conducted can be found.
 
-| Status | **Main Website - User Logged Out**
+| Status | **Main Website - User Logged Out - Navigation**
 |:-------:|:--------|
+| &check; | The free shipping treshold changes in the top bar changes when changing the treshold in the settings file
 | &check; | Typing in a incorrect URL on the page loads the 404 error page
-| &check; | Pasting page that needs authentication loads a forbidden page
+| &check; | Pasting page that needs authentication opens the sing in page or views a forbidden page
 | &check; | Clicking the nav logo loads the home page
-| &check; | Clicking the Home button on the nav bar loads the home page and lists all reviews
-| &check; | Clicking the All button on the nav bar lists all reviews
-| &check; | Clicking the Albums button on the nav bar lists all album reviews
-| &check; | Clicking the Concert button on the nav bar lists all concert reviews
-| &check; | Clicking the Log In / Sign Up loads the sign up page
-| &check; | 6 Reviews are rendered for the user on all / albums / concert page before pagination kicks in
-| &check; | Clicking the Read More button on the a review card loads the review detail page
-| &check; | In the details view the user cannot create a comment
+| &check; | Clicking the Home button on the nav bar loads the home page and views the carousel and blog posts
+| &check; | Clicking the By Added Date link in the Products menu lists all products and sorts them by added date.
+| &check; | Clicking the By Price link in the Products menu lists all products and sorts them by price.
+| &check; | Clicking the By Rating link in the Products menu lists all products and sorts them by rating.
+| &check; | Clicking the By Name link in the Products menu lists all products and sorts them by name.
+| &check; | Clicking the All Products link in the Products menu lists all products.
+| &check; | Clicking the Tapes link in the Categories menu lists all products within the category tape
+| &check; | Clicking the CDS link in the Categories menu lists all products within the category cds
+| &check; | Clicking the Posters link in the Categories menu lists all products within the category posters
+| &check; | Clicking the Pins link in the Categories menu lists all products within the category pins
+| &check; | Clicking the T-shirts link in the Categories menu lists all products within the category t-shirts
+| &check; | Clicking the Tank Tops link in the Categories menu lists all products within the category tank tops
+| &check; | Clicking the Tote Bags link in the Categories menu lists all products within the category tote bags
+| &check; | Clicking the Vinyls link in the Categories menu lists all products within the category vinyls
+| &check; | Clicking the New Arrivals link in the Special Offers menu lists all products with the tag new arrivals
+| &check; | Clicking the Product Of The Month link in the Special Offers menu lists all products with the tag product of the month
+| &check; | Clicking the Register link in the My Account menu loads the sign up page
+| &check; | Clicking the Login link in the My Account menu loads the loginpage
+| &check; | Clicking on the cart link in the menu bar loads the shopping bag page
+| &check; | Input an empty query in the search box triggers an error messages and lists all products
+| &check; | Input a valid query in the search box lists the correct products
+
+| Status | **Main Website - User Logged Out - Carousel**
+|:-------:|:--------|
+
+
+| Status | **Main Website - User Logged Out - Blog**
+|:-------:|:--------|
+| &check; | 3 Blog posts are rendered for the user on the home page before pagination is activated
+| &check; | The correct image and information for each blog post is being shown.
+| &check; | When clicking on the pagination previous / next buttons the previous / next 3 posts are being rendered
+| &check; | When clicking on the pagination first / last buttons the first / last 3 posts are being rendered
+| &check; | Clicking the Read More button on a blog post card loads the blog detail page
+| &check; | Clicking the Tag on the blog post card loads the blog posts with the same tags
+| &check; | Clicking the Back To Home button on the blog detail page loads the home page
+
+| Status | **Main Website - User Logged Out - Products**
+|:-------:|:--------|
+| &check; | 9 Products are rendered for the user on the product pages before pagination is activated
+| &check; | When clicking on the pagination previous / next buttons the previous / next 9 products are being rendered
+| &check; | When using the sorting function below the product page headline the products are being sorted accordingly.
+| &check; | When clicking on the pagination first / last buttons the first / last 9 products are being rendered
+| &check; | Clicking the Read More button on a product loads the product detail page
+| &check; | Clicking the Tag on the product card loads the products with the same tags
+| &check; | Clicking the Category on the product card loads the products with the same category
+| &check; | The correct image and information for each product is being shown
+| &check; | When adding products to the cart the total updates correctly to the right of the cart symbol in the menu.
+| &check; | Clicking the Keep Shopping button on the product detail page loads the home page
+| &check; | Clicking the Add To Bag button on the product detail page adds the quantity and size to the shopping bag and shows a flash message with the bag content in the top right
+| &check; | Clicking the Add To Wishlist button on the product detail page opens the sign-in page because wishlists only works for logged in users
+| &check; | It's possible to change the quantity on the product detail page
+| &check; | If the product has sizes a size dropdown is visible on the product detail page
+| &check; | When clicking on the product image on the product detail page a modal opens with the image
+
+
+
+| Status | **Main Website - User Logged Out - Footer**
+|:-------:|:--------|
 | &check; | Clicking the Instagram link in the footer area opens Instagram in a new window
-| &check; | Clicking the YouTube link in the footer area opens YouTube in a new window
-| &check; | Clicking the LinkedInlink in the footer area opens LinkedIN in a new window
-| &check; | Clicking the Twitter link in the footer area opens Twitter in a new window
+| &check; | Clicking the Facebook link in the footer area opens Facebook in a new window
+| &check; | Register a valid e-mail address in the e-mail signup in the footer is working
+| &check; | Register a non-valid e-mail address in the e-mail signup in the footer triggers an error message
+| &check; | Register a non-valid e-mail address in the e-mail signup in the footer triggers an error message
+
+
+
+
 
 | Status | **Main Website - User Logged In**
 |:-------:|:--------|
+| &check; | Clicking the Add To Wishlist button on the product detail page adds the product to the wishlist and
+
 | &check; | Typing in a incorrect URL on the page loads the 404 error page
 | &check; | Pasting page that needs authentication loads a forbidden page
 | &check; | Clicking the nav logo loads the home page
@@ -803,6 +861,7 @@ In addition to tests stated above I have performed a series of manual tests. Bel
 
 | Status | **Main Website - Admin Logged In**
 |:-------:|:--------|
+| &check; | Clicking the Back To Home button on the blog detail page loads the home page
 | &check; | Clicking the Admin Area button in the logged in user menu loads the Admin Area Page
 | &check; | In the review section. Clicking the approve / unapprove / publish / unpublish toggles the approve and status signs
 | &check; | The view button is only visible if a review is published
