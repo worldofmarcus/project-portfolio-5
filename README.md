@@ -505,13 +505,13 @@ The sites incorporates flash messages when an action has been performed (i.e. de
 
 ### Features Left to Implement
 
-* Add more automated testing
-* Add 'current page is active' in navbar
-* Search reviews functionality from the navbar
-* Information in the about section how many reviews each reviewer has made
-* Add / remove genre and category in admin section
-* Add image resize functionality
-* Remove admin approval of comments
+* Add seach function in the blog management section
+* Fix the pagination bug (described in the bug section)
+* Give the logged in site user the possibility to add a promotion code
+* Give the logged in site user the possibility to rate a product
+* Give the logged in site user the possibility to write a product review
+* Add an admin area with general information (like number of logged in users, number of products and so on)
+* Add more e-mail functionality (i.e email is being sent out when the order has been handled)
 
 [Back to top](<#table-of-content>)
 
