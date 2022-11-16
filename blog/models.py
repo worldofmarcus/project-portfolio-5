@@ -41,11 +41,11 @@ class Post(models.Model):
     """
 
     class Meta:
-            """
-            This meta class orders the model by date.
-            """
+        """
+        This meta class orders the model by date.
+        """
 
-            ordering = ['-date']
+        ordering = ['-date']
 
     title = models.CharField(max_length=255, unique=True)
     blog_headline = models.CharField(max_length=255, null=True, blank=True)
