@@ -1050,35 +1050,29 @@ In addition to tests stated above I have performed a series of manual tests. Bel
 | &check; | Clicking the Keep Shopping button on the product detail page lists all products
 | &check; | Clicking the Secure Checkout button on the product detail page loads the secure checkout page
 
-| Status | **Main Website - User Logged In - Checkout**
+| Status | **Main Website - Admin Logged In - Checkout**
 |:-------:|:--------|
 | &check; | The correct products, information and delivery amount are showing in the order summary (including correct sizes when product has size)
 | &check; | It the user has updated the profile information the information is prefilled in the form.
-| &check; | In the bottom of the form an option to save the delivery inforation to the users profile is visible
+| &check; | If the bottom of the form an option to save the delivery inforation to the users profile is visible
 | &#10008; | The form validation is working except that the Full Name field can include numbers and the phone number field can include text.
 | &check; | When clicking the Adjust Bag Button the Shopping Bag page loads
 | &check; | The payment with card number is working correctly (tested with Stripe test numbers)
 | &check; | The payment with card number that needs to be authenticated is working correctly (tested with Stripe test numbers). The authentication window is visible.
 
-| Status | **Main Website - User Logged In - Order Confirmation Page**
+| Status | **Main Website - Admin Logged In - Order Confirmation Page**
 |:-------:|:--------|
 | &check; | The correct products, information and delivery amount are showing in the order confirmation and an e-mail has been sent to the registered site user e-mail
 | &check; | Webhooks are working and is confirmed in Stripe developer dashboard
 | &check; | When clicking the Back To The Store button all products are being listed
 
-| Status | **Main Website - User Logged In - Footer**
+| Status | **Main Website - Admin Logged In - Footer**
 |:-------:|:--------|
 | &check; | Clicking the Instagram link in the footer area opens Instagram in a new window
 | &check; | Clicking the Facebook link in the footer area opens Facebook in a new window
 | &check; | Register a valid e-mail address in the e-mail signup in the footer is working
 | &check; | Register a non-valid e-mail address in the e-mail signup in the footer triggers an error message
 | &check; | Register a non-valid e-mail address in the e-mail signup in the footer triggers an error message
-
-
-
-
-
-
 
 ### Automated Testing
 Some automated testing has been done during this project. Due to prioritization of other tasks I only could provide 34% coverage. See screenshot below. Automated tests can be run by typing the command - *python3 manage.py test*

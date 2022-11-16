@@ -8,7 +8,7 @@
         <div class="col-12 col-md-6">
             <p class="text-danger">Are you sure you want to remove {{ product.name }} from your wishlist?<br>This action
                 cannot be undone!</p>
-            <a type="button" class="btn btn-danger btn-sm rounded mt-5 text-uppercase"
+            <a class="btn btn-danger btn-sm rounded mt-5 text-uppercase"
                 href="{% url 'add_to_wishlist' product.id %}">Remove From Wishlist</a>
         </div>
     </div>
