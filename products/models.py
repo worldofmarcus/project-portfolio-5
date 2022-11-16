@@ -5,6 +5,7 @@ from django.core.validators import MinValueValidator
 
 STATUS = ((0, 'Draft'), (1, 'Published'))
 
+
 class Tag(models.Model):
 
     """ Tag model """
