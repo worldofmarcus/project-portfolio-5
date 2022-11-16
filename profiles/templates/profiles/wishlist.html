@@ -12,8 +12,6 @@
                 <div class="row g-0 align-items-center">
                     <div class="col-md-4 img-fluid d-block p-2">
                         {% if product.image %}
-
-
                         <a href="{% url 'product_detail' product.id %}">
                             <img class="img-fluid rounded" src="{{ product.image.url }}" alt="{{ product.name }}">
                         </a>
@@ -30,8 +28,6 @@
                             <p class="card-text">Price: €{{ product.price }}</p>
                             <a class="btn btn-danger btn-sm rounded mt-5 text-uppercase"
                                 href="{% url 'remove_wishlist' product.id %}">Remove From Wishlist</a>
-
-
                         </div>
                     </div>
                 </div>
@@ -43,7 +39,4 @@
         </div>
     </div>
 </div>
-
-
-
 {% endblock %}
