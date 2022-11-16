@@ -804,8 +804,8 @@ In addition to tests stated above I have performed a series of manual tests. Bel
 | &check; | When clicking on the pagination previous / next buttons the previous / next 9 products are being rendered
 | &check; | When clicking on the pagination first / last buttons the first / last 9 products are being rendered
 | &check; | Clicking the Read More button on a product loads the product detail page
-| &check; | Clicking the Tag on the product card loads the products with the same tags
-| &check; | Clicking the Category on the product card loads the products with the same category
+| &check; | Clicking the Tag on the product card / product detail loads the products with the same tags
+| &check; | Clicking the Category on the product card / product detail loads the products with the same category
 | &check; | The correct image and information for each product is being shown
 | &check; | When adding products to the cart the total updates correctly to the right of the cart symbol in the menu.
 | &check; | Clicking the Keep Shopping button on the product detail page lists all products
@@ -826,7 +826,8 @@ In addition to tests stated above I have performed a series of manual tests. Bel
 | Status | **Main Website - User Logged Out - Checkout**
 |:-------:|:--------|
 | &check; | The correct products, information and delivery amount are showing in the order summary (including correct sizes when product has size)
-| &#10008; | The form validation is working except that the Full Name field can include numbers and the phone number field can include text.
+| &#10008; | The form validation is working except that the Full Name field can include numbers and the phone number field can include text
+| &check; | In the bottom of the form an option log in or sign up is visible
 | &check; | When clicking the Adjust Bag Button the Shopping Bag page loads
 | &check; | The payment with card number is working correctly (tested with Stripe test numbers)
 | &check; | The payment with card number that needs to be authenticated is working correctly (tested with Stripe test numbers). The authentication window is visible.
@@ -837,8 +838,235 @@ In addition to tests stated above I have performed a series of manual tests. Bel
 | &check; | Webhooks are working and is confirmed in Stripe developer dashboard
 | &check; | When clicking the Back To The Store button all products are being listed
 
-
 | Status | **Main Website - User Logged Out - Footer**
+|:-------:|:--------|
+| &check; | Clicking the Instagram link in the footer area opens Instagram in a new window
+| &check; | Clicking the Facebook link in the footer area opens Facebook in a new window
+| &check; | Register a valid e-mail address in the e-mail signup in the footer is working
+| &check; | Register a non-valid e-mail address in the e-mail signup in the footer triggers an error message
+| &check; | Register a non-valid e-mail address in the e-mail signup in the footer triggers an error message
+
+| Status | **Main Website - User Logged In - Navigation**
+|:-------:|:--------|
+| &check; | The free shipping treshold changes in the top bar changes when changing the treshold in the settings file
+| &check; | Typing in a incorrect URL on the page loads the 404 error page
+| &check; | Pasting page that needs authentication opens the sing in page or views a forbidden page
+| &check; | Clicking the nav logo loads the home page
+| &check; | Clicking the Home button on the nav bar loads the home page and views the carousel and blog posts
+| &check; | Clicking the By Added Date link in the Products menu lists all products and sorts them by added date.
+| &check; | Clicking the By Price link in the Products menu lists all products and sorts them by price.
+| &check; | Clicking the By Rating link in the Products menu lists all products and sorts them by rating.
+| &check; | Clicking the By Name link in the Products menu lists all products and sorts them by name.
+| &check; | Clicking the All Products link in the Products menu lists all products.
+| &check; | Clicking the Tapes link in the Categories menu lists all products within the category tape
+| &check; | Clicking the CDS link in the Categories menu lists all products within the category cds
+| &check; | Clicking the Posters link in the Categories menu lists all products within the category posters
+| &check; | Clicking the Pins link in the Categories menu lists all products within the category pins
+| &check; | Clicking the T-shirts link in the Categories menu lists all products within the category t-shirts
+| &check; | Clicking the Tank Tops link in the Categories menu lists all products within the category tank tops
+| &check; | Clicking the Tote Bags link in the Categories menu lists all products within the category tote bags
+| &check; | Clicking the Vinyls link in the Categories menu lists all products within the category vinyls
+| &check; | Clicking the New Arrivals link in the Special Offers menu lists all products with the tag new arrivals
+| &check; | Clicking the Product Of The Month link in the Special Offers menu lists all products with the tag product of the month
+| &check; | Clicking the My Profile link the My Account menu loads the my profile page
+| &check; | Clicking the My Wishlist link in the My Account menu loads the wishlist page
+| &check; | Clicking on the cart link in the menu bar loads the shopping bag page
+| &check; | Input an empty query in the search box triggers an error messages and lists all products
+| &check; | Input a valid query in the search box lists the correct products
+
+| Status | **Main Website - User Logged In - Carousel**
+|:-------:|:--------|
+| &check; | 2 images are being looped in the carousel
+| &check; | On image 1 the call to action button 'Start Shopping' loads the product page and lists all products.
+| &check; | On image 2 the call to action button 'Subscrib' takes the site user to the footer.
+| &check; | The navigation options in the carousel is working (left / right and bottom navigation)
+
+| Status | **Main Website - User Logged In - Blog**
+|:-------:|:--------|
+| &check; | 3 Blog posts are rendered for the user on the home page before pagination is activated
+| &check; | The correct image and information for each blog post is being shown.
+| &check; | When clicking on the pagination previous / next buttons the previous / next 3 posts are being rendered
+| &check; | When clicking on the pagination first / last buttons the first / last 3 posts are being rendered
+| &check; | Clicking the Read More button on a blog post card loads the blog detail page
+| &check; | Clicking the Tag on the blog post card loads the blog posts with the same tags
+| &check; | Clicking the Back To Home button on the blog detail page loads the home page
+
+| Status | **Main Website - User Logged In - Products**
+|:-------:|:--------|
+| &check; | When using the sorting function below the product page headline the products are being sorted accordingly.
+| &check; | 9 Products are rendered for the user on the product pages before pagination is activated
+| &check; | When clicking on the pagination previous / next buttons the previous / next 9 products are being rendered
+| &check; | When clicking on the pagination first / last buttons the first / last 9 products are being rendered
+| &check; | Clicking the Read More button on a product loads the product detail page
+| &check; | Clicking the Tag on the product card / product detailloads the products with the same tags
+| &check; | Clicking the Category on the product card / product detail loads the products with the same category
+| &check; | The correct image and information for each product is being shown
+| &check; | When adding products to the cart the total updates correctly to the right of the cart symbol in the menu.
+| &check; | Clicking the Keep Shopping button on the product detail page lists all products
+| &check; | Clicking the Add To Bag button on the product detail page adds the quantity and size to the shopping bag and shows a flash message with the bag content and totals in the top right together (with a working link to the shopping bag)
+| &check; | Clicking the Add To Wishlist button on the product detail page adds the product to the users wishlist and changes the button to 'In Your Wishlist'
+| &check; | It's possible to change the quantity on the product detail page
+| &check; | If the product has sizes a size dropdown is visible on the product detail page
+| &check; | When clicking on the product image on the product detail page a modal opens with the image
+
+| Status | **Main Website - User Logged In - Shopping Bag**
+|:-------:|:--------|
+| &check; | The correct products and information are showing in the shopping bag (including correct sizes when product has size)
+| &check; | When changing the quantity and click update the quantity updates
+| &check; | When clicking the remove link the product is being removed from the shopping bag
+| &check; | Clicking the Keep Shopping button on the product detail page lists all products
+| &check; | Clicking the Secure Checkout button on the product detail page loads the secure checkout page
+
+| Status | **Main Website - User Logged In - Checkout**
+|:-------:|:--------|
+| &check; | The correct products, information and delivery amount are showing in the order summary (including correct sizes when product has size)
+| &check; | It the user has updated the profile information the information is prefilled in the form.
+| &check; | In the bottom of the form an option to save the delivery inforation to the users profile is visible
+| &#10008; | The form validation is working except that the Full Name field can include numbers and the phone number field can include text.
+| &check; | When clicking the Adjust Bag Button the Shopping Bag page loads
+| &check; | The payment with card number is working correctly (tested with Stripe test numbers)
+| &check; | The payment with card number that needs to be authenticated is working correctly (tested with Stripe test numbers). The authentication window is visible.
+
+| Status | **Main Website - User Logged In - Order Confirmation Page**
+|:-------:|:--------|
+| &check; | The correct products, information and delivery amount are showing in the order confirmation and an e-mail has been sent to the registered site user e-mail
+| &check; | Webhooks are working and is confirmed in Stripe developer dashboard
+| &check; | When clicking the Back To The Store button all products are being listed
+
+| Status | **Main Website - User Logged In - Footer**
+|:-------:|:--------|
+| &check; | Clicking the Instagram link in the footer area opens Instagram in a new window
+| &check; | Clicking the Facebook link in the footer area opens Facebook in a new window
+| &check; | Register a valid e-mail address in the e-mail signup in the footer is working
+| &check; | Register a non-valid e-mail address in the e-mail signup in the footer triggers an error message
+| &check; | Register a non-valid e-mail address in the e-mail signup in the footer triggers an error message
+
+| Status | **Main Website - Admin Logged In - Navigation**
+|:-------:|:--------|
+| &check; | The free shipping treshold changes in the top bar changes when changing the treshold in the settings file
+| &check; | Typing in a incorrect URL on the page loads the 404 error page
+| &check; | Pasting page that needs authentication opens the sing in page or views a forbidden page
+| &check; | Clicking the nav logo loads the home page
+| &check; | Clicking the Home button on the nav bar loads the home page and views the carousel and blog posts
+| &check; | Clicking the By Added Date link in the Products menu lists all products and sorts them by added date.
+| &check; | Clicking the By Price link in the Products menu lists all products and sorts them by price.
+| &check; | Clicking the By Rating link in the Products menu lists all products and sorts them by rating.
+| &check; | Clicking the By Name link in the Products menu lists all products and sorts them by name.
+| &check; | Clicking the All Products link in the Products menu lists all products.
+| &check; | Clicking the Tapes link in the Categories menu lists all products within the category tape
+| &check; | Clicking the CDS link in the Categories menu lists all products within the category cds
+| &check; | Clicking the Posters link in the Categories menu lists all products within the category posters
+| &check; | Clicking the Pins link in the Categories menu lists all products within the category pins
+| &check; | Clicking the T-shirts link in the Categories menu lists all products within the category t-shirts
+| &check; | Clicking the Tank Tops link in the Categories menu lists all products within the category tank tops
+| &check; | Clicking the Tote Bags link in the Categories menu lists all products within the category tote bags
+| &check; | Clicking the Vinyls link in the Categories menu lists all products within the category vinyls
+| &check; | Clicking the New Arrivals link in the Special Offers menu lists all products with the tag new arrivals
+| &check; | Clicking the Product Of The Month link in the Special Offers menu lists all products with the tag product of the month
+| &check; | Clicking the My Profile link the My Account menu loads the my profile page
+| &check; | Clicking the My Wishlist link in the My Account menu loads the wishlist page
+| &check; | Clicking the My Manage Products link the My Account menu loads the my product management page
+| &check; | Clicking the Manage Blog link in the My Account menu loads the blog management page
+| &check; | Clicking on the cart link in the menu bar loads the shopping bag page
+| &check; | Input an empty query in the search box triggers an error messages and lists all products
+| &check; | Input a valid query in the search box lists the correct products
+
+| Status | **Main Website - Admin Logged In - Carousel**
+|:-------:|:--------|
+| &check; | 2 images are being looped in the carousel
+| &check; | On image 1 the call to action button 'Start Shopping' loads the product page and lists all products.
+| &check; | On image 2 the call to action button 'Subscrib' takes the site user to the footer.
+| &check; | The navigation options in the carousel is working (left / right and bottom navigation)
+
+| Status | **Main Website - Admin Logged In - Blog**
+|:-------:|:--------|
+| &check; | 3 Blog posts are rendered for the user on the home page before pagination is activated
+| &check; | The correct image and information for each blog post is being shown.
+| &check; | When clicking the Edit button to the right of the Read More button below the blog post the blog management edit page is loaded
+| &check; | When clicking on the pagination previous / next buttons the previous / next 3 posts are being rendered
+| &check; | When clicking on the pagination first / last buttons the first / last 3 posts are being rendered
+| &check; | Clicking the Read More button on a blog post card loads the blog detail page
+| &check; | Clicking the Tag on the blog post card loads the blog posts with the same tags
+| &check; | Clicking the Back To Home button on the blog detail page loads the home page
+| &check; | When clicking the Edit button to the right of the Back To Home button below the blog post the blog management edit page is loaded
+
+| Status | **Main Website - Admin Logged In - Products**
+|:-------:|:--------|
+| &check; | When using the sorting function below the product page headline the products are being sorted accordingly.
+| &check; | 9 Products are rendered for the user on the product pages before pagination is activated
+| &check; | When clicking on the pagination previous / next buttons the previous / next 9 products are being rendered
+| &check; | When clicking on the pagination first / last buttons the first / last 9 products are being rendered
+| &check; | Clicking the Read More button on a product loads the product detail page
+| &check; | Clicking the Tag on the product card / product detail loads the products with the same tags
+| &check; | Clicking the Category on the product card / product detail loads the products with the same category
+| &check; | When clicking the Edit button to the right of the Read More button below the product the product management edit page is loaded
+| &check; | The correct image and information for each product is being shown
+| &check; | When adding products to the cart the total updates correctly to the right of the cart symbol in the menu.
+| &check; | Clicking the Keep Shopping button on the product detail page lists all products
+| &check; | Clicking the Add To Bag button on the product detail page adds the quantity and size to the shopping bag and shows a flash message with the bag content and totals in the top right together (with a working link to the shopping bag)
+| &check; | Clicking the Add To Wishlist button on the product detail page adds the product to the users wishlist and changes the button to 'In Your Wishlist'
+| &check; | It's possible to change the quantity on the product detail page
+| &check; | If the product has sizes a size dropdown is visible on the product detail page
+| &check; | When clicking on the product image on the product detail page a modal opens with the image
+| &check; | When clicking the Edit button to the right of the Add To The Wishlist button below the product the product management edit page is loaded
+
+
+| Status | **Main Website - Admin Logged In - Product Management - Add Product**
+|:-------:|:--------|
+| &check; | The form validation is working and does not accept negative numbers on price field
+| &check; | When setting the status to draft the product is not visible in the product list for ordinary users
+| &check; | When not adding an image to the product a default image is being used instead automatically
+| &check; | When doing a search in the product list the correct products are being shown in the list (and the correct amount is being shown as well)
+| &check; | When clicking the Cancel button the standard product view is being loaded and all products are being listed
+| &check; | When clicking the Add Product button the standard product view is being loaded viewing the newly added product
+
+| Status | **Main Website - Admin Logged In - Product Management - Edit Product**
+|:-------:|:--------|
+| &check; | When clicking the Edit button the form is prefilled with the product information and the action is changed to 'You are editing this product'.
+| &check; | When clicking the Delete Product button a warning modal is being loaded for confirmation. After confirmation the Add Product page is being loaded
+| &check; | When clicking the Cancel button the Add Product page is being loaded
+| &check; | When clicking the Update button Product Detail page is being loaded viewing the newly updated product
+
+| Status | **Main Website - Admin Logged In - Blog Management - Add Blog Post**
+|:-------:|:--------|
+| &check; | The form validation is working
+| &check; | When setting the status to draft the blog post is not visible in the blog area on the home page for ordinary users
+| &check; | When not adding an image to the blog post a default image is being used instead automatically
+| &check; | When clicking the Cancel button the home page is being loaded
+| &check; | When clicking the Add Blog Post button the product detail is being loaded viewing the newly created blog post
+
+| Status | **Main Website - Admin Logged In - Product Management - Edit Blog Post**
+|:-------:|:--------|
+| &check; | When clicking the Edit button the form is prefilled with the blog post information and the action is changed to 'You are editing this post'.
+| &check; | When clicking the Delete Post button a warning modal is being loaded for confirmation. After confirmation the Add Blog Post page is being loaded
+| &check; | When clicking the Cancel button the Add Blog Post page is being loaded
+| &check; | When clicking the Update button Blog Post Detail page is being loaded viewing the newly updated blog post
+
+| Status | **Main Website - Admin Logged In - Shopping Bag**
+|:-------:|:--------|
+| &check; | The correct products and information are showing in the shopping bag (including correct sizes when product has size)
+| &check; | When changing the quantity and click update the quantity updates
+| &check; | When clicking the remove link the product is being removed from the shopping bag
+| &check; | Clicking the Keep Shopping button on the product detail page lists all products
+| &check; | Clicking the Secure Checkout button on the product detail page loads the secure checkout page
+
+| Status | **Main Website - User Logged In - Checkout**
+|:-------:|:--------|
+| &check; | The correct products, information and delivery amount are showing in the order summary (including correct sizes when product has size)
+| &check; | It the user has updated the profile information the information is prefilled in the form.
+| &check; | In the bottom of the form an option to save the delivery inforation to the users profile is visible
+| &#10008; | The form validation is working except that the Full Name field can include numbers and the phone number field can include text.
+| &check; | When clicking the Adjust Bag Button the Shopping Bag page loads
+| &check; | The payment with card number is working correctly (tested with Stripe test numbers)
+| &check; | The payment with card number that needs to be authenticated is working correctly (tested with Stripe test numbers). The authentication window is visible.
+
+| Status | **Main Website - User Logged In - Order Confirmation Page**
+|:-------:|:--------|
+| &check; | The correct products, information and delivery amount are showing in the order confirmation and an e-mail has been sent to the registered site user e-mail
+| &check; | Webhooks are working and is confirmed in Stripe developer dashboard
+| &check; | When clicking the Back To The Store button all products are being listed
+
+| Status | **Main Website - User Logged In - Footer**
 |:-------:|:--------|
 | &check; | Clicking the Instagram link in the footer area opens Instagram in a new window
 | &check; | Clicking the Facebook link in the footer area opens Facebook in a new window
