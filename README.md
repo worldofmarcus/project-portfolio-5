@@ -782,7 +782,10 @@ In addition to tests stated above I have performed a series of manual tests. Bel
 
 | Status | **Main Website - User Logged Out - Carousel**
 |:-------:|:--------|
-
+| &check; | 2 images are being looped in the carousel
+| &check; | On image 1 the call to action button 'Start Shopping' loads the product page and lists all products.
+| &check; | On image 2 the call to action button 'Subscrib' takes the site user to the footer.
+| &check; | The navigation options in the carousel is working (left / right and bottom navigation)
 
 | Status | **Main Website - User Logged Out - Blog**
 |:-------:|:--------|
@@ -796,22 +799,43 @@ In addition to tests stated above I have performed a series of manual tests. Bel
 
 | Status | **Main Website - User Logged Out - Products**
 |:-------:|:--------|
+| &check; | When using the sorting function below the product page headline the products are being sorted accordingly.
 | &check; | 9 Products are rendered for the user on the product pages before pagination is activated
 | &check; | When clicking on the pagination previous / next buttons the previous / next 9 products are being rendered
-| &check; | When using the sorting function below the product page headline the products are being sorted accordingly.
 | &check; | When clicking on the pagination first / last buttons the first / last 9 products are being rendered
 | &check; | Clicking the Read More button on a product loads the product detail page
 | &check; | Clicking the Tag on the product card loads the products with the same tags
 | &check; | Clicking the Category on the product card loads the products with the same category
 | &check; | The correct image and information for each product is being shown
 | &check; | When adding products to the cart the total updates correctly to the right of the cart symbol in the menu.
-| &check; | Clicking the Keep Shopping button on the product detail page loads the home page
-| &check; | Clicking the Add To Bag button on the product detail page adds the quantity and size to the shopping bag and shows a flash message with the bag content in the top right
+| &check; | Clicking the Keep Shopping button on the product detail page lists all products
+| &check; | Clicking the Add To Bag button on the product detail page adds the quantity and size to the shopping bag and shows a flash message with the bag content and totals in the top right together (with a working link to the shopping bag)
 | &check; | Clicking the Add To Wishlist button on the product detail page opens the sign-in page because wishlists only works for logged in users
 | &check; | It's possible to change the quantity on the product detail page
 | &check; | If the product has sizes a size dropdown is visible on the product detail page
 | &check; | When clicking on the product image on the product detail page a modal opens with the image
 
+| Status | **Main Website - User Logged Out - Shopping Bag**
+|:-------:|:--------|
+| &check; | The correct products and information are showing in the shopping bag (including correct sizes when product has size)
+| &check; | When changing the quantity and click update the quantity updates
+| &check; | When clicking the remove link the product is being removed from the shopping bag
+| &check; | Clicking the Keep Shopping button on the product detail page lists all products
+| &check; | Clicking the Secure Checkout button on the product detail page loads the secure checkout page
+
+| Status | **Main Website - User Logged Out - Checkout**
+|:-------:|:--------|
+| &check; | The correct products, information and delivery amount are showing in the order summary (including correct sizes when product has size)
+| &#10008; | The form validation is working except that the Full Name field can include numbers and the phone number field can include text.
+| &check; | When clicking the Adjust Bag Button the Shopping Bag page loads
+| &check; | The payment with card number is working correctly (tested with Stripe test numbers)
+| &check; | The payment with card number that needs to be authenticated is working correctly (tested with Stripe test numbers). The authentication window is visible.
+
+| Status | **Main Website - User Logged Out - Order Confirmation Page**
+|:-------:|:--------|
+| &check; | The correct products, information and delivery amount are showing in the order confirmation and an e-mail has been sent to the registered site user e-mail
+| &check; | Webhooks are working and is confirmed in Stripe developer dashboard
+| &check; | When clicking the Back To The Store button all products are being listed
 
 
 | Status | **Main Website - User Logged Out - Footer**
@@ -826,97 +850,7 @@ In addition to tests stated above I have performed a series of manual tests. Bel
 
 
 
-| Status | **Main Website - User Logged In**
-|:-------:|:--------|
-| &check; | Clicking the Add To Wishlist button on the product detail page adds the product to the wishlist and
 
-| &check; | Typing in a incorrect URL on the page loads the 404 error page
-| &check; | Pasting page that needs authentication loads a forbidden page
-| &check; | Clicking the nav logo loads the home page
-| &check; | Clicking the Home button on the nav bar loads the home page and lists all reviews
-| &check; | Clicking the All button on the nav bar lists all reviews
-| &check; | Clicking the Albums button on the nav bar lists all album reviews
-| &check; | Clicking the Concert button on the nav bar lists all concert reviews
-| &check; | 6 Reviews are rendered for the user on all / albums / concert page before pagination kicks in
-| &check; | Clicking the Read More button on the a review card loads the review detail page
-| &check; | In the detail view the logged in user can comment a review
-| &check; | When user submits a comment a message with approval information is being showed on the page
-| &check; | In the detail view the logged in user can update/delete the comments written by themselves
-| &check; | Clicking the update button loads the update comment page
-| &check; | Clicking the delete button loads the delete comment page
-| &check; | In the detail view the logged in user can like/unlike reviews
-| &check; | In the detail view the logged in user can update/delete the reviews written by themselves
-| &check; | Clicking the update button in the detail view loads the update review page
-| &check; | Clicking the delete button in the detail view loads the delete review page
-| &check; | Clicking the My Reviews button in the logged in user menu lists the logged in users reviews
-| &check; | Clicking the update button in the My Reviews view loads the update review page
-| &check; | Clicking the delete button in the My Reviews view loads the delete review page
-| &check; | In the My Reviews view the information about the review status is correct
-| &check; | In the logged in user menu the Admin Area is not visible
-| &check; | Clicking the Show Profile Page button in the logged in user menu loads the My Profile page
-| &check; | Clicking the Instagram link in the footer area opens Instagram in a new window
-| &check; | Clicking the YouTube link in the footer area opens YouTube in a new window
-| &check; | Clicking the LinkedInlink in the footer area opens LinkedIN in a new window
-| &check; | Clicking the Twitter link in the footer area opens Twitter in a new window
-
-| Status | **Main Website - Admin Logged In**
-|:-------:|:--------|
-| &check; | Clicking the Back To Home button on the blog detail page loads the home page
-| &check; | Clicking the Admin Area button in the logged in user menu loads the Admin Area Page
-| &check; | In the review section. Clicking the approve / unapprove / publish / unpublish toggles the approve and status signs
-| &check; | The view button is only visible if a review is published
-| &check; | In the comment section. Clicking the approve / unapprove toggles the approve and status signs
-| &cross; | When clicking delete / add genre the appropiate page loads and shows success page after submit
-| &check; | Total Users shows correct number of total users
-| &check; | Total Reviews shows the correct number of total reviews
-| &check; | Total Comments shows the correct number of total comments
-| &check; | Reviews that need approval shows the correct numer of reviews that need approval
-| &check; | Comments that need approval shows the correct numer of comments that need approval
-
- Status | **Create A Review - User Logged In**
-|:-------:|:--------|
-| &check; | Title field is required
-| &check; | Title field does not accept empty field
-| &check; | Title field does not accept just spaces
-| &check; | Artist field is required
-| &check; | Artist field does not accept empty field
-| &check; | Artist field does not accept just spaces
-| &check; | Featured Image is not required
-| &check; | Fragment field is required
-| &check; | Fragment field does not accept empty field
-| &check; | Body field is required
-| &check; | Body field does not accept empty field
-| &check; | Category field defaults to Uncategorized
-| &check; | Fragment field is required
-| &check; | Fragment field does not accept empty field
-| &check; | Record Label is not required
-| &check; | Venue is not required
-| &check; | Genre field defaults to Uncategorized
-| &check; | Rating field defaults to 3
-| &check; | Status field defaults to Draft
-| &check; | Posting as shows name of logged in user
-| &check; | Review Success Page is displayed when the user submits the review and the form validation is ok.
-
-Status | **Create A New User - User Logged Out**
-|:-------:|:--------|
-| &check; | Username field is required
-| &check; | Username field does not accept empty field
-| &check; | Email field does not accept just spaces
-| &check; | Email field is optional
-| &check; | Password field does not accept empty field
-| &check; | Success flash message is displayed when the user submits the create a new user form
-| &check; | Default biography is visible in about page (with i.e default featured image)
-
-Status | **Create A Profile Page - User Logged In**
-|:-------:|:--------|
-| &check; | Default featured image is visible the first time a user opens the 'my profile' page
-| &check; | First Name field is required
-| &check; | First Name field does not accept empty field
-| &check; | First Name field does not accept just spaces
-| &check; | Last Name field is required
-| &check; | Last Name field does not accept empty field
-| &check; | Last Name field does not accept just spaces
-| &check; | Update profile success Page is displayed when the user submits the profile form
 
 ### Automated Testing
 Some automated testing has been done during this project. Due to prioritization of other tasks I only could provide 34% coverage. See screenshot below. Automated tests can be run by typing the command - *python3 manage.py test*
