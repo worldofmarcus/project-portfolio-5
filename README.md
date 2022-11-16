@@ -257,11 +257,35 @@ The navigation bar is includes the same basic options for the user (logged in or
 When an ordinary user is logged in the **my account** gets more available options, **my profile** and **my wishlist**.
 
 * My Profile - On the profile page the user can change delivery information and see the order history (and confirmations from earlier purchases)
-* My Wishlist - On the wishlist page the user can find their wishlist that is populated when the user adds itemt to the wishlist from the product detail area.
+* My Wishlist - On the wishlist page the user can find their wishlist that is populated when the user adds itemt to the wishlist from the product detail area. From this view the user also can remove products from the wishlist (after being promted an 'are you sure'-confirmation message)
 
 <details><summary><b>Navigation - My Account - User Logged In</b></summary>
 
 ![Navigation - My Account - User Logged In](readme/assets/images/menu_my_account_user.png)
+
+</details><br/>
+
+<details><summary><b>Navigation - My Account - My Profile - Empty</b></summary>
+
+![Navigation - My Profile](readme/assets/images/menu_my_profile_empty.png)
+
+</details><br/>
+
+<details><summary><b>Navigation - My Account - My Profile - With Delivery Information And Order History</b></summary>
+
+![Navigation - My Profile](readme/assets/images/menu_my_profile_updated.png)
+
+</details><br/>
+
+<details><summary><b>Navigation - My Account - My Wishlist</b></summary>
+
+![Navigation - My Wishlist](readme/assets/images/menu_my_wishlist.png)
+
+</details><br/>
+
+<details><summary><b>Navigation - My Account - My Wishlist - Removal Confirmation</b></summary>
+
+![Navigation - My Wishlist - Removal Confirmation](readme/assets/images/menu_my_wishlist_removal.png)
 
 </details><br/>
 
@@ -296,45 +320,6 @@ This page lists all the reviews that has been made at Review | Alliance. If the 
 ### **Albums**
 This page lists all the album reviews that has been made at Review | Alliance. If the user is not logged in there is only a "read more" option visible for the user on each review card. If the user is logged in an *update* and *delete* option gets visible on the reviews that the user has written. No screenshots for this view due to the fact it's the same concept as in the all reviews section except that the review cards are filtered on the category 'album'.
 
-### **Concerts**
-This page lists all the concert reviews that has been made at Review | Alliance. If the user is not logged in there is only a "read more" option visible for the user on each review card. If the user is logged in an *update* and *delete* option gets visible on the reviews that the user has written. No screenshots for this view due to the fact it's the same concept as in the all reviews section except that the review cards are filtered on the category 'concert'.
-
-### **Review Detail View**
-The review detail shows the details about the review that the user has chosen in the all, albums or concert view. Depending on if the user is logged in the view looks a little bit different. If the user is logged in they get the possibility to like the review and also update and delete it if they have written it. A logged in user can also leave a comment (and update / delete their own comment as well).
-
-<details><summary><b>Review Detail View - User Logged Out</b></summary>
-
-![Review Detail View - User Logged Out](readme/assets/images/review_detail_logged_out.png)
-![Review Detail View Comment - User Logged Out](readme/assets/images/review_detail_comment_logged_out.png)
-</details><br/>
-
-<details><summary><b>Review Detail View - User Logged In</b></summary>
-
-![Review Detail View - User Logged In](readme/assets/images/review_detail_logged_in.png)
-![Review Detail View Comment - User Logged In](readme/assets/images/review_detail_comment_logged_in.png)
-</details><br/>
-
-### **Update And Delete Comment**
-If the user is logged in and has written a comment there is a possibility to edit and delete the comment. When the comment has been updated it needs to be re-approved by Review | Alliance.
-
-<details><summary><b>Update Comment</b></summary>
-
-![Update Comment](readme/assets/images/update_comment.png)
-</details><br/>
-
-### **Member Reviews**
-The Member Review Page lists the reviews that the logged in user has written. The user can update and delete their review on this page and also gets information about the status of the review. There are 4 different statuses:
-
-* *Your review is awaiting approval* - Review has been submitted with the status 'published' and awaits approval
-* *Your review is in draft status but is approved* - The review is in draft status but has been approved
-* *Your review is published and approved* - The review is published and approved
-* *Your review is in draft status* - The review has been submitted with the status 'draft'
-
-<details><summary><b>Member Reviews</b></summary>
-
-![Member Reviews](readme/assets/images/member_reviews.png)
-</details><br/>
-
 ### **Create Review**
 On this page the registered and logged in user can create their own review. When they have sent it in Review | Alliance needs to approve it, until it's approved it will not be visible for the public.
 
@@ -343,13 +328,7 @@ On this page the registered and logged in user can create their own review. When
 ![Create Review](readme/assets/images/create_review.png)
 </details><br/>
 
-### **Update Review**
-On this page the registered and logged in user can update their own review. When they have updated it in Review | Alliance needs to re-approve it, until it's re-approved it will not be visible for the public.
 
-<details><summary><b>Update Review</b></summary>
-
-![Update Review](readme/assets/images/update_review.png)
-</details><br/>
 
 ### **Profile Page**
 On this page the user can view and update their own profile page. The profile is visible in the about section.
@@ -359,13 +338,6 @@ On this page the user can view and update their own profile page. The profile is
 ![Profile Page](readme/assets/images/update_profile.png)
 </details><br/>
 
-### **Admin Area**
-On this page the administrator (or other superuser decided by Review | Alliance) can *approve* / *unapprove* / *publish* / *unpublish* and *delete* reviews and comments. General information about *number of users*, *number of comments*, *number of reviews*, *unapproved comments / reviews* is also being showed on the page.
-
-<details><summary><b>Admin Area</b></summary>
-
-![Admin Area](readme/assets/images/admin_area.png)
-</details><br/>
 
 ### **Sign Up**
 If the site visitor has no registered user at Review | Alliance they can sign up. They can also add a presentation and upload a featured image that will be used on the users profile page.
