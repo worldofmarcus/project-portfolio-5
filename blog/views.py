@@ -10,17 +10,11 @@ from .forms import CreateBlogPostForm
 from .models import *
 
 
-def list_all_posts(request):
+def view_latest_blog_posts(request):
     """ A view that lists all blog posts """
 
     posts = Post.objects.filter(status=1)
     post_category = None
-
-    if request.GET:
-
-        if 'category' in request.GET:
-            category = request.GET['category']
-            posts = posts.filter(category=category)
 
     # Pagination code
     p = Paginator(posts, 3)
@@ -33,6 +27,30 @@ def list_all_posts(request):
         }
 
     return render(request, 'home/index.html', context)
+
+
+def view_all_blog_posts(request):
+    """ A view that lists all blog posts """
+
+    posts = Post.objects.filter(status=1)
+    post_category = None
+
+    if request.GET:
+        if 'category' in request.GET:
+            category = request.GET['category']
+            posts = posts.filter(category=category)
+
+    # Pagination code
+    p = Paginator(posts, 9)
+    page = request.GET.get('page')
+    blog_posts = p.get_page(page)
+    # End of Pagination code
+
+    context = {
+        'blog_posts': blog_posts,
+        }
+
+    return render(request, 'blog/view_all_blog_posts.html', context)
 
 
 def blog_post_detail(request, slug):
