@@ -72,16 +72,20 @@ To know which business model that fits the needs and requirements for a business
 ## Marketing Techniques
 There are a lot of different marketing techniques out there. For Kollektiv Fem there has from the start been some areas that builds the foundation of the Kollektiv Fem trademark, and also sets the prerequisites to reach the customers.
 
-**Optimize For Mobile Devices**
+* **Optimize For Mobile Devices**
+
 In a world where most of the people visits the web from a mobile device it is very important that the site looks good on mobiles and tablets. The Kollektiv Fem site is fully responsive which means that it takes into account whether the customer uses a mobile or desktop device.
 
-**The Website Layout**
+* **The Website Layout**
+
 The Kollektiv Fem website is easy to navigate and have an intuitive design which makes it easy for the customer to find relevant information and make a purchase without a hassle.
 
-**Create content (content marketing)**
+* **Create content (content marketing)**
+
 On the Kollektiv Fem site there is a blog that is being used to create original, informative and relevant content to the Kollektiv Fem customers. There are also links to external relevant sites to further increase a positive experience to the site users. Kollektiv Fems ambition is that the customers want to visit our site because **they want to** not because we want to.
 
-**Facebook and Instagram (social media marketing)**
+* **Facebook and Instagram (social media marketing)**
+
 Social Media marketing is a great tool if it's done in the right way. Kollektiv Fem has a presence on social media through the platforms Facebook and Instagram. It helps Kollektiv Fem to communicate with both existing customers but also potential new ones. Through the social media platforms Kollektiv Fem can create engagement, interact on a broad level and maintain brand recognition. For Kollektiv Fem the product sale is being made on the site why it is very important to use the social media platforms to boost traffic to the website (i.e. when a new blog has been published or when the product of the month has been released). For now Kollektiv Fem only works with organic growth but will most likely start with payed ads to target specific customer groups in the future.
 
 <details><summary><b>Kollektiv Fem - Facebook</b></summary>
@@ -96,15 +100,15 @@ Social Media marketing is a great tool if it's done in the right way. Kollektiv 
 
 </details><br/>
 
-**E-mail marketing**
+* **E-mail marketing**
 One form of reaching out to the customers in an effective way is through e-mail marketing. But in a world with a lot of challenges with spam it is very important to think about the content and who is being targeted. Kollektiv Fem gives the site users / customers a possibility to sign up for a Kollektiv Fem newsletter on the Kollektiv Fem site. The service being used is [Mailchimp](https://mailchimp.com/) and is an easy way to let the customers know what is happening at Kollektiv Fem. The content being sent out is personal and can include i.e. advertisment for new blog posts, product of the month, events, co-operations, and discount codes).
 
-**Search Engine Optimization (SEO)**
+* **Search Engine Optimization (SEO)**
 Search Engine Optimization is a very important method to improve the ranking on search-engines (and has a high Return Of Investement if done right). The ambition is that Kollektiv Fem includes relevant, professional and reliable content and offers a hassle free experience for the site user. Kollektiv Fem has an ambition (even thought it's not an easy task) to use keywords in the content that matches the users search criterias when using search engines. Descriptive Meta Tags have been implemented on the site after a brainstorming session (and use of [Wordtracker](https://www.wordtracker.com/)). The final description / words that have been used can be seen below:
 
-* Meta Description - Kollektiv Fem (KFEM) is a small record label, e-shop, and creative studio located in the north of Sweden.
+    * Meta Description - Kollektiv Fem (KFEM) is a small record label, e-shop, and creative studio located in the north of Sweden.
 
-* Meta Keywords - kollektiv fem, vinyl, albums, tapes, ambient music, analog, record label, e-shop, music studio, diy, asmr, t-shirts, tote bags, pins, cds, cassette, ambient art, creative studio sweden
+    * Meta Keywords - kollektiv fem, vinyl, albums, tapes, ambient music, analog, record label, e-shop, music studio, diy, asmr, t-shirts, tote bags, pins, cds, cassette, ambient art, creative studio sweden
 
 The site also includes a sitemap.xml and robots.txt to make sure that the search engines can find and crawl the pages on the site.
 
