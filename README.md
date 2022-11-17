@@ -1114,7 +1114,6 @@ dered
 
 | Status | **Main Website - Admin Logged In - Blog**
 |:-------:|:--------|
-|:-------:|:--------|
 | &check; | The 3 latest blog posts are rendered for the user on the home page
 | &check; | Clicking the View All Blog Posts button loads the View All Blog Posts page
 | &check; | The correct image and information for each blog post is being shown.
@@ -1167,6 +1166,7 @@ dered
 |:-------:|:--------|
 | &check; | When clicking the Edit button the form is prefilled with the product information and the action is changed to 'You are editing this product'.
 | &check; | When clicking the Delete Product button a warning modal is being loaded for confirmation. After confirmation the Add Product page is being loaded
+| &check; | When doing a search in the blog history list the correct blog posts are being shown in the list (and the correct amount is being shown as well)
 | &check; | When clicking the Cancel button the Add Product page is being loaded
 | &check; | When clicking the Update button Product Detail page is being loaded viewing the newly updated product
 
@@ -1177,6 +1177,7 @@ dered
 | &check; | When not adding an image to the blog post a default image is being used instead automatically
 | &check; | When clicking the Cancel button the home page is being loaded
 | &check; | When clicking the Add Blog Post button the product detail is being loaded viewing the newly created blog post
+| &check; | When doing a search in the blog history list the correct blog posts are being shown in the list (and the correct amount is being shown as well)
 
 | Status | **Main Website - Admin Logged In - Product Management - Edit Blog Post**
 |:-------:|:--------|
@@ -1184,6 +1185,7 @@ dered
 | &check; | When clicking the Delete Post button a warning modal is being loaded for confirmation. After confirmation the Add Blog Post page is being loaded
 | &check; | When clicking the Cancel button the Add Blog Post page is being loaded
 | &check; | When clicking the Update button Blog Post Detail page is being loaded viewing the newly updated blog post
+| &check; | When doing a search in the blog history list the correct blog posts are being shown in the list (and the correct amount is being shown as well)
 
 | Status | **Main Website - Admin Logged In - Shopping Bag**
 |:-------:|:--------|
