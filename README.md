@@ -13,6 +13,8 @@ Even though this is a fictional size that most likely never will be published to
     * [Objective](<#objective>)
     * [Site Users Goal](<#site-users-goal>)
     * [Site Owners Goal](<#site-owners-goal>)
+    * [Business Model](<#business-model>)
+    * [Marketing Techniques](<#marketing-techniques>)
     * [Project Management](<#project-management>)
 
 * [**User Experience (UX)**](<#user-experience-ux>)
@@ -22,23 +24,20 @@ Even though this is a fictional size that most likely never will be published to
     * [Design Choices](<#design-choices>)
 
 * [**Existing Features**](<#existing-features>)
+    * [Top Bar](<#top-bar>)
     * [Navigation](<#navigation>)
-    * [About](<#about>)
-    * [All](<#all>)
-    * [Albums](<#albums>)
-    * [Concerts](<#concerts>)
-    * [Review Detail View](<#review-detail-view>)
-    * [Update / Delete Comment](<#update-and-delete-comment>)
-    * [Member Reviews](<#member-reviews>)
-    * [Create Review](<#create-review>)
-    * [Update Review](<#update-review>)
-    * [Profile Page](<#profile-page>)
-    * [Admin Area](<#admin-area>)
+    * [Home](<#home>)
+    * [Products](<#products>)
+    * [Shopping Bag](<#shopping-bag>)
+    * [Secure Checkout](<#secure-checkout>)
+    * [Order Confirmation](<#order-confirmation>)
+    * [Confirmation Emails](<#confirmation-emails>)
     * [Sign Up](<#sign-up>)
     * [Sign In](<#sign-in>)
+    * [Password Reset](<#password-reset>)
     * [Sign Out](<#sign-out>)
     * [Footer](<#footer>)
-    * [Flash Messages](<#flash-messages-and-confirmation-pages-to-the-user>)
+    * [Visual Feedback To The User](<#visual-feedback-to-the-user>)
 
 * [**Features Left To Implement**](<#features-left-to-implement>)
 
@@ -101,7 +100,7 @@ Social Media marketing is a great tool if it's done in the right way. Kollektiv 
 One form of reaching out to the customers in an effective way is through e-mail marketing. But in a world with a lot of challenges with spam it is very important to think about the content and who is being targeted. Kollektiv Fem gives the site users / customers a possibility to sign up for a Kollektiv Fem newsletter on the Kollektiv Fem site. The service being used is [Mailchimp](https://mailchimp.com/) and is an easy way to let the customers know what is happening at Kollektiv Fem. The content being sent out is personal and can include i.e. advertisment for new blog posts, product of the month, events, co-operations, and discount codes).
 
 **Search Engine Optimization (SEO)**
-Search Engine Optimization is a very important method to improve the ranking on search-engines (and has a high Return Of Investement if done right). The ambition is that Kollektiv Fem includes relevant, professional and reliable content and offers a hassle free experience for the site user. Kollektiv Fem has an ambition (even thought it's not an easy task) to use keywords in the content that matches the users search criterias when using search engines. Descriptive Meta Tags have been implemented on the site after a brainstorming session. The final description / words that have been used can be seen below:
+Search Engine Optimization is a very important method to improve the ranking on search-engines (and has a high Return Of Investement if done right). The ambition is that Kollektiv Fem includes relevant, professional and reliable content and offers a hassle free experience for the site user. Kollektiv Fem has an ambition (even thought it's not an easy task) to use keywords in the content that matches the users search criterias when using search engines. Descriptive Meta Tags have been implemented on the site after a brainstorming session (and use of [Wordtracker](https://www.wordtracker.com/)). The final description / words that have been used can be seen below:
 
 * Meta Description - Kollektiv Fem (KFEM) is a small record label, e-shop, and creative studio located in the north of Sweden.
 
@@ -216,7 +215,7 @@ Below the user stories for the project are listed to clarify why particular feat
 | As a Site Admin | I can log out from the site so that I can feel safe that nobody can access my information | &#9745; |
 | As a Site Admin | I can create draft product posts so that I can finish writing the content later | &#9745; |
 | As a Site Admin | I can access an admin area so that I can get a general understanding of i.e. number of users, number of products| &#9745; |
-| As a Site Admin | I can get visual feedback when interacting with the content so that I can be sure how I have interacted with the page | &#9745;; |
+| As a Site Admin | I can get visual feedback when interacting with the content so that I can be sure how I have interacted with the page | &#9745; |
 | As a Site Admin | I can I can create, update and delete blog posts so that I can manage my blog content | &#9745; |
 | As a Site Admin | I can create draft blog posts so that I can finish writing the content later | &#9745; |
 
