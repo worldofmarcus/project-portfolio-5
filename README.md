@@ -250,7 +250,7 @@ The fonts used for the site are **Nunito**, **Poppins'** and **Cousine**. Fallba
 
 * 'Poppins' is used on the logo in the navigation bar and on all headlines (h1 - h6). It has a really clean look and works really well as header text.
 
-* 'Cousine' is used on all product descriptions. Maybe a little bold decision to use this font but I think its 'alternative' look works really well in the context.
+* 'Cousine' is used on all product descriptions and on the FAQ page. Maybe a little bold decision to use this font but I think its 'alternative' look works really well in the context.
 
 ![Google Fonts Nunito](readme/assets/images/google_fonts_nunito.png)
 
@@ -382,7 +382,7 @@ When a superuser / administrator is logged in the **my account** gets more avila
 
 </details><br/>
 
-* **Manage Blog** - On this page the administrator can add, edit, remove blog posts. The page consists of two columns. The left one is the add, edit, remove area. Here admin can add all blog information. The right column views the blog posts in the database. Here the admin i.e. can see if the blog post is published or not. If the admin clicks edit on a blog post the form is pre-filled with all the blog post information (and a 'You are editing this post' gets visible in the action column). If the admin chooses to delete a blog post a confirmation/warning modal will be triggered. If the blog post is not published it will not be shown to the site users.
+* **Manage Blog** - On this page the administrator can add, edit, remove blog posts. The page consists of two columns. The left one is the add, edit, remove area. Here admin can add all blog information. The right column views the blog posts in the database. Here the admin i.e. can see if the blog post is published or not. If the admin clicks edit on a blog post the form is pre-filled with all the blog post information (and a 'You are editing this post' gets visible in the action column). If the admin chooses to delete a blog post a confirmation/warning modal will be triggered. There is also possible for admin to do a search within the blog management area which can be very convinient if there are a lot of blog posts in the store. If the blog post is not published it will not be shown to the site users.
 
 <details><summary><b>Navigation - Admin Logged In - Blog Management</b></summary>
 
@@ -539,14 +539,14 @@ The footer area includes short information about Kollektiv Fem, links to relevan
 ![Footer](readme/assets/images/footer.png)
 </details><br/>
 
-<details><summary><b>Newsletter & Privacy Policy</b></summary>
+<details><summary><b>Newsletter, FAQ & Privacy Policy</b></summary>
 
 ![Newsletter Registration](readme/assets/images/newsletter.png)
 ![Newsletter Success](readme/assets/images/newsletter_success.png)
 ![Newsletter Error 1](readme/assets/images/newsletter_error_1.png)
 ![Newsletter Error 2](readme/assets/images/newsletter_error_2.png)
+![FAQ](readme/assets/images/faq.png)
 ![Privacy Policy](readme/assets/images/privacy_policy.png)
-![Privacy Policy](readme/assets/images/faq.png)
 </details><br/>
 
 ### **Visual Feedback To The User**
