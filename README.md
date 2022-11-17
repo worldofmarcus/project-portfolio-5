@@ -172,58 +172,58 @@ Below the user stories for the project are listed to clarify why particular feat
 
 |  | | |
 |:-------:|:--------|:--------|
-| As a Customer | I can view a list of products so that I can read more about it and purchase it | &#9745; |
-| As a Customer | I can click on a specific product so that I view its details like price, description, product rating, sizes and image | &#9745; |
-| As a Customer | I can read the reviews that are connected to a specific product so that I can base my purchase decision on that | &#9746; |
-| As a Customer | I can view the total of my purchases at any time so that I can keep track of my expenses | &#9745; |
-| As a Site User | I can navigate easy on the site through paginated list of products and posts so that I feel comfortable using the site | &#9745; |
-| As a Site User | I can view the site owners blog post so that I can get the latest information | &#9745; |
-| As a Site User | I can contact Kollektiv Fem in an easy way so that I can interact with them if I have a need for it | &#9745; |
-| As a Customer | I can like and unlike a review on a product I have purchased so that it is possible for me to raise my opinion | &#9746; |
-| As a Site User | I can get visual feedback when interacting with the content so that I can be sure how I have interacted with the page | &#9745; |
+| As a Customer | I want to view a list of products so that I can read more about it and purchase it | &#9745; |
+| As a Customer | I want to click on a specific product so that I view its details like price, description, product rating, sizes and image | &#9745; |
+| As a Customer | I want to read the reviews that are connected to a specific product so that I can base my purchase decision on that | &#9746; |
+| As a Customer | I want to view the total of my purchases at any time so that I can keep track of my expenses | &#9745; |
+| As a Site User | I want to navigate easy on the site through paginated list of products and posts so that I feel comfortable using the site | &#9745; |
+| As a Site User | I want to view the site owners blog post so that I can get the latest information | &#9745; |
+| As a Site User | I want to contact Kollektiv Fem in an easy way so that I can interact with them if I have a need for it | &#9745; |
+| As a Customer | I want to like and unlike a review on a product I have purchased so that it is possible for me to raise my opinion | &#9746; |
+| As a Site User | I want to get visual feedback when interacting with the content so that I can be sure how I have interacted with the page | &#9745; |
 
 
 ### Registration And User Accounts
 |  | | |
 |:-------:|:--------|:--------|
-| As a Site User | I can register an account so that I have a personal account and get access to my profile| &#9745; |
-| As a Site User | I can have my own user profile so that I can view my personal order history, write reviews and update my contact / payment information| &#9745; |
-| As a Site User | I can log out from the site so that I can feel safe that nobody can access my information | &#9745; |
+| As a Site User | I want to register an account so that I have a personal account and get access to my profile| &#9745; |
+| As a Site User | I want to have my own user profile so that I can view my personal order history, write reviews and update my contact / payment information| &#9745; |
+| As a Site User | I want to log out from the site so that I can feel safe that nobody can access my information | &#9745; |
 
 
 ### Sorting And Searching
 |  | | |
 |:-------:|:--------|:--------|
-| As a Customer | I can sort the list of all products in different ways so that I can identify the best rated, best prices and products based on category| &#9745; |
-| As a Customer | I can sort a specific category of products so that I can identify the best rated, best prices or just sort the products by name. | &#9745; |
-| As a Customer | I can sort the list of products by using a single or multiple tags so that I can i.e. see all ’analog’ or ’ambient’ related products. | &#9745; |
-| As a Customer | I can easily get information about what I have searched for and how many results the search generated so that I can see if the product is available.| &#9745; |
+| As a Customer | I want to sort the list of all products in different ways so that I can identify the best rated, best prices and products based on category| &#9745; |
+| As a Customer | I want to sort a specific category of products so that I can identify the best rated, best prices or just sort the products by name. | &#9745; |
+| As a Customer | I want to sort the list of products by using a single or multiple tags so that I can i.e. see all ’analog’ or ’ambient’ related products. | &#9745; |
+| As a Customer | I want to easily get information about what I have searched for and how many results the search generated so that I can see if the product is available.| &#9745; |
 
 ### Purchasing And Checkout
 |  | | |
 |:-------:|:--------|:--------|
-| As a Customer | I can easily choose the quantity of a product and size if applicable when purchasing it so that that I ensure I get the correct product | &#9745; |
-| As a Customer | I can easily view the items in my cart to be purchased so that I can see the total cost and all the items I am about to receive  .| &#9745; |
-| As a Customer | I can easily adjust the amount of products in my cart so that I can change the cart before checking out | &#9745; |
-| As a Customer | I can give my payment information in an easy way so that the checkout-process is quick and easy| &#9745; |
-| As a Customer | I need to feel safe and secure when interacting with the site so that I feel comfortable to provide all necessary information needed for purchase | &#9745; |
-| As a Customer | I view an order confirmation after checkout so that I can secure I have purchased the correct items and everything is ok | &#9745; |
-| As a Customer | I will receive an email confirmation after the checkout process is done so that I can keep the information for future use if needed | &#9745; |
-| As a Customer | I can receive an email confirmation when my order changes so that I get relevant information about my order | &#9746; |
-| As a Customer | I can create a wishlist so that I can come back later to purchase the products | &#9745; |
-| As a Customer | I can use a promotion code so that I can get a better deal | &#9746; |
+| As a Customer | I want to easily choose the quantity of a product and size if applicable when purchasing it so that that I ensure I get the correct product | &#9745; |
+| As a Customer | I want to easily view the items in my cart to be purchased so that I can see the total cost and all the items I am about to receive  .| &#9745; |
+| As a Customer | I want to easily adjust the amount of products in my cart so that I can change the cart before checking out | &#9745; |
+| As a Customer | I want to give my payment information in an easy way so that the checkout-process is quick and easy| &#9745; |
+| As a Customer | I want to feel safe and secure when interacting with the site so that I feel comfortable to provide all necessary information needed for purchase | &#9745; |
+| As a Customer | I want to view an order confirmation after checkout so that I can secure I have purchased the correct items and everything is ok | &#9745; |
+| As a Customer | I want to receive an email confirmation after the checkout process is done so that I can keep the information for future use if needed | &#9745; |
+| As a Customer | I want to receive an email confirmation when my order changes so that I get relevant information about my order | &#9746; |
+| As a Customer | I want to create a wishlist so that I can come back later to purchase the products | &#9745; |
+| As a Customer | I want to use a promotion code so that I can get a better deal | &#9746; |
 
 ### Site Admin
 
 |  | | |
 |:-------:|:--------|:--------|
-| As a Site Admin | I can create, update and delete product posts so that I can manage my product content | &#9745;
-| As a Site Admin | I can log out from the site so that I can feel safe that nobody can access my information | &#9745; |
-| As a Site Admin | I can create draft product posts so that I can finish writing the content later | &#9745; |
-| As a Site Admin | I can access an admin area so that I can get a general understanding of i.e. number of users, number of products| &#9745; |
-| As a Site Admin | I can get visual feedback when interacting with the content so that I can be sure how I have interacted with the page | &#9745; |
-| As a Site Admin | I can I can create, update and delete blog posts so that I can manage my blog content | &#9745; |
-| As a Site Admin | I can create draft blog posts so that I can finish writing the content later | &#9745; |
+| As a Site Admin | I want to create, update and delete product posts so that I can manage my product content | &#9745;
+| As a Site Admin | I want to log out from the site so that I can feel safe that nobody can access my information | &#9745; |
+| As a Site Admin | I want to create draft product posts so that I can finish writing the content later | &#9745; |
+| As a Site Admin | I want to access an admin area so that I can get a general understanding of i.e. number of users, number of products| &#9745; |
+| As a Site Admin | I want to get visual feedback when interacting with the content so that I can be sure how I have interacted with the page | &#9745; |
+| As a Site Admin | I want to I can create, update and delete blog posts so that I can manage my blog content | &#9745; |
+| As a Site Admin | I want to create draft blog posts so that I can finish writing the content later | &#9745; |
 
 [Back to top](<#table-of-content>)
 
@@ -634,116 +634,116 @@ The libraries used in this project are located in the requirements.txt file and 
 
 ### Viewing And Navigation
 
-* As a Customer I can view a list of products so that I can read more about it and purchase it
+* As a Customer I want to view a list of products so that I can read more about it and purchase it
 
     * At the top of the site there is a navigation bar with links that lists products based on categories, sorting or through a search query.
 
-* As a Customer I can click on a specific product so that I view its details like price, description, product rating, sizes and image
+* As a Customer I want to click on a specific product so that I view its details like price, description, product rating, sizes and image
 
     * At the top of the site there is a navigation bar with links that lists products based on categories, sorting or through a search query. When a user clicks on a product a detail view of the product opens.
 
-* As a Customer I can read the reviews that are connected to a specific product so that I can base my purchase decision on that
+* As a Customer I want to read the reviews that are connected to a specific product so that I can base my purchase decision on that
 
     * Not implemented yet
 
-* As a Customer I can view the total of my purchases at any time so that I can keep track of my expenses
+* As a Customer I want to view the total of my purchases at any time so that I can keep track of my expenses
 
     * At the top of the screen the user can see the total amount of the current purchases beside the cart icon. The user can also click the cart icon to open the shopping bag page where the totals of the purchases also can be viewed.
 
-* As a Site User I can navigate easy on the site through paginated list of products and posts so that I feel comfortable using the site
+* As a Site User I want to navigate easy on the site through paginated list of products and posts so that I feel comfortable using the site
     * On the blog posts in the home page the pagination is activated when there are more than three posts. On the product pages the pagination is activated when there are more than nine products.
 
-* As a Site User I can view the site owners blog post so that I can get the latest information
+* As a Site User I want to view the site owners blog post so that I can get the latest information
     * On the home page there are three blog posts visable that can be clicked on. When clicked on a blog detail page opens.
 
-* As a Site User I can contact Kollektiv Fem in an easy way so that I can interact with them if I have a need for it
+* As a Site User I want to contact Kollektiv Fem in an easy way so that I can interact with them if I have a need for it
     * In the footer there is clear information about how to contact Kollektiv Fem.
 
-* As a Customer I can like and unlike a review on a product I have purchased so that it is possible for me to raise my opinion
+* As a Customer I want to like and unlike a review on a product I have purchased so that it is possible for me to raise my opinion
     * Not implemented yet
 
-* As a Site User I can get visual feedback when interacting with the content so that I can be sure how I have interacted with the page
+* As a Site User I want to get visual feedback when interacting with the content so that I can be sure how I have interacted with the page
     * When the site user performs actions on the sites flash messages shows (i.e. delete/update/add to bag/ actions).
 
 ### Registration And User Accounts
 
-* As a Site User I can register an account so that I have a personal account and get access to my profile
+* As a Site User I want to register an account so that I have a personal account and get access to my profile
     * In the navigation bar the user can click the Register link in the My Account menu sign up for a new account. When this is done the user can access the personal account.
 
-* As a Site User I can have my own user profile so that I can view my personal order history, write reviews and update my contact / payment information
+* As a Site User I want to have my own user profile so that I can view my personal order history, write reviews and update my contact / payment information
 
     * When the user has created an account and is logged in the menu My Profile in the menu takes them to a profile page were they can access personal information and order history. The write reviews function is not implemented yet.
 
-* As a Site User I can log out from the site so that I can feel safe that nobody can access my information
+* As a Site User I want to log out from the site so that I can feel safe that nobody can access my information
     * When the user is logged in it is possible to choose the 'Log Out'-option in the navigation menu.
 
 ### Sorting And Searching
 
-* As a Customer I can sort the list of all products in different ways so that I can identify the best rated, best prices and products based on category
+* As a Customer I want to sort the list of all products in different ways so that I can identify the best rated, best prices and products based on category
     * At the top of the site there is a navigation bar with links that lists products based on categories, sorting or through a search query.
 
-* As a Customer I can sort a specific category of products so that I can identify the best rated, best prices or just sort the products by name.
+* As a Customer I want to sort a specific category of products so that I can identify the best rated, best prices or just sort the products by name.
     * At the top of the site there is a navigation bar with links that lists products based on categories, sorting or through a search query.
 
-* As a Customer I can sort the list of products by using a single or multiple tags so that I can i.e. see all ’analog’ or ’ambient’ related products.
+* As a Customer I can want to the list of products by using a single or multiple tags so that I can i.e. see all ’analog’ or ’ambient’ related products.
     * When the user has listed the products the tags is visible in the product cards. When the user clicks the card it is possible to choose a single tag. Multiple choice of tags not implemented yet.
 
-* As a Customer I can easily get information about what I have searched for and how many results the search generated so that I can see if the product is available.
+* As a Customer I want to easily get information about what I have searched for and how many results the search generated so that I can see if the product is available.
     *  At the top of the site there is a navigation bar with a search field that lists the searched products.
 
 ### Purchasing And Checkout
 
-* As a Customer I can easily choose the quantity of a product and size if applicable when purchasing it so that that I ensure I get the correct product
+* As a Customer I want to easily choose the quantity of a product and size if applicable when purchasing it so that that I ensure I get the correct product
     * On the product detail page the user can choose the quantity of a product and size.
 
-* As a Customer I can easily view the items in my cart to be purchased so that I can see the total cost and all the items I am about to receive
+* As a Customer I want to easily view the items in my cart to be purchased so that I can see the total cost and all the items I am about to receive
     * The user can easily view the cart by clicking the cart icon in the top navigation bar.
 
-* As a Customer I can easily adjust the amount of products in my cart so that I can change the cart before checking out
+* As a Customer I want to easily adjust the amount of products in my cart so that I can change the cart before checking out
     * In the shopping bag that the user can reach by clicking the cart icon in the top navigation bar, it is easy to adjust the amount of products before checking out.
 
-* As a Customer I can give my payment information in an easy way so that the checkout-process is quick and easy
+* As a Customer I want to give my payment information in an easy way so that the checkout-process is quick and easy
     * In the secure checkout page the user can in an easy way give the payment information needed for an easy checkout process.
 
-* As a Customer I need to feel safe and secure when interacting with the site so that I feel comfortable to provide all necessary information needed for purchase
+* As a Customer I want to feel safe and secure when interacting with the site so that I feel comfortable to provide all necessary information needed for purchase
     * This is somehow subjective but the site has been build to 'radiate' a sense of professionality and stability.
 
-* As a Customer I view an order confirmation after checkout so that I can secure I have purchased the correct items and everything is ok
+* As a Customer I want to view an order confirmation after checkout so that I can secure I have purchased the correct items and everything is ok
     * When the checkout process is completed the user is taken to a confirmation success page with information about which products that have been purchased.
 
-* As a Customer I will receive an email confirmation after the checkout process is done so that I can keep the information for future use if needed
+* As a Customer I want to receive an email confirmation after the checkout process is done so that I can keep the information for future use if needed
     * When the checkout process is completed the user recieves a confirmation e-mail to the e-mail that has been registered in the checkout process.
 
-* As a Customer I can receive an email confirmation when my order changes so that I get relevant information about my order
+* As a Customer I want to receive an email confirmation when my order changes so that I get relevant information about my order
     * Not implemented yet
 
-* As a Customer I can create a wishlist so that I can come back later to purchase the products
+* As a Customer I want to create a wishlist so that I can come back later to purchase the products
     * On the product detail page the logged in user can add the specific product to their whislist and then access the wishlist from the 'my account' menu.
 
-* As a Customer I can use a promotion code so that I can get a better deal
+* As a Customer I want to use a promotion code so that I can get a better deal
     * Not implemented yet
 
 ### Site Admin
 
-* As a Site Admin I can create, update and delete product posts so that I can manage my product content
+* As a Site Admin I want to create, update and delete product posts so that I can manage my product content
     * When admin is logged the product management page can be reached through the 'my account'-menu.
 
-* As a Site Admin I can log out from the site so that I can feel safe that nobody can access my information
+* As a Site Admin I want to log out from the site so that I can feel safe that nobody can access my information
     * When admin is logged in it is possible to choose the 'Log Out'-option in the navigation menu.
 
-* As a Site Admin I can create draft product posts so that I can finish writing the content later
+* As a Site Admin I want to create draft product posts so that I can finish writing the content later
     * In the product management page the administrator can choose to put the product in 'draft'-mode before publishing it.
 
-* As a Site Admin I can access an admin area so that I can get a general understanding of i.e. number of users, number of products
+* As a Site Admin I want to access an admin area so that I can get a general understanding of i.e. number of users, number of products
     * Not implemented yet
 
-* As a Site Admin I can get visual feedback when interacting with the content so that I can be sure how I have interacted with the page
+* As a Site Admin I want to get visual feedback when interacting with the content so that I can be sure how I have interacted with the page
     * When the site user performs actions on the sites flash messages shows (i.e. delete/update/add to bag/ actions).
 
-* As a Site Admin I can I can create, update and delete blog posts so that I can manage my blog content
+* As a Site Admin I want to I can create, update and delete blog posts so that I can manage my blog content
     * When admin is logged the blog management page can be reached through the 'my account'-menu.
 
-* As a Site Admin I can create draft blog posts so that I can finish writing the content later
+* As a Site Admin I want to create draft blog posts so that I can finish writing the content later
     * In the blog management page the administrator can choose to put the blog post in 'draft'-mode before publishing it.
 
 [Back to top](<#table-of-content>)
