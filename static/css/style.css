@@ -39,6 +39,11 @@ h6 {
     font-size: 15px;
 }
 
+.faq {
+    font-family: 'Cousine', monospace;
+    font-size: 20px;
+}
+
 .img-zoom {
     overflow: hidden;
 }
