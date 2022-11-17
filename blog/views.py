@@ -14,7 +14,7 @@ def view_latest_blog_posts(request):
     """ A view that lists all blog posts """
 
     posts = Post.objects.filter(status=1)
-    post_category = None
+    category = None
 
     # Pagination code
     p = Paginator(posts, 3)
@@ -24,6 +24,7 @@ def view_latest_blog_posts(request):
 
     context = {
         'blog_posts': blog_posts,
+        'category': category,
         }
 
     return render(request, 'home/index.html', context)
@@ -33,7 +34,7 @@ def view_all_blog_posts(request):
     """ A view that lists all blog posts """
 
     posts = Post.objects.filter(status=1)
-    post_category = None
+    category = None
 
     if request.GET:
         if 'category' in request.GET:
@@ -48,6 +49,7 @@ def view_all_blog_posts(request):
 
     context = {
         'blog_posts': blog_posts,
+        'category': category,
         }
 
     return render(request, 'blog/view_all_blog_posts.html', context)
