@@ -28,7 +28,7 @@
         <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
         {% endif %}
     </div>
-    <p class="product-description">{{ product.description }}</p>
+    <p class="product-description">{{ product.description|linebreaksbr }}</p>
     {% if product.rating %}
     <p class="mb-1 text-muted smallcard-text"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</p>
     {% else %}
