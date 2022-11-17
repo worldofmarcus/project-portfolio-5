@@ -35,52 +35,54 @@
                     <strong>"{{ search_term }}"</strong>{% endif %}
                 </p>
             </div>
-            <table class="table table-sm table-text">
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Image</th>
-                        <th scope="col">Title</th>
-                        <th scope="col">Date</th>
-                        <th scope="col">Author</th>
-                        <th scope="col">Status</th>
-                        <th scope="col">Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for post in posts %}
-                    <tr>
-                        <td class="align-middle">{{ post.id }}</td>
-                        <td class="align-middle">
-                            {% if post.featured_image %}
-                            <a href="{% url 'blog_post_detail' post.slug %}">
-                                <img class="card-img-top img-fluid img-thumbnail image-table-admin" width="150"
-                                    height="150" src="{{ post.featured_image.url }}" alt="{{ post.name }}">
-                            </a>
-                            {% else %}
-                            <a href="{% url 'blog_post_detail' post.slug %}">
-                                <img class="card-img-top img-fluid img-thumbnail image-table-admin" width="150"
-                                    height="150" src="
+            <div class="product-list-wrapper mt-3">
+                <table class="table table-sm table-text">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Image</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Author</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for post in posts %}
+                        <tr>
+                            <td class="align-middle">{{ post.id }}</td>
+                            <td class="align-middle">
+                                {% if post.featured_image %}
+                                <a href="{% url 'blog_post_detail' post.slug %}">
+                                    <img class="card-img-top img-fluid img-thumbnail image-table-admin" width="150"
+                                        height="150" src="{{ post.featured_image.url }}" alt="{{ post.name }}">
+                                </a>
+                                {% else %}
+                                <a href="{% url 'blog_post_detail' post.slug %}">
+                                    <img class="card-img-top img-fluid img-thumbnail image-table-admin" width="150"
+                                        height="150" src="
                                 {{ MEDIA_URL }}noimage.png" alt="{{ post.name }}">
-                            </a>
-                            {% endif %}
-                        </td>
-                        <td class="align-middle">{{ post.title }}</td>
-                        <td class="align-middle">{{ post.date_created_on|date:"Y-m-d" }}</td>
-                        <td class="align-middle">{{ post.author }}</td>
-                        <td class="align-middle">{% if post.status == 1 %}Published {% else%}Not
-                            Published{% endif %}</td>
-                        <td class="align-middle">
-                            {% if blog_post.slug == post.slug %}
-                            You are editing this post
-                            {% else %}
-                            <a href="{% url 'edit_blog_post' post.slug %}" class=" btn btn-danger btn-sm">Edit</a>
-                            {% endif %}
-                        </td>
-                    </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
+                                </a>
+                                {% endif %}
+                            </td>
+                            <td class="align-middle">{{ post.title }}</td>
+                            <td class="align-middle">{{ post.date_created_on|date:"Y-m-d" }}</td>
+                            <td class="align-middle">{{ post.author }}</td>
+                            <td class="align-middle">{% if post.status == 1 %}Published {% else%}Not
+                                Published{% endif %}</td>
+                            <td class="align-middle">
+                                {% if blog_post.slug == post.slug %}
+                                You are editing this post
+                                {% else %}
+                                <a href="{% url 'edit_blog_post' post.slug %}" class=" btn btn-danger btn-sm">Edit</a>
+                                {% endif %}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>
