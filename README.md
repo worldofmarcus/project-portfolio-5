@@ -107,6 +107,8 @@ Search Engine Optimization is a very important method to improve the ranking on 
 
 * Meta Keywords - kollektiv fem, vinyl, albums, tapes, ambient music, analog, record label, e-shop, music studio, diy, asmr, t-shirts, tote bags, pins, cds, cassette, ambient art, creative studio sweden
 
+The site also includes a sitemap.xml and robots.txt to make sure that the search engines can find and crawl the pages on the site.
+
 ## Project Management
 
 ### Trello & Github Board
