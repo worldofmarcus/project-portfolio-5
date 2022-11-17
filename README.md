@@ -1330,6 +1330,22 @@ No known bugs besides those in the fixed / unfixed bugs section.
 
 ### Unfixed Bugs
 
+**2022-11-10**
+* Bug: The Pagination on the site works really well except when the user chooses a specific category or a specific sorting. The problem is when the user clicks the next/previous button on the pagination the category/sorting attribute disappears which means that the next/previous pagination page does not take the users choice into consideration. I managed to fix parts of the problem and had two sessions with two different tutors without success. I tried to solve the problem by adding if statements in the url to keep the category/sorting but it quite fast got really complex. Me and the tutors discussed if it could be easier to handle it from the product views but I needed to move on with the project to not get stuck on this issue to long. The pagination works as it should with the exception when the user chooses category/sorting. Here is an example of the code that partly worked (which I removed in the deployed project.
+
+```
+{% if product_list.has_next %}
+<li class="page-item"><a class="page-link" href="
+        {% if current_sorting == 'None_None' %}?page={{ product_list.next_page_number }}
+        {% elif current_sorting == 'None_None' and current_categories %}?page={{ product_list.next_page_number }}&category={{ category }}
+        {% elif search_term %}?page={{ product_list.next_page_number }}??page={{ product_list.next_page_number }}&q= {{ search_term }}
+        {% elif current_sorting %}?page={{ product_list.next_page_number }}&sort={{ sort }}&direction={{ direction }}
+        {% elif current_sorting %}?page={{ product_list.next_page_number }}&sort={{ sort }}&direction={{ direction }}
+        {% else %}?page={{ product_list.next_page_number }}
+        {% endif %}">Next</a>
+</li>
+```
+
 **2022-11-14**
 * Bug: In the checkout form it is possible for the user to add ordinary letters in the phone number field. I have done some digging and it could be possible to use a validator but I haven't gotten it to work fully. I need to prioritize the rest of the project for now, why this bug is unfixed for now.
 * Bug: In the checkout form it is possible for the user to add numerals in the name field. I have done some digging and it could be possible to use a validator but I haven't gotten it to work fully. I need to prioritize the rest of the project for now, why this bug is unfixed for now.
