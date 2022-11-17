@@ -217,12 +217,12 @@ Below the user stories for the project are listed to clarify why particular feat
 
 |  | | |
 |:-------:|:--------|:--------|
-| As a Site Admin | I want to create, update and delete product posts so that I can manage my product content | &#9745;
+| As a Site Admin | I want to search, create, update and delete product posts so that I can manage my product content | &#9745;
 | As a Site Admin | I want to log out from the site so that I can feel safe that nobody can access my information | &#9745; |
 | As a Site Admin | I want to create draft product posts so that I can finish writing the content later | &#9745; |
 | As a Site Admin | I want to access an admin area so that I can get a general understanding of i.e. number of users, number of products| &#9745; |
 | As a Site Admin | I want to get visual feedback when interacting with the content so that I can be sure how I have interacted with the page | &#9745; |
-| As a Site Admin | I want to I can create, update and delete blog posts so that I can manage my blog content | &#9745; |
+| As a Site Admin | I want to search, create, update and delete blog posts so that I can manage my blog content | &#9745; |
 | As a Site Admin | I want to create draft blog posts so that I can finish writing the content later | &#9745; |
 
 [Back to top](<#table-of-content>)
@@ -725,7 +725,7 @@ The libraries used in this project are located in the requirements.txt file and 
 
 ### Site Admin
 
-* As a Site Admin I want to create, update and delete product posts so that I can manage my product content
+* As a Site Admin I want to search, create, update and delete product posts so that I can manage my product content
     * When admin is logged the product management page can be reached through the 'my account'-menu.
 
 * As a Site Admin I want to log out from the site so that I can feel safe that nobody can access my information
@@ -740,7 +740,7 @@ The libraries used in this project are located in the requirements.txt file and 
 * As a Site Admin I want to get visual feedback when interacting with the content so that I can be sure how I have interacted with the page
     * When the site user performs actions on the sites flash messages shows (i.e. delete/update/add to bag/ actions).
 
-* As a Site Admin I want to I can create, update and delete blog posts so that I can manage my blog content
+* As a Site Admin I want to search, create, update and delete blog posts so that I can manage my blog content
     * When admin is logged the blog management page can be reached through the 'my account'-menu.
 
 * As a Site Admin I want to create draft blog posts so that I can finish writing the content later
