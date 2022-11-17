@@ -108,6 +108,8 @@ Search Engine Optimization is a very important method to improve the ranking on 
 
 The site also includes a sitemap.xml and robots.txt to make sure that the search engines can find and crawl the pages on the site.
 
+[Back to top](<#table-of-content>)
+
 ## Project Management
 
 ### Trello & Github Board
@@ -219,7 +221,6 @@ Below the user stories for the project are listed to clarify why particular feat
 | As a Site Admin | I can I can create, update and delete blog posts so that I can manage my blog content | &#9745; |
 | As a Site Admin | I can create draft blog posts so that I can finish writing the content later | &#9745; |
 
-
 [Back to top](<#table-of-content>)
 
 ## Site Structure
@@ -297,7 +298,6 @@ The navigation bar is includes the same basic options for the user (logged in or
 ![Navigation - Search Results](readme/assets/images/menu_search_results.png)
 
 ![Navigation - Cart With Products](readme/assets/images/cart_products.png)
-
 
 </details><br/>
 
@@ -742,6 +742,8 @@ The libraries used in this project are located in the requirements.txt file and 
 * As a Site Admin I can create draft blog posts so that I can finish writing the content later
     * In the blog management page the administrator can choose to put the blog post in 'draft'-mode before publishing it.
 
+[Back to top](<#table-of-content>)
+
 ## Code Validation
 The code on the Kollektiv Fem site has been tested through W3C Markup Validation Service, W3C CSS Validation Service, CI Python Linter and JSHint.
 
@@ -948,6 +950,8 @@ In addition to tests stated above I have performed a series of manual tests. Bel
 | &check; | Clicking the Kollektiv Fem link in the footer area opens the Kollektiv Fem site in a new window
 | &check; | Clicking the Privacy Policy link in the footer area opens loads the privacy policy page
 
+[Back to top](<#table-of-content>)
+
 | Status | **Main Website - User Logged In - Navigation**
 |:-------:|:--------|
 | &check; | The free shipping treshold changes in the top bar changes when changing the treshold in the settings file
@@ -1044,6 +1048,8 @@ In addition to tests stated above I have performed a series of manual tests. Bel
 | &check; | Register a non-valid e-mail address in the e-mail signup in the footer triggers an error message
 | &check; | Clicking the Kollektiv Fem link in the footer area opens the Kollektiv Fem site in a new window
 | &check; | Clicking the Privacy Policy link in the footer area opens loads the privacy policy page
+
+[Back to top](<#table-of-content>)
 
 | Status | **Main Website - Admin Logged In - Navigation**
 |:-------:|:--------|
@@ -1179,6 +1185,8 @@ In addition to tests stated above I have performed a series of manual tests. Bel
 | &check; | Clicking the Kollektiv Fem link in the footer area opens the Kollektiv Fem site in a new window
 | &check; | Clicking the Privacy Policy link in the footer area opens loads the privacy policy page
 
+[Back to top](<#table-of-content>)
+
 ### Automated Testing
 No automated testing has been done during this project.
 
@@ -1271,40 +1279,63 @@ Additional testing of the application was conducted by people outside of the sof
 No known bugs besides those in the fixed / unfixed bugs section.
 
 ### Fixed Bugs
-**2022-10-10**
-* Bug: When updating a review or comment the approved variable did not get updated to 'False'. This is is now handled and fixed.
+**2022-11-10**
+* Bug: When trying to log in to the site locally a CSRF verification failed appears. This fail was connected to CSRF Trusted Origins which could be fixed by adding a row to settings.py. It is a little bit of a hassle to change the address from time to time due to that the local adress changes.
 
-**2022-10-11**
-* Bug: When updating a review the slug did not change. I chose to fix this bug so that the slug updates when a review is updated but one 'school' within this area says that a slug never should be changed (due to problems with urls / linking in the future). This functionality is an easy fix to remove if necessary but I chose to keep it for now.
+<details><summary><b>CSRF Fail</b></summary>
 
-**2022-10-14**
-* Bug: When the Markup Validation was done there was initially quite a lot of errors. The debugging process was very straight forward and the errors could easily be fixed.
+![CSRF Fail](readme/assets/images/csrf_fail.png)
+![CSRF Fix](readme/assets/images/csrf_fix.png)
+</details><br/>
 
-<details><summary><b>HTML Validation</b></summary>
+**2022-11-10**
+* Bug: I got an Uncaught TypeError connected to the toast messages. This hade to do with me using a newer version of Bootstrap which could be easily fixed.
 
-![HTML Validation](readme/assets/images/html_validation_error.png)
+**2022-11-11**
+* Bug: I got quite a lot of problems when I deployed the site to Heroku the first time. I got a 'failed to build backports.zoneinfo'. It was actually quite an easy fix. I added a runtime.txt to the root folder with information about what python version Heroku should install to work with the Heroku version at the time.
+
+**2022-11-14**
+* Bug: My mentor noticed that it was possible to add a negative number in the price field when adding a product in the product management area. I fixed this by adding a validation check in the product model (MinValueValidator).
+
+<details><summary><b>Negative Price Bug</b></summary>
+
+![Negative Price Bug 1](readme/assets/images/negative_price_bug_1.png)
+![Negative Price Bug 2](readme/assets/images/negative_price_bug_2.png)
+![Negative Price Fix](readme/assets/images/negative_price_fix.png)
 </details><br />
 
-**2022-10-17**
-* Bug: The CSS Validation reported an error that is connected to Font Awesome. When I validate my own CSS code there are no errors at all. So this might be a Font Awesome bug that is out of my control. But I thought it would be proper to highlight the error here in the bugs section.
+**2022-11-16**
+* Bug: The CSS Validation reported an error that is connected to Bootstrap. When I validate my own CSS code there are no errors at all. So this might be a Font Awesome bug that is out of my control. But I thought it would be proper to highlight the error here in the bugs section.
 
-<details><summary><b>CSS Validation</b></summary>
+* Bug: The HTML Validation reported some errors that could be quite easily fixed.
 
-![CSS Validation](readme/assets/images/css_validaton_error.png)
+<details><summary><b>HTML Validator Error</b></summary>
+
+**HTML Validator Error Home**
+
+![HTML Validator Error Home](readme/assets/images/html_validator_home.png)
+
+**HTML Validator Error Wishlist**
+![HTML Validator Error Wishlist](readme/assets/images/html_validator_bug_wishlist)
+
+**HTML Validator Error Remove Wishlist**
+![HTML Validator Error Remove Wishlist](readme/assets/images/html_validator_bug_remove_wishlist)
+
+**HTML Validator Error Footer**
+![HTML Validator Error Footer](readme/assets/images/html_validator_footer.png)
+
+**HTML Validator Error Profile**
+![HTML Validator Error Footer](readme/assets/images/html_validator_profile_page.png)
 </details><br />
 
 ### Unfixed Bugs
 
-**2022-10-14**
-* Bug: Summernote is not working 100% properly. I have debugged and sweeped the Internet for solutions. The issue is that when a user creates a review it's not possible to overide the choices the user makes when writing the review (i.e. font-size and font). I tried to handle this by setting rules of what tools to show in the Summernote editor without success. One workaround could of course be to remove the Summernote functionality but I did not want to do that in this project at least. This bug is still unfixed and I haven't found a solution to it yet.
+**2022-11-14**
+* Bug: In the checkout form it is possible for the user to add ordinary letters in the phone number field. I have done some digging and it could be possible to use a validator but I haven't gotten it to work fully. I need to prioritize the rest of the project for now, why this bug is unfixed for now.
+* Bug: In the checkout form it is possible for the user to add numerals in the name field. I have done some digging and it could be possible to use a validator but I haven't gotten it to work fully. I need to prioritize the rest of the project for now, why this bug is unfixed for now.
 
-**2022-10-15**
-* Bug: 2 warning / issues reported in the Google Chrome DevTools console. The first one is connected to a navigator.userAgent issue and the second to usage of a deprecated feature. I have done some digging and it seems that these issues have been reported within different forums on the web. I have checked other browsers (i.e. Firefox, Min and Edge) and the issue does not show up there.
-
-<details><summary><b>Warnings from Google Chrome DevTools</b></summary>
-
-![HTML Validation](readme/assets/images/google_chrome_warning.png)
-</details><br />
+**2022-11-17**
+* Bug: The HTML Validator Error connected to the Profile Page has not been corrected yet. I haven't been able to correct it without risking to break the rest of the page. The error is connected to the attribute placeholder not allowed on the select element. The form code for this section is based on the 'Boutique Ado' project with quite complex looping through the form fields. So for now I will not fix it due to the need to prioritize the rest of the project but of course if I would use the site in a live situation I would fix it. Actually if I could do the form again I would not use a loop functionality due to **unnecessary** added complexity.
 
 [Back to top](<#table-of-content>)
 
@@ -1602,7 +1633,7 @@ To clone and set up this project you need to follow the steps below.
 
 * Blog images taken from [Shutterstock](https://www.shutterstock.com/sv)
 
-* Product images taken from [Kollektiv Fem](https://www.kollektivfem.se) which is owned by Marcus Eriksson.
+* Product images and text taken from [Kollektiv Fem](https://www.kollektivfem.se) which is owned by Marcus Eriksson.
 
 * Featured default review image taken from [FAVPNG](https://favpng.com/png_view/download-clip-art-png/hHNmGh4R)
 
@@ -1619,8 +1650,8 @@ To clone and set up this project you need to follow the steps below.
 * Inspiration regarding adding extra forms in Django Allauth form [How to add more custom fields on signup form?](https://stackoverflow.com/questions/68591755/django-allauth-how-to-add-more-custom-fields-on-signup-form)
 
 # Acknowledgements
-This fictional site was created for Portfolio Project #4 (Full-Stack Tolkin) - Diploma in Full Stack Software Development Diploma at the [Code Institute](https://www.codeinstitute.net). I would like to thank my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/) for relevant feedback during the project.
+This fictional site was created for Portfolio Project #5 (E-Commerce Applications Portfolio Project) - Diploma in Full Stack Software Development Diploma at the [Code Institute](https://www.codeinstitute.net). I would like to thank my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/) for relevant feedback during the project.
 
-*Marcus Eriksson, 2022-10-18*
+*Marcus Eriksson, 2022-11-22*
 
 [Back to top](<#table-of-content>)
