@@ -59,13 +59,53 @@ Even though this is a fictional size that most likely never will be published to
 # **Project**
 
 ## Objective
-As I mentioned in the Portfolio Project I absolutely love music, well actually all kinds of art. Therefore I have decided to make my existing Kollektiv Fem DIY business come to life in this project. I have decided to create a site as authentic I can and at the same time demonstrate my knowledge within the Django Framework, Python, JavaScript, CSS and HTML.
+As I mentioned in the Portfolio Project 4 I absolutely love music, well actually all kinds of art. Therefore I have decided to make my existing Kollektiv Fem DIY business come to life in this project. I have decided to create a site as authentic I can and at the same time demonstrate my knowledge within the Django Framework, Python, JavaScript, CSS and HTML.
 
 ## Site Users Goal
 The user of 'Kollektiv Fem' loves art of all forms and is excited to listen to and buy high quality art for a reasonable price.
 
 ## Site Owners Goal
 The goal of the site owner is to deliver a site where the users in an intuitive way can buy Kollektiv Fems art and get relevant information of what is happening at Kollektiv Fem.
+
+## Business Model
+To know which business model that fits the needs and requirements for a business is of course very important. Kollektiv Fem is a business that sells the products directly to the end users through direct selling via the Kollektiv Fem webpage. The buyers are private consumers which makes Kollektiv Fems business model a B2C (Business To Consumer)-model. This means that everytime a Kollektiv Fem customer buys something from the webpage a B2C transaction is completed. To be able to implement a B2C eCommerce model in a successful way it is very important to have a quickly adjustable platform to be able to adapt to the customers if needed. The Kollektiv Fem webpage is highly a adjustable platform which makes fast adjustments quite easy. But to have a solid platform is not everything, of course there is a need for good marketing techniques to be able to reach out to new customers and engage the existing ones.
+
+## Marketing Techniques
+There are a lot of different marketing techniques out there. For Kollektiv Fem there has from the start been some areas that builds the foundation of the Kollektiv Fem trademark, and also sets the prerequisites to reach the customers.
+
+**Optimize For Mobile Devices**
+In a world where most of the people visits the web from a mobile device it is very important that the site looks good on mobiles and tablets. The Kollektiv Fem site is fully responsive which means that it takes into account whether the customer uses a mobile or desktop device.
+
+**The Website Layout**
+The Kollektiv Fem website is easy to navigate and have an intuitive design which makes it easy for the customer to find relevant information and make a purchase without a hassle.
+
+**Create content (content marketing)**
+On the Kollektiv Fem site there is a blog that is being used to create original, informative and relevant content to the Kollektiv Fem customers. There are also links to external relevant sites to further increase a positive experience to the site users. Kollektiv Fems ambition is that the customers want to visit our site because **they want to** not because we want to.
+
+**Facebook and Instagram (social media marketing)**
+Social Media marketing is a great tool if it's done in the right way. Kollektiv Fem has a presence on social media through the platforms Facebook and Instagram. It helps Kollektiv Fem to communicate with both existing customers but also potential new ones. Through the social media platforms Kollektiv Fem can create engagement, interact on a broad level and maintain brand recognition. For Kollektiv Fem the product sale is being made on the site why it is very important to use the social media platforms to boost traffic to the website (i.e. when a new blog has been published or when the product of the month has been released). For now Kollektiv Fem only works with organic growth but will most likely start with payed ads to target specific customer groups in the future.
+
+<details><summary><b>Kollektiv Fem - Facebook</b></summary>
+
+![Kollektiv Fem - Facebook](readme/assets/images/kfem_facebook.png)
+
+</details><br/>
+
+<details><summary><b>Kollektiv Fem - Instagram</b></summary>
+
+![Kollektiv Fem - Instagram](readme/assets/images/kfem_instagram.PNG)
+
+</details><br/>
+
+**E-mail marketing**
+One form of reaching out to the customers in an effective way is through e-mail marketing. But in a world with a lot of challenges with spam it is very important to think about the content and who is being targeted. Kollektiv Fem gives the site users / customers a possibility to sign up for a Kollektiv Fem newsletter on the Kollektiv Fem site. The service being used is [Mailchimp](https://mailchimp.com/) and is an easy way to let the customers know what is happening at Kollektiv Fem. The content being sent out is personal and can include i.e. advertisment for new blog posts, product of the month, events, co-operations, and discount codes).
+
+**Search Engine Optimization (SEO)**
+Search Engine Optimization is a very important method to improve the ranking on search-engines (and has a high Return Of Investement if done right). The ambition is that Kollektiv Fem includes relevant, professional and reliable content and offers a hassle free experience for the site user. Kollektiv Fem has an ambition (even thought it's not an easy task) to use keywords in the content that matches the users search criterias when using search engines. Descriptive Meta Tags have been implemented on the site after a brainstorming session. The final description / words that have been used can be seen below:
+
+* Meta Description - Kollektiv Fem (KFEM) is a small record label, e-shop, and creative studio located in the north of Sweden.
+
+* Meta Keywords - kollektiv fem, vinyl, albums, tapes, ambient music, analog, record label, e-shop, music studio, diy, asmr, t-shirts, tote bags, pins, cds, cassette, ambient art, creative studio sweden
 
 ## Project Management
 
@@ -544,6 +584,7 @@ The sites incorporates flash messages when an action has been performed (i.e. de
 * [VSCode](https://code.visualstudio.com/) - Used to create and edit the site.
 * [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) - Used to debug and test responsiveness.
 * [Trello](https://trello.com/en-GB) - A project management tool to organize the project.
+* [Mailchimp](https://mailchimp.com/) - Used for the newsletter functionality on the site.
 * [Amazon Web Services](https://aws.amazon.com/) - A service that hosts all static files and images in the project.
 * [HTML Validation](https://validator.w3.org/) - Used to validate HTML code
 * [CSS Validation](https://jigsaw.w3.org/css-validator/) - Used to validate CSS code
