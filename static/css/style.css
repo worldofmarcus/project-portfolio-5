@@ -39,11 +39,6 @@ h6 {
     font-size: 15px;
 }
 
-.faq {
-    font-family: 'Cousine', monospace;
-    font-size: 20px;
-}
-
 .img-zoom {
     overflow: hidden;
 }
@@ -293,6 +288,20 @@ input[type=email]:focus {
     height: 1000px;
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+/* ==================
+   faq
+   ================== */
+
+.faq {
+    font-family: 'Cousine', monospace;
+    font-size: 20px;
+}
+
+.faq-answers {
+    font-family: 'Cousine', monospace;
+    font-size: 15px;
 }
 
 /* ==============

@@ -414,7 +414,7 @@ The home page contains a carousel with two images and the latest blog posts.
 ![Carousel 2](readme/assets/images/carousel_2.png)
 </details><br/>
 
-**Blog Area** - The blog area shows the three latest blog posts. When there are more than three blog posts it's possible for the user to use the pagination option to switch to the next three blog posts. When a site user clicks on the blog post a blog detail view is being shown. If admin is logged in there is a possibility to go to the edit blog management page from the blog area and the blog detail view (via the edit button)
+**Blog Area** - The blog area shows the three latest blog posts. Above the posts there is a button that takes the user to a specific page where all the posts are being listed (the same view opens if the user clicks the 'category'-tag under the read more button, but then only blog posts with that specific category is being shown). When a site user clicks on the blog post a blog detail view is being shown. If admin is logged in there is a possibility to go to the edit blog management page from the blog area and the blog detail view (via the edit button)
 
 <details><summary><b>Blog Area</b></summary>
 
@@ -424,6 +424,18 @@ The home page contains a carousel with two images and the latest blog posts.
 <details><summary><b>Blog Detail</b></summary>
 
 ![Blog Area](readme/assets/images/blog_detail.png)
+</details><br/>
+
+**Blog - View All Blog Posts** - The View All Blog Posts Page lists all blog posts 9 at a time (before the pagination is activated). If the user has clicked the 'category' tag only blog posts with that specific category will be listed (i.e. 'Tips'). From this view it is also possible to access the blog detail page via the read more button and admin can also access the blog management via the edit button. In the bottom of the page there is also a back to home button that takes the user to the index page.
+
+<details><summary><b>Blog - View All Blog Posts</b></summary>
+
+![Blog - View All Blog Posts](readme/assets/images/blog_view_all.png)
+</details><br/>
+
+<details><summary><b>Blog View Blog Posts Witch Category 'Tips'</b></summary>
+
+![Blog Area](readme/assets/images/blog_view_tips.png)
 </details><br/>
 
 ### **Products**
@@ -520,7 +532,7 @@ When the user clicks sign out in the menu bar a confirmation page is being showe
 </details><br/>
 
 ### **Footer**
-The footer area includes short information about Kollektiv Fem, links to relevant social media, a newsletter signup form (through MailChimp), a link to Kollektiv Fem on the web and a link to Kollektiv Fems privacy policy.
+The footer area includes short information about Kollektiv Fem, links to relevant social media, a newsletter signup form (through MailChimp), a link to Kollektiv Fem on the web, a link to Kollektiv Fems privacy policy and a link to Kollektiv Fems FAQ:s.
 
 <details><summary><b>Footer</b></summary>
 
@@ -534,6 +546,7 @@ The footer area includes short information about Kollektiv Fem, links to relevan
 ![Newsletter Error 1](readme/assets/images/newsletter_error_1.png)
 ![Newsletter Error 2](readme/assets/images/newsletter_error_2.png)
 ![Privacy Policy](readme/assets/images/privacy_policy.png)
+![Privacy Policy](readme/assets/images/faq.png)
 </details><br/>
 
 ### **Visual Feedback To The User**
