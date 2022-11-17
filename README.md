@@ -895,12 +895,21 @@ In addition to tests stated above I have performed a series of manual tests. Bel
 
 | Status | **Main Website - User Logged Out - Blog**
 |:-------:|:--------|
-| &check; | 3 Blog posts are rendered for the user on the home page before pagination is activated
+| &check; | The 3 latest blog posts are rendered for the user on the home page
+| &check; | Clicking the View All Blog Posts button loads the View All Blog Posts page
 | &check; | The correct image and information for each blog post is being shown.
-| &check; | When clicking on the pagination previous / next buttons the previous / next 3 posts are being rendered
-| &check; | When clicking on the pagination first / last buttons the first / last 3 posts are being rendered
 | &check; | Clicking the Read More button on a blog post card loads the blog detail page
 | &check; | Clicking the Tag on the blog post card loads the blog posts with the same tags
+| &check; | Clicking the Back To Home button on the blog detail page loads the home page
+
+| Status | **Main Website - User Logged Out - Blog - View All Blog Posts**
+|:-------:|:--------|
+| &check; | 9 Products are rendered for the user on the product pages before pagination is activated
+| &check; | Clicking the Read More button on a blog post card loads the blog detail page
+| &check; | When clicking on the pagination previous / next buttons the previous / next 9 posts are being rendered
+| &check; | When clicking on the pagination first / last buttons the first / last 9 posts are being rendered
+dered
+| &check; | When clicking on the category link all the blog posts with that category is being shown and the pagination takes the categories into consideration.
 | &check; | Clicking the Back To Home button on the blog detail page loads the home page
 
 | Status | **Main Website - User Logged Out - Products**
@@ -953,6 +962,7 @@ In addition to tests stated above I have performed a series of manual tests. Bel
 | &check; | Register a non-valid e-mail address in the e-mail signup in the footer triggers an error message
 | &check; | Clicking the Kollektiv Fem link in the footer area opens the Kollektiv Fem site in a new window
 | &check; | Clicking the Privacy Policy link in the footer area opens loads the privacy policy page
+| &check; | Clicking the FAQ link in the footer area opens loads the FAQ page
 
 [Back to top](<#table-of-content>)
 
@@ -993,12 +1003,21 @@ In addition to tests stated above I have performed a series of manual tests. Bel
 
 | Status | **Main Website - User Logged In - Blog**
 |:-------:|:--------|
-| &check; | 3 Blog posts are rendered for the user on the home page before pagination is activated
+| &check; | The 3 latest blog posts are rendered for the user on the home page
+| &check; | Clicking the View All Blog Posts button loads the View All Blog Posts page
 | &check; | The correct image and information for each blog post is being shown.
-| &check; | When clicking on the pagination previous / next buttons the previous / next 3 posts are being rendered
-| &check; | When clicking on the pagination first / last buttons the first / last 3 posts are being rendered
 | &check; | Clicking the Read More button on a blog post card loads the blog detail page
 | &check; | Clicking the Tag on the blog post card loads the blog posts with the same tags
+| &check; | Clicking the Back To Home button on the blog detail page loads the home page
+
+| Status | **Main Website - User Logged In - Blog - View All Blog Posts**
+|:-------:|:--------|
+| &check; | 9 Products are rendered for the user on the product pages before pagination is activated
+| &check; | Clicking the Read More button on a blog post card loads the blog detail page
+| &check; | When clicking on the pagination previous / next buttons the previous / next 9 posts are being rendered
+| &check; | When clicking on the pagination first / last buttons the first / last 9 posts are being rendered
+dered
+| &check; | When clicking on the category link all the blog posts with that category is being shown and the pagination takes the categories into consideration.
 | &check; | Clicking the Back To Home button on the blog detail page loads the home page
 
 | Status | **Main Website - User Logged In - Products**
@@ -1052,6 +1071,7 @@ In addition to tests stated above I have performed a series of manual tests. Bel
 | &check; | Register a non-valid e-mail address in the e-mail signup in the footer triggers an error message
 | &check; | Clicking the Kollektiv Fem link in the footer area opens the Kollektiv Fem site in a new window
 | &check; | Clicking the Privacy Policy link in the footer area opens loads the privacy policy page
+| &check; | Clicking the FAQ link in the footer area opens loads the FAQ page
 
 [Back to top](<#table-of-content>)
 
@@ -1094,15 +1114,25 @@ In addition to tests stated above I have performed a series of manual tests. Bel
 
 | Status | **Main Website - Admin Logged In - Blog**
 |:-------:|:--------|
-| &check; | 3 Blog posts are rendered for the user on the home page before pagination is activated
+|:-------:|:--------|
+| &check; | The 3 latest blog posts are rendered for the user on the home page
+| &check; | Clicking the View All Blog Posts button loads the View All Blog Posts page
 | &check; | The correct image and information for each blog post is being shown.
-| &check; | When clicking the Edit button to the right of the Read More button below the blog post the blog management edit page is loaded
-| &check; | When clicking on the pagination previous / next buttons the previous / next 3 posts are being rendered
-| &check; | When clicking on the pagination first / last buttons the first / last 3 posts are being rendered
 | &check; | Clicking the Read More button on a blog post card loads the blog detail page
 | &check; | Clicking the Tag on the blog post card loads the blog posts with the same tags
 | &check; | Clicking the Back To Home button on the blog detail page loads the home page
-| &check; | When clicking the Edit button to the right of the Back To Home button below the blog post the blog management edit page is loaded
+| &check; | When clicking the Edit button to the right of the Read More button below the blog post the blog management edit page is loaded
+
+| Status | **Main Website - Admin Logged In - Blog - View All Blog Posts**
+|:-------:|:--------|
+| &check; | 9 Products are rendered for the user on the product pages before pagination is activated
+| &check; | Clicking the Read More button on a blog post card loads the blog detail page
+| &check; | When clicking on the pagination previous / next buttons the previous / next 9 posts are being rendered
+| &check; | When clicking on the pagination first / last buttons the first / last 9 posts are being rendered
+dered
+| &check; | When clicking on the category link all the blog posts with that category is being shown and the pagination takes the categories into consideration.
+| &check; | Clicking the Back To Home button on the blog detail page loads the home page
+| &check; | When clicking the Edit button to the right of the Read More button below the blog post the blog management edit page is loaded
 
 | Status | **Main Website - Admin Logged In - Products**
 |:-------:|:--------|
@@ -1188,6 +1218,7 @@ In addition to tests stated above I have performed a series of manual tests. Bel
 | &check; | Register a non-valid e-mail address in the e-mail signup in the footer triggers an error message
 | &check; | Clicking the Kollektiv Fem link in the footer area opens the Kollektiv Fem site in a new window
 | &check; | Clicking the Privacy Policy link in the footer area opens loads the privacy policy page
+| &check; | Clicking the FAQ link in the footer area opens loads the FAQ page
 
 [Back to top](<#table-of-content>)
 
