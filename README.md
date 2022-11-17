@@ -1214,11 +1214,11 @@ The responsive design tests were carried out manually with [Google Chrome DevToo
 [Back to top](<#table-of-content>)
 
 ### Browser Compatibility
-* Google Chrome Version (106.0.5249.119)
-* Mozilla Firefox (version 105.0.3)
+* Google Chrome Version (107.0.5304.110)
+* Mozilla Firefox (version 107.0)
 * Min (version 1.26.0)
 * Apple Safari (version 16.0)
-* Microsoft Edge (version 106.0.1370.47)
+* Microsoft Edge (version 107.0.1418.42)
 
 [Back to top](<#table-of-content>)
 
