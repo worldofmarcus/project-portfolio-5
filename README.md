@@ -390,7 +390,7 @@ When a superuser / administrator is logged in the **my account** gets more avila
 
 </details><br/>
 
-<details><summary><b>Navigation - Admin Logged In - Product Management - Edit</b></summary>
+<details><summary><b>Navigation - Admin Logged In - Blog Management - Edit</b></summary>
 
 ![Navigation - My Account - Blog Management - Edit](readme/assets/images/admin_blog_management_edit.png)
 
@@ -399,6 +399,18 @@ When a superuser / administrator is logged in the **my account** gets more avila
 <details><summary><b>Navigation - Admin Logged In - Blog Management - Delete</b></summary>
 
 ![Navigation - My Account - Blog Management - Delete](readme/assets/images/admin_blog_management_delete.png)
+
+</details><br/>
+
+<details><summary><b>Navigation - Admin Logged In - Blog Management - Search</b></summary>
+
+![Navigation - My Account - Blog Management - Search](readme/assets/images/admin_blog_management_search.png)
+
+</details><br/>
+
+<details><summary><b>Navigation - Admin Logged In - Blog Management - Search Results</b></summary>
+
+![Navigation - My Account - Blog Management - Search Results](readme/assets/images/admin_blog_management_search_results.png)
 
 </details><br/>
 
