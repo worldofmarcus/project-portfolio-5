@@ -415,7 +415,7 @@ When the site user had added products by pressing the **add to bag** button the 
 </details><br/>
 
 ### **Secure Checkout**
-On the secure checkout page the user fills out a form with delivery details, card details to be able to complete the order. On the page there is a order summary as well. If something doesn't look right the user has a possibility to adjust the bag. If the user is happy with the order summary they can use the **complete order** button to send the order for processing.
+On the secure checkout page the user fills out a form with delivery details, card details to be able to complete the order. In the form the user has a possibility (if logged in) to save the information to the profile. If not logged in they get an option to register / sign in. On the page there is a order summary as well. If something doesn't look right the user has a possibility to adjust the bag. If the user is happy with the order summary they can use the **complete order** button to send the order for processing. The payment service used in this project is Stripe.
 
 <details><summary><b>Secure Checkout</b></summary>
 
@@ -1138,12 +1138,7 @@ In addition to tests stated above I have performed a series of manual tests. Bel
 | &check; | Clicking the Privacy Policy link in the footer area opens loads the privacy policy page
 
 ### Automated Testing
-Some automated testing has been done during this project. Due to prioritization of other tasks I only could provide 34% coverage. See screenshot below. Automated tests can be run by typing the command - *python3 manage.py test*
-
-<details><summary><b>Automated Testing</b></summary>
-
-![Automated Testing](readme/assets/images/test_coverage_report.png)
-</details><br/>
+No automated testing has been done during this project.
 
 ### Responsiveness Test
 The responsive design tests were carried out manually with [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) and [Responsive Design Checker](https://www.responsivedesignchecker.com/).
@@ -1563,9 +1558,9 @@ To clone and set up this project you need to follow the steps below.
 
 * All text content written by Marcus Eriksson.
 
-* Test concert images on review cards taken from [Shutterstock](https://www.shutterstock.com/sv)
+* Blog images taken from [Shutterstock](https://www.shutterstock.com/sv)
 
-* Test album images on review cards taken from [Kollektiv Fem](https://www.kollektivfem.se) which is owned by Marcus Eriksson.
+* Product images taken from [Kollektiv Fem](https://www.kollektivfem.se) which is owned by Marcus Eriksson.
 
 * Featured default review image taken from [FAVPNG](https://favpng.com/png_view/download-clip-art-png/hHNmGh4R)
 
