@@ -1418,6 +1418,9 @@ No known bugs besides those in the fixed / unfixed bugs section.
 **2022-11-17**
 * Bug: The HTML Validator Error connected to the Profile Page has not been corrected yet. I haven't been able to correct it without risking to break the rest of the page. The error is connected to the attribute placeholder not allowed on the select element. The form code for this section is based on the 'Boutique Ado' project with quite complex looping through the form fields. So for now I will not fix it due to the need to prioritize the rest of the project but of course if I would use the site in a live situation I would fix it. Actually if I could do the form again I would not use a loop functionality due to **unnecessary** added complexity.
 
+**2022-11-18**
+* Bug: On the add_product.html (Product Management) page the drop-down arrow on the size field is missing. I have tried several fixes without success so I decided to keep it as it is. If the site would have gone live I would have invested more time to fix the bug.
+
 [Back to top](<#table-of-content>)
 
 # Deployment
