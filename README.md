@@ -1284,36 +1284,41 @@ The responsive design tests were carried out manually with [Google Chrome DevToo
 [Back to top](<#table-of-content>)
 
 ### Lighthouse
-Google Lighthouse in Chrome Developer Tools was used to test the application within the areas of *Performance*, *Accessibility*, *Best Practices* and *SEO*. I tested the *index page*, *review details page*, *the admin area* and *the about page*. The testing showed the following:
+Google Lighthouse in Chrome Developer Tools was used to test the application within the areas of *Performance*, *Accessibility*, *Best Practices* and *SEO*. I tested the *home page*, *view all blog posts page*, *view all products page*, *product management page* and *blog management page*. The testing showed the following:
 
-* Index Page - Performance: 75, Accessibility: 100, Best Practises: 100, SEO: 92
-* Review Details Page - Performance: 81, Accessibility: 98, Best Practises: 100, SEO: 92
-* Admin Area - Performance: 85, Accessibility: 97, Best Practises: 100, SEO: 100
-* About page - Performance: 73, Accessibility: 98, Best Practises: 100, SEO: 100
+* Home Page - Performance: 70, Accessibility: 100, Best Practises: 100, SEO: 92
+* View All Blog Posts Page - Performance: 68, Accessibility: 100, Best Practises: 100, SEO: 92
+* View All Products Page - Performance: 64, Accessibility: 99, Best Practises: 100, SEO: 92
+* Product Management - Performance: 75, Accessibility: 100, Best Practises: 100, SEO: 100
+* Blog Management - Performance: 75, Accessibility: 100, Best Practises: 100, SEO: 100
 
-In general this is OK results. The performance is affected in a negative way by external scripts (connected to i.e. Bootstrap) and the lower result on SEO on the Index page and Admin Area Page is i.e. connected to the 'read more' links that is not a 100% optimal description from a SEO point of view. The lower accessibility result on the review details page is connected to the heading elements not being in sequentially-descending order, but this is an active design choice and not a big issue (but I thought it would be proper to highlight it here so that it's clear I'm aware of it).
+From a general point of view this are quite good results. On all pages the performance is a little bit to low and it is mainly connected to the image sizes. I did some compressing on all the images(approx -50% in size) but still the performance result landed around 70-80. The decrease in the SEO results are mainly connected to the 'read more' links that is not a optimal description from a SEO point of view. In the view all products page the SEO result is affected by the heading elements not being in sequentially-descending order, but this is an active design choice and not a big issue (but I thought it would be proper to highlight it here so that it's clear I'm aware of it).
 
-<details><summary><b>Lighthouse Index Result</b></summary>
+<details><summary><b>Lighthouse Home Result</b></summary>
 
-![Lighthouse Index Result](readme/assets/images/lighthouse_index.png)
+![Lighthouse Home Result](readme/assets/images/lighthouse_home.png)
 </details><br/>
 
-<details><summary><b>Lighthouse Review Details Page Result</b></summary>
+<details><summary><b>Lighthouse View All Blog Posts Page Result</b></summary>
 
-![Lighthouse Review Details Page](readme/assets/images/lighthouse_review_details_page.png)
+![Lighthouse View All Blog Posts Page](readme/assets/images/lightouse_all_blog_posts.png)
 </details><br/>
 
-<details><summary><b>Lighthouse Admin Area Result</b></summary>
+<details><summary><b>Lighthouse View All Products Page Result</b></summary>
 
 
-![Lighthouse Admin Area Result](readme/assets/images/lighthouse_admin_area.png)
+![Lighthouse View All Products Page Result](readme/assets/images/lightouse_all_products.png)
 </details><br/>
 
-<details><summary><b>Lighthouse About Page Result</b></summary>
+<details><summary><b>Lighthouse Product Management Result</b></summary>
 
-![Lighthouse About Page Result](readme/assets/images/lighthouse_about.png)
+![Lighthouse Product Management Result](readme/assets/images/lighthouse_product_management.png)
 </details><br/>
 
+<details><summary><b>Lighthouse Blog Management Result</b></summary>
+
+![Lighthouse Blog Management](readme/assets/images/lighthouse_blog_management.png)
+</details><br/>
 
 ### WAVE
 [WAVE](https://wave.webaim.org/) was used to check accessibility. 0 errors were found.
@@ -1713,7 +1718,7 @@ To clone and set up this project you need to follow the steps below.
 
 * The poster images was converted to posters through [Pictorem](https://www.pictorem.com/).
 
-* The tote image was converted to a tote bag through [Printify](https://printify.com/).
+* The tote bag, tank top and t-shirt images was converted to product images through [Printify](https://printify.com/).
 
 * Featured default review image taken from [FAVPNG](https://favpng.com/png_view/download-clip-art-png/hHNmGh4R)
 
