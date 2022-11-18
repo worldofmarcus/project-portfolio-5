@@ -1711,6 +1711,10 @@ To clone and set up this project you need to follow the steps below.
 
 * Product images and text taken from [Kollektiv Fem](https://www.kollektivfem.se) which is owned by Marcus Eriksson.
 
+* The poster images was converted to posters through [Pictorem](https://www.pictorem.com/).
+
+* The tote image was converted to a tote bag through [Printify](https://printify.com/).
+
 * Featured default review image taken from [FAVPNG](https://favpng.com/png_view/download-clip-art-png/hHNmGh4R)
 
 * Template for read.me provided by Code Institute (*with some additional changes that my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/))* suggested.
