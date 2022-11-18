@@ -1321,7 +1321,7 @@ From a general point of view this are quite good results. On all pages the perfo
 </details><br/>
 
 ### WAVE
-[WAVE](https://wave.webaim.org/) was used to check accessibility. 0 errors were found.
+[WAVE](https://wave.webaim.org/) was used to check accessibility. 2 errors were found (1 missing form label and 1 contrast error). The missing form label is connected to the Mailchimp code why I don't want to change anything there. The contrast error is connected to the carousel but when I run the check in other contrast checking software there is no error. So I decided to keep it as it is.
 
 <details><summary><b>WAVE Result</b></summary>
 
