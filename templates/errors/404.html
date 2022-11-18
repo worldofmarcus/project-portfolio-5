@@ -1,25 +1,18 @@
 {% extends 'base.html' %}
-{% load static %}
 {% block content %}
+
 <div class="container">
-    <div class="row">
-        <div class="col"></div>
-    </div>
-</div>
-<div class="container h-100">
-    <div class="row h-100">
-        <div class="col-7 col-md-6 my-auto">
+    <div class="row justify-content-center">
+        <div class="col-6">
             <h1>
                 The page you are looking for isn't available
             </h1>
-            <div class="my-5">
-                <h4>
-                    <a href="{% url 'list_all_products' %}"
-                        class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">
-                        Return to Kollektiv Fem
-                    </a>
-                </h4>
-            </div>
+            <p>
+                <a href="{% url 'list_all_products' %}"
+                    class="btn btn-outline-secondary btn-sm rounded text-uppercase py-3">
+                    Return to Kollektiv Fem
+                </a>
+            </p>
         </div>
     </div>
 </div>
