@@ -1339,7 +1339,7 @@ From a general point of view this are quite good results. On all pages the perfo
 [Back to top](<#table-of-content>)
 
 ### Peer Review
-Additional testing of the application was conducted by people outside of the software development field. Some smaller spelling and grammar errors were found and corrected. No issues connected to design or handling of the site.
+Additional testing of the application was conducted by people outside of the software development field. Some smaller spelling and grammar errors were found on the site and corrected. No major challenges connected to the design or handling of the site.
 
 ## Known bugs
 No known bugs besides those in the fixed / unfixed bugs section.
