@@ -576,8 +576,7 @@ The sites incorporates flash messages when an action has been performed (i.e. de
 
 ### Features Left to Implement
 
-* Add seach function in the blog management section
-* Fix the pagination bug (described in the bug section)
+* Fix the product list pagination bug (described in the bug section)
 * Give the logged in site user the possibility to add a promotion code
 * Give the user the possibility to sort on multiple tags
 * Give the logged in site user the possibility to rate a product
