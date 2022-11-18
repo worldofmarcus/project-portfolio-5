@@ -451,7 +451,7 @@ The home page contains a carousel with two images and the latest blog posts.
 </details><br/>
 
 ### **Products**
-Depending on what the site user chooses in the submenus in the menus **products**, **categories** or **special offers** the page lists different views. I will only show one view due to the fact it's the same visual design but just with different products being showed. In the example the products are being sorted on name (A-Z). When a site user clicks on the product a product detail page is being shown. If admin is logged in there is a possibility to go to the edit product management page from the product overview and product detail page.
+Depending on what the site user chooses in the submenus in the menus **products**, **categories** or **special offers** the page lists different views. 9 products is listed before the pagination activates. If the user chooses a category the pagination will take that into consideration as well (even though there is a bug in the pagination if the user chooses to filter on a specific sorting). I will only show one view due to the fact it's the same visual design but just with different products being showed. In the example the products are being sorted on name (A-Z). When a site user clicks on the product a product detail page is being shown. If admin is logged in there is a possibility to go to the edit product management page from the product overview and product detail page.
 
 <details><summary><b>Product View</b></summary>
 
