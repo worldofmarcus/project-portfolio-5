@@ -544,7 +544,7 @@ When the user clicks sign out in the menu bar a confirmation page is being showe
 </details><br/>
 
 ### **Footer**
-The footer area includes short information about Kollektiv Fem, links to relevant social media, a newsletter signup form (through MailChimp), a link to Kollektiv Fem on the web, a link to Kollektiv Fems privacy policy and a link to Kollektiv Fems FAQ:s.
+The footer area includes short information about Kollektiv Fem, links to relevant social media, a newsletter signup form (through MailChimp), a link to Kollektiv Fem on the web, a link to Kollektiv Fems privacy policy and a link to Kollektiv Fems FAQ:s (that includes commonly asked questions and a couple of useful links to Kollektiv Fems friends in the business).
 
 <details><summary><b>Footer</b></summary>
 
