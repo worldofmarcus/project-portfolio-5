@@ -122,7 +122,7 @@ def add_product(request):
         else:
             messages.error(
                 request, 'Failed to add product.'
-                f'Please ensure the form is valid.')
+                'Please ensure the form is valid.')
     else:
         form = ProductForm()
 
