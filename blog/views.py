@@ -78,7 +78,8 @@ def add_blog_post(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, 'You did not enter any search criteria!')
+                messages.error(request,
+                               'You did not enter any search criteria!')
                 return redirect(reverse('add_product'))
             queries = Q(title__icontains=query) | Q(body__icontains=query)
             posts = posts.filter(queries)
@@ -94,9 +95,12 @@ def add_blog_post(request):
             form.instance.slug = slugify(form.instance.title)
             post = form.save()
             messages.success(request, 'Successfully added blog post!')
-            return redirect(reverse('blog_post_detail', args=[form.instance.slug]))
+            return redirect(
+                reverse('blog_post_detail', args=[form.instance.slug]))
         else:
-            messages.error(request, 'Failed to add blog post. Please ensure the form is valid.')
+            messages.error(request,
+                           'Failed to add blog post. '
+                           'Please ensure the form is valid.')
     else:
         form = CreateBlogPostForm()
 
@@ -120,7 +124,8 @@ def edit_blog_post(request, slug):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, 'You did not enter any search criteria!')
+                messages.error(request,
+                               'You did not enter any search criteria!')
                 return redirect(reverse('add_product'))
             queries = Q(title__icontains=query) | Q(body__icontains=query)
             posts = posts.filter(queries)
@@ -131,7 +136,8 @@ def edit_blog_post(request, slug):
 
     blog_post = get_object_or_404(Post, slug=slug)
     if request.method == 'POST':
-        form = CreateBlogPostForm(request.POST, request.FILES, instance=blog_post)
+        form = CreateBlogPostForm(
+            request.POST, request.FILES, instance=blog_post)
         if form.is_valid():
             form.instance.author = request.user
             form.instance.slug = slugify(form.instance.title)
@@ -139,7 +145,8 @@ def edit_blog_post(request, slug):
             messages.success(request, 'Successfully updated blog post!')
             return redirect(reverse('blog_post_detail', args=[blog_post.slug]))
         else:
-            messages.error(request, 'Failed to update blog post. Please ensure the form is valid.')
+            messages.error(request, 'Failed to update blog post. '
+                           'Please ensure the form is valid.')
     else:
         form = CreateBlogPostForm(instance=blog_post)
         messages.info(request, f'You are editing {blog_post.title}.')
