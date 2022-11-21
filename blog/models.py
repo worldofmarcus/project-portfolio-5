@@ -23,7 +23,7 @@ class Category(models.Model):
     def __str__(self):
         """
         This function returns the name of the category
-        to add user readability.
+        to add better user readability.
         """
 
         return str(self.name)
@@ -54,7 +54,7 @@ class Post(models.Model):
 
     class Meta:
         """
-        This meta class orders the model by date.
+        This meta class orders the post model by date.
         """
 
         ordering = ['-date_created_on']

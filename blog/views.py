@@ -11,7 +11,8 @@ from .models import *
 
 
 def view_latest_blog_posts(request):
-    """ A view that lists all blog posts """
+    """ This view lists the 3 latest blog posts
+    and adds the query to a paginator """
 
     posts = Post.objects.filter(status=1)
     category = None
@@ -31,7 +32,8 @@ def view_latest_blog_posts(request):
 
 
 def view_all_blog_posts(request):
-    """ A view that lists all blog posts """
+    """ This view lists 9 blog posts at a time.
+    The view also includes pagination functionality """
 
     posts = Post.objects.filter(status=1)
     category = None
@@ -56,7 +58,7 @@ def view_all_blog_posts(request):
 
 
 def blog_post_detail(request, slug):
-    """ A view that lists a specific blog post """
+    """ This view lists a specific blog post """
 
     blog_post = get_object_or_404(Post, slug=slug)
 
@@ -162,7 +164,7 @@ def edit_blog_post(request, slug):
 
 @login_required
 def delete_blog_post(request, slug):
-    """ This view will delete a blog post from the site """
+    """ This view deletes a blog post from the site """
 
     if not request.user.is_superuser:
         messages.error(request, 'You do not have access to this page!')
