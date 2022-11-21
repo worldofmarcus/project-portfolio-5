@@ -5,6 +5,7 @@ from products.models import Product
 
 
 def bag_contents(request):
+    """ This view keeps track of the items in the bag """
 
     bag_items = []
     total = 0
