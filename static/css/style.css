@@ -284,7 +284,8 @@ input[type=email]:focus {
 }
 
 .product-list-wrapper,
-.blog-list-wrapper {
+.blog-list-wrapper,
+.order-list-wrapper {
     height: 1000px;
     overflow-x: hidden;
     overflow-y: auto;
