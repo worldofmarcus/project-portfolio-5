@@ -4,8 +4,6 @@ from django.shortcuts import (
 from django.contrib import messages
 from products.models import Product
 
-# Create your views here.
-
 
 def view_bag(request):
     """ This view renders the bag contents page """
@@ -56,7 +54,7 @@ def add_to_bag(request, item_id):
 
 
 def adjust_bag(request, item_id):
-    """Adjust the quantity of the specified product to the specified amount"""
+    """ This view adjusts the quantity to a specific product """
 
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
@@ -98,7 +96,7 @@ def adjust_bag(request, item_id):
 
 
 def remove_from_bag(request, item_id):
-    """Remove the item from the shopping bag"""
+    """ This view removes a specific item from the shopping bag """
 
     try:
         product = get_object_or_404(Product, pk=item_id)
