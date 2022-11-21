@@ -831,7 +831,7 @@ CI Python Linter [Code Institute Linter](https://pep8ci.herokuapp.com/) was used
 * signals.py - No errors reported
 * urls.py - No errors reported
 * views.py - No errors reported
-* webhook_handler.py - No errors reported
+* webhook_handler.py - 3 line-too-long errors reported which I was not able to fix before sending in to assessment
 * webhooks.py - No errors reported
 
 **App Home**
