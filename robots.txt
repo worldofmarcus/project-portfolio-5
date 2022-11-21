@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /profile/
+Sitemap: https://project-portfolio-5.herokuapp.com/sitemap.xml

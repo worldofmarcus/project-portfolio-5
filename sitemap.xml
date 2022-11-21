@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/?sort=date&amp;direction=desc</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/?sort=rating&amp;direction=desc</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/?sort=name&amp;direction=asc</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/?category=tapes</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/?category=cds</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/?category=posters</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/?category=pins</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/?category=tshirts</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/?category=tanktops</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/?category=totebags</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/?category=vinyls</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/?tag=newarrivals</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/?tag=productofthemonth</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/accounts/login/</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/bag/</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/blog/</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/blog/new-release-by-artax/</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/blog/?category=Releases</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/blog/a-walk-in-the-morning-sun/</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/blog/?category=Tips</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/blog/new-release-by-layla/</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/faq/</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/privacy_policy/</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/66/</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/?tag=Ambient</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/?tag=Analog</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/65/</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/?tag=Birthday</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/64/</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/37/</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/36/</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/35/</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/34/</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/33/</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/32/</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/?tag=Fun</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/?page=</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/?page=2</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/?page=3</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/28/</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/?tag=Tape</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/31/</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/29/</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/30/</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/22/</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/24/</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/23/</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/21/</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/27/</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/26/</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/25/</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/blog/studio-session-in-the-forest/</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/blog/?page=</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://project-portfolio-5.herokuapp.com/products/?page=1</loc>
+  <lastmod>2022-11-21T11:29:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
