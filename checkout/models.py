@@ -10,6 +10,9 @@ from profiles.models import UserProfile
 
 
 class Order(models.Model):
+    """
+    This class creates the order model.
+    """
     order_number = models.CharField(max_length=32, null=False, editable=False)
     user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,
                                      null=True, blank=True,
@@ -59,7 +62,7 @@ class Order(models.Model):
     def save(self, *args, **kwargs):
         """
         This method overrides the default save method to set the
-        order number (if it has'nt already been set).
+        order number (if it hasn't already been set).
         """
         if not self.order_number:
             self.order_number = self._generate_order_number()
@@ -70,6 +73,9 @@ class Order(models.Model):
 
 
 class OrderLineItem(models.Model):
+    """
+    This class creates the orderlineitem model.
+    """
     order = models.ForeignKey(Order, null=False, blank=False,
                               on_delete=models.CASCADE,
                               related_name='lineitems')
