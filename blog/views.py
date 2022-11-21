@@ -12,7 +12,8 @@ from .models import *
 
 def view_latest_blog_posts(request):
     """ This view lists the 3 latest blog posts
-    and adds the query to a paginator """
+    and adds the query to a paginator
+    """
 
     posts = Post.objects.filter(status=1)
     category = None
@@ -33,7 +34,8 @@ def view_latest_blog_posts(request):
 
 def view_all_blog_posts(request):
     """ This view lists 9 blog posts at a time.
-    The view also includes pagination functionality """
+    The view also includes pagination functionality
+    """
 
     posts = Post.objects.filter(status=1)
     category = None
@@ -117,7 +119,8 @@ def add_blog_post(request):
 @login_required
 def edit_blog_post(request, slug):
     """ This view makes it possible to edit a blog post
-    on the site """
+    on the site
+    """
 
     posts = Post.objects.all()
     query = None
