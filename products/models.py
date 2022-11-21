@@ -51,10 +51,13 @@ class Product(models.Model):
                                  on_delete=models.SET_NULL)
     date = models.DateTimeField(auto_now_add=True)
     name = models.CharField(max_length=200, null=True)
-    price = models.DecimalField(max_digits=15, decimal_places=2, validators=[MinValueValidator(0.0, message=None)])
+    price = models.DecimalField(
+        max_digits=15, decimal_places=2, validators=[
+            MinValueValidator(0.0, message=None)])
     tags = models.ManyToManyField(Tag)
     description = models.TextField()
-    rating = models.DecimalField(max_digits=6, decimal_places=2, blank=True, null=True)
+    rating = models.DecimalField(
+        max_digits=6, decimal_places=2, blank=True, null=True)
     sku = models.CharField(max_length=254, null=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     product_size = models.BooleanField(default=False, null=True, blank=True)
