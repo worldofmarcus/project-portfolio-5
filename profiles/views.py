@@ -20,7 +20,8 @@ def profile(request):
             form.save()
             messages.success(request, 'Profile updated successfully')
         else:
-            messages.error(request, 'Update failed. Please ensure the form is valid.')
+            messages.error(
+                request, 'Update failed. Please ensure the form is valid.')
     else:
         form = UserProfileForm(instance=profile)
     orders = profile.orders.all().order_by('-date')
@@ -57,12 +58,14 @@ def add_to_wishlist(request, id):
     product = get_object_or_404(Product, id=id)
     if product.users_wishlist.filter(id=request.user.id).exists():
         product.users_wishlist.remove(request.user)
-        messages.success(request, 'Removed ' + product.name + ' from your wishlist')
+        messages.success(
+            request, 'Removed ' + product.name + ' from your wishlist')
         return redirect(reverse('wishlist'))
 
     else:
         product.users_wishlist.add(request.user)
-        messages.success(request, 'Added ' + product.name + ' to your wishlist')
+        messages.success(
+            request, 'Added ' + product.name + ' to your wishlist')
 
     return HttpResponseRedirect(request.META['HTTP_REFERER'])
 
