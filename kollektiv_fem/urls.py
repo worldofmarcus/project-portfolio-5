@@ -1,3 +1,5 @@
+"""Import relevant modules for the application"""
+
 from .views import handler404
 from django.contrib import admin
 from django.urls import path, include

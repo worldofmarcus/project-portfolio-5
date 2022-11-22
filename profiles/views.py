@@ -1,3 +1,5 @@
+"""Import relevant modules for the application"""
+
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.http import HttpResponseRedirect
 from django.contrib import messages

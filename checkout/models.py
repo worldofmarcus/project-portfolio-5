@@ -1,3 +1,5 @@
+"""Import relevant modules for the application"""
+
 import uuid
 
 from django.db import models

@@ -1,3 +1,5 @@
+"""Import relevant modules for the application"""
+
 from django.contrib import admin
 from .models import Order, OrderLineItem
 

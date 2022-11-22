@@ -1,3 +1,5 @@
+"""Import relevant modules for the application"""
+
 from django.db import models
 from django.contrib.auth.models import User
 from django.core.validators import MinValueValidator

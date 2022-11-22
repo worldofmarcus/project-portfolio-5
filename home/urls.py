@@ -1,3 +1,5 @@
+"""Import relevant modules for the application"""
+
 from django.urls import path
 from blog.views import view_latest_blog_posts
 from . import views

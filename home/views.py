@@ -1,3 +1,5 @@
+"""Import relevant modules for the application"""
+
 from django.shortcuts import render
 
 
