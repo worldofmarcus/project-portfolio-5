@@ -25,6 +25,8 @@ import json
 
 @require_POST
 def cache_checkout_data(request):
+    """This view handles the caching of customer data"""
+
     try:
         pid = request.POST.get('client_secret').split('_secret')[0]
         stripe.api_key = settings.STRIPE_SECRET_KEY
@@ -41,6 +43,12 @@ def cache_checkout_data(request):
 
 
 def checkout(request):
+
+    """This view handles the checkout process
+    i.e. validating the form data and pre fill it
+    if there is delivery information in the users
+    profile"""
+
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
@@ -117,7 +125,7 @@ def checkout(request):
             currency=settings.STRIPE_CURRENCY,
         )
 
-        # Try to pre fill the form wit info from user profile
+        # Try to pre fill the form with info from user profile
         if request.user.is_authenticated:
             try:
                 profile = UserProfile.objects.get(user=request.user)
@@ -153,7 +161,7 @@ def checkout(request):
 
 def checkout_success(request, order_number):
     """
-    Handle successful checkouts
+    This view handles the successful checkouts
     """
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
