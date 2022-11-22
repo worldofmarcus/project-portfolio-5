@@ -9,6 +9,8 @@ from checkout.webhook_handler import StripeWH_Handler
 
 import stripe
 
+"""This webhook is taken from the 'Building an E-commerce Platform -
+Project - Boutique Ado'"""
 
 @require_POST
 @csrf_exempt

@@ -13,7 +13,8 @@ from products.models import Product
 
 @login_required
 def profile(request):
-    """ This view displays the users profile. """
+    """This view displays the users profile"""
+
     profile = get_object_or_404(UserProfile, user=request.user)
 
     if request.method == 'POST':
@@ -40,6 +41,9 @@ def profile(request):
 
 @login_required
 def order_history(request, order_number):
+    """This view displays the order history
+    on a checkout success page"""
+
     order = get_object_or_404(Order, order_number=order_number)
 
     messages.info(request, (
@@ -57,6 +61,9 @@ def order_history(request, order_number):
 
 @login_required
 def add_to_wishlist(request, id):
+    """This view handles the adding of a product to the
+    users wishlist"""
+
     product = get_object_or_404(Product, id=id)
     if product.users_wishlist.filter(id=request.user.id).exists():
         product.users_wishlist.remove(request.user)
@@ -74,6 +81,8 @@ def add_to_wishlist(request, id):
 
 @login_required
 def wishlist(request):
+    """This view lists the users wishlist"""
+
     products = Product.objects.filter(users_wishlist=request.user)
     template = 'profiles/wishlist.html'
     context = {
@@ -85,6 +94,9 @@ def wishlist(request):
 
 @login_required
 def remove_wishlist(request, id):
+    """This view handles the removal of a product from the
+    users wishlist"""
+
     product = get_object_or_404(Product, id=id)
     template = 'profiles/remove_wishlist.html'
     context = {

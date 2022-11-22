@@ -12,6 +12,8 @@ from profiles.models import UserProfile
 import json
 import time
 
+"""This webhook_handler is taken from the 'Building an E-commerce Platform -
+Project - Boutique Ado'"""
 
 class StripeWH_Handler:
     """This class handles the Stripe webhooks"""
