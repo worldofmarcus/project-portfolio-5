@@ -1704,11 +1704,11 @@ To clone and set up this project you need to follow the steps below.
 ![Clone](readme/assets/images/github_clone_01.png)
 </details><br />
 
-5. To be able to get the project to work you need to install the requirements. This can be done by using the command below:
+5. You need to install all the requirements to get the project to work. This can be done by using the command below:
 
-* ```pip3 install -r requirements.txt``` - This command downloads and install all required dependencies that is stated in the requirements file.
+* ```pip3 install -r requirements.txt``` - This command downloads and installs all required dependencies that is stated in the requirements file.
 
-6. The next step is to set up the environment file so that the project knows what variables that needs to be used for it to work. Environment variables are usually hidden due to sensitive information. It's very important that you don't push the env.py file to Github (this can be secured by adding env.py to the .gitignore-file). The variables that are declared in the env.py file needs to be added to the Heroku config vars. Don't forget to do necessary migrations before trying to run the server.
+6. The next step is to set up the environment file so that the project knows what variables it needs to work. Environment variables are usually hidden due to sensitive information. It's **very** important that you don't push the env.py file to Github (this can be secured by adding env.py to the .gitignore-file). The variables that are declared in the env.py file needs to be added to the Heroku config vars. Don't forget to do necessary migrations before trying to run the server.
 
 * ```python3 manage.py migrate``` - This will do the necessary migrations.
 * ```python3 manage.py runserver``` - If everything i setup correctly the project is now live locally.
