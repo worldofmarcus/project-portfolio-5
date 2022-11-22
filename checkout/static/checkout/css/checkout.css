@@ -1,3 +1,7 @@
+/* ============================
+   Loading overlay & spinner
+   ============================ */
+
 #loading-overlay {
     display: none;
     position: fixed;
