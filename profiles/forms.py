@@ -5,6 +5,11 @@ from .models import UserProfile
 
 
 class UserProfileForm(forms.ModelForm):
+    """
+    This class handles the UserProfileForm
+    (based on the UserProfile model)
+    """
+
     class Meta:
         model = UserProfile
         exclude = ('user',)
@@ -18,6 +23,7 @@ class UserProfileForm(forms.ModelForm):
         Add placeholders and classes, remove auto-generated
         labels and set autofocus on first field
         """
+
         super().__init__(*args, **kwargs)
         placeholders = {
             'default_phone_number': 'Phone Number',
