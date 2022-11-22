@@ -1766,6 +1766,8 @@ To clone and set up this project you need to follow the steps below.
 # Acknowledgements
 This fictional site was created for Portfolio Project #5 (E-Commerce Applications Portfolio Project) - Diploma in Full Stack Software Development Diploma at the [Code Institute](https://www.codeinstitute.net). I would like to thank my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/) for relevant feedback during the project and my fantastic wife for supporting me through all the projects.
 
+This is my last project here at Code Institute and I would like to thank you guys for a really exciting and rewarding education (which I managed to complete in 5 months). :)
+
 *Marcus Eriksson, 2022-11-22*
 
 [Back to top](<#table-of-content>)
