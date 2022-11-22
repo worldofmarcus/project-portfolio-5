@@ -1445,6 +1445,8 @@ No known bugs besides those in the fixed / unfixed bugs section.
 ![Bug When Changing Product Size To True](readme/assets/images/bug_change_product_to_size.png)
 </details><br />
 
+**2022-11-22**
+* Bug: If a user has added an item in the wishlist and admin changes the product to draft the product still is showing in the users wishlist. If admin removes the product it disappears from the users wishlist. It's quite easy to put in a check if the product is in draft or not on the wishlist (hence not show it if it's not published). I can't prioritize this due to project deadline, but I am aware of the bug (which is not a critical bug I would say).
 
 [Back to top](<#table-of-content>)
 
