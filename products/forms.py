@@ -18,7 +18,7 @@ class ProductForm(forms.ModelForm):
 
         model = Product
         fields = ('category', 'name', 'price', 'product_size', 'description',
-                  'image', 'tags', 'status',)
+                  'image', 'sku', 'tags', 'status',)
         widgets = {
                     'category': forms.Select(
                         attrs={'class': 'form-select'}),
