@@ -12,7 +12,10 @@ from .forms import ProductForm
 
 
 def list_all_products(request):
-    """ A view that lists all products """
+    """ This view lists all products depending on what
+    is included in the GET request (i.e. category and sort).
+    It also handles the pagination on the page.
+    """
 
     products = Product.objects.filter(status=1)
     query = None
@@ -82,7 +85,7 @@ def list_all_products(request):
 
 
 def product_detail(request, product_id):
-    """ A view that lists a specific product """
+    """This view lists a specific product"""
 
     product = get_object_or_404(Product, pk=product_id)
 
@@ -95,7 +98,7 @@ def product_detail(request, product_id):
 
 @login_required
 def add_product(request):
-    """ This view adds a product to the site """
+    """This view adds a product to the site"""
 
     products = Product.objects.all()
     query = None
@@ -139,8 +142,10 @@ def add_product(request):
 
 @login_required
 def edit_product(request, product_id):
-    """ This view makes it possible to edit a product
-    on the site """
+    """
+    This view makes it possible to edit a product
+    on the site
+    """
 
     products = Product.objects.all()
 
@@ -175,7 +180,7 @@ def edit_product(request, product_id):
 
 @login_required
 def delete_product(request, product_id):
-    """ This view will delete a product from the site """
+    """This view will delete a product from the site"""
 
     if not request.user.is_superuser:
         messages.error(request, 'You do not have access to this page!')
