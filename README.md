@@ -1402,7 +1402,7 @@ No known bugs besides those in the fixed / unfixed bugs section.
 </details><br />
 
 **2022-11-22**
-* Bug: When creating a new product and adding a price more than 999.999.99 EUR the site crasches during checkout (throws a 500 error / InvalidRequestError). This bug was fixed by changing the number of accepted digits in the products model.
+* Bug: When creating a new product and adding a price more than 999.999.99 EUR the site crasches during checkout (throws a 500 error / InvalidRequestError). This bug was fixed by changing the number of accepted digits in the products model. **Update** The problem did show up again during the handshake with Stripe. I have solved this to lower the number of accepted digits, which works fine for the products on this site.
 
 <details><summary><b>999.999.99 EUR Checkout Bug</b></summary>
 
