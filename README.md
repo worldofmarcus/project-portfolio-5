@@ -1437,6 +1437,15 @@ No known bugs besides those in the fixed / unfixed bugs section.
 **2022-11-18**
 * Bug: On the add_product.html (Product Management) page the drop-down arrow on the size field is missing. I have tried several fixes without success so I decided to keep it as it is. If the site would have gone live I would have invested more time to fix the bug.
 
+**2022-11-22**
+* Bug: After adding a product from the product management view without a size and then change the product to include a size the site crasches (TypeError). This is not something I can't prioritize to fix it due to project deadline but I thought it would be proper to report it as a bug so that you know I am aware of it.
+
+<details><summary><b>Bug When Changing Product Size To True</b></summary>
+
+![Bug When Changing Product Size To True](readme/assets/images/bug_change_product_to_size.png)
+</details><br />
+
+
 [Back to top](<#table-of-content>)
 
 # Deployment
