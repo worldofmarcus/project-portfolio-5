@@ -1,12 +1,12 @@
-/* ==============
+/* ============================
    google fonts
-   ============== */
+   ============================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-/* ==============
+/* ============================
    global styles
-   ============== */
+   ============================ */
 
 h1,
 h2,
@@ -51,9 +51,9 @@ h6 {
     transform: scale(1.1);
 }
 
-/* ==================
+/* ============================
    top bar & nav bar
-   ================== */
+   ============================ */
 
 #topContent {
     background-color: #ce8147;
@@ -83,9 +83,9 @@ h6 {
     font-size: 1rem;
 }
 
-/* ==============
+/* ============================
    carousel
-   ============== */
+   ============================ */
 
 .carousel-item {
     height: 32rem;
@@ -131,7 +131,6 @@ h6 {
     padding-bottom: 130px;
 }
 
-
 .carousel-button {
     font-family: 'Poppins', sans-serif;
     color: #fff4d2;
@@ -158,9 +157,9 @@ h6 {
     height: 48px;
 }
 
-/* ==================
+/* ============================
    blog posts
-   ================== */
+   ============================*/
 
 .card-title {
     font-family: 'Poppins', sans-serif;
@@ -185,9 +184,9 @@ h6 {
     font-size: 1.1rem;
 }
 
-/* ==============
-   input fields
-   ============== */
+/* ============================
+   input fields & tables
+   ============================ */
 
 input[type=search] {
     border: none;
@@ -238,18 +237,17 @@ input[type=email]:focus {
     height: 50px;
 }
 
-
-/* ==============
+/* ============================
    allauth
-   ============== */
+   ============================*/
 .allauth-text {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1rem;
 }
 
-/* ==============
+/* ============================
    footer
-   ============== */
+   ============================*/
 
 .footer-bg {
     background-color: #ce8147;
@@ -259,26 +257,6 @@ input[type=email]:focus {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1.0rem;
 }
-
-/* ============================
-   Image field in product form
-   ============================ */
-
-.btn-file {
-    position: relative;
-    overflow: hidden;
-}
-
-.btn-file input[type="file"] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    opacity: 0;
-    cursor: pointer;
-}
-
 
 /* ============================
    bag
@@ -298,9 +276,9 @@ input[type=email]:focus {
     overflow-y: auto;
 }
 
-/* ==================
+/* ============================
    faq
-   ================== */
+   ============================ */
 
 .faq {
     font-family: 'Cousine', monospace;
@@ -312,9 +290,9 @@ input[type=email]:focus {
     font-size: 15px;
 }
 
-/* ==============
+/* ============================
    mailchimp
-   ============== */
+   ============================ */
 
 #mc_embed_signup {
     background: #ce8147;
@@ -332,9 +310,9 @@ input[type=email]:focus {
     color: #000000;
 }
 
-/* ==============
+/* ============================
    media queries
-   ============== */
+   ============================ */
 
 @media screen and (max-width: 1200px) {
     .carousel-text-box-headline {
@@ -348,7 +326,30 @@ input[type=email]:focus {
     }
 }
 
+@media screen and (max-width: 500px) {
+    .carousel-text-box-headline {
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+
+    .carousel-text-box {
+        font-size: 0.8rem;
+        padding-bottom: 150px;
+    }
+
+    .carousel-button {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+}
+
 @media screen and (max-width: 375px) {
+
+    #topContent {
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+
     .navbar-brand {
         font-size: 1.5em;
     }

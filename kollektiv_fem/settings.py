@@ -32,7 +32,7 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['project-portfolio-5.herokuapp.com', 'localhost']
 CSRF_TRUSTED_ORIGINS = ['https://8000-worldofmarc-projectport-pfzlly4vy23.ws-eu77.gitpod.io']
