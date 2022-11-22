@@ -6,6 +6,12 @@ from .models import Product, Tag, Category
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
+    """
+    This class adds fields from the Product model to the admin
+    area and also add list functionality (i.e ordering and possibility
+    to execute actions).
+    """
+
     list_display = (
 
         'sku',
@@ -37,6 +43,11 @@ class ProductAdmin(admin.ModelAdmin):
 
 @admin.register(Tag)
 class TagAdmin(admin.ModelAdmin):
+    """
+    This class adds fields from the Tag model to the admin
+    area.
+    """
+
     list_display = (
         'view_name',
         'name',
@@ -45,6 +56,11 @@ class TagAdmin(admin.ModelAdmin):
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
+    """
+    This class adds fields from the Category model to the admin
+    area.
+    """
+
     list_display = (
         'view_name',
         'name',
