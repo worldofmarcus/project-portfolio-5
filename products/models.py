@@ -54,7 +54,7 @@ class Product(models.Model):
     date = models.DateTimeField(auto_now_add=True)
     name = models.CharField(max_length=200, null=True)
     price = models.DecimalField(
-        max_digits=15, decimal_places=2, validators=[
+        max_digits=8, decimal_places=2, validators=[
             MinValueValidator(0.0, message=None)])
     tags = models.ManyToManyField(Tag)
     description = models.TextField()
