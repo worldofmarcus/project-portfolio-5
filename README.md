@@ -1,7 +1,7 @@
 # **Kollektiv Fem [KFEM.]**
 Kollektiv Fem [KFEM] is a small DIY record label, creative studio and webshop located in the north of Sweden. Risen from the ashes of Dreamnation Studios in 2018. Kollektiv Fem mainly focuses on releasing own art and other creative content like i.e. cassettes, vinyl records, t-shirts, compact discs, posters and pins. The site offers a webshop so that as many as possible can buy art in an easy way. The site also offers a blog that is handled by Kollektiv Fem with information about their latest releases and other relevant content for the site visitor. Kollektiv Fem is not only a webshop but also a digital spot on the web where everyone interested in art are welcome.
 
-Even though this is a fictional size that most likely never will be published to the masses it is actually my (Marcus) DIY business where I release art that I have made. But for now this site was created for Portfolio Project #5 (E-Commerce Applications Portfolio Project) - Diploma in Full Stack Software Development Diploma at the [Code Institute](https://www.codeinstitute.net).
+Even though this is a fictional size that most likely never will be published to the masses it is actually my (Marcus) DIY business where I release art that I have created. But for now this site was created for Portfolio Project #5 (E-Commerce Applications Portfolio Project) - Diploma in Full Stack Software Development Diploma at the [Code Institute](https://www.codeinstitute.net).
 
 [View live website here](https://project-portfolio-5.herokuapp.com/)
 
@@ -67,7 +67,7 @@ The user of 'Kollektiv Fem' loves art of all forms and is excited to listen to a
 The goal of the site owner is to deliver a site where the users in an intuitive way can buy Kollektiv Fems art and get relevant information of what is happening at Kollektiv Fem.
 
 ## Business Model
-To know which business model that fits the needs and requirements for a business is of course very important. Kollektiv Fem is a business that sells the products directly to the end users through direct selling via the Kollektiv Fem webpage. The buyers are private consumers which makes Kollektiv Fems business model a B2C (Business To Consumer)-model. This means that everytime a Kollektiv Fem customer buys something from the webpage a B2C transaction is completed. To be able to implement a B2C eCommerce model in a successful way it is very important to have a quickly adjustable platform to be able to adapt to the customers if needed. The Kollektiv Fem webpage is highly a adjustable platform which makes fast adjustments quite easy. But to have a solid platform is not everything, of course there is a need for good marketing techniques to be able to reach out to new customers and engage the existing ones.
+To know which business model that fits the needs and requirements for a business is of course very important. Kollektiv Fem is a business that sells the products directly to the end users through direct selling via the Kollektiv Fem webpage. The buyers are private consumers which makes Kollektiv Fems business model a B2C (Business To Consumer)-model. This means that everytime a Kollektiv Fem customer buys something from the webpage a B2C transaction is completed. To be able to implement a B2C eCommerce model in a successful way it is very important to have a quickly adjustable platform to be able to adapt to the customers if needed. The Kollektiv Fem webpage is a highly adjustable platform which makes fast adjustments quite easy. But to have a solid platform is not everything, of course there is a need for good marketing techniques to be able to reach out to new customers and engage the existing ones.
 
 ## Marketing Techniques
 There are a lot of different marketing techniques out there. For Kollektiv Fem there has from the start been some areas that builds the foundation of the Kollektiv Fem trademark, and also sets the prerequisites to reach the customers.
@@ -86,7 +86,7 @@ On the Kollektiv Fem site there is a blog that is being used to create original,
 
 * **Facebook and Instagram (social media marketing)**
 
-Social Media marketing is a great tool if it's done in the right way. Kollektiv Fem has a presence on social media through the platforms Facebook and Instagram. It helps Kollektiv Fem to communicate with both existing customers but also potential new ones. Through the social media platforms Kollektiv Fem can create engagement, interact on a broad level and maintain brand recognition. For Kollektiv Fem the product sale is being made on the site why it is very important to use the social media platforms to boost traffic to the website (i.e. when a new blog has been published or when the product of the month has been released). For now Kollektiv Fem only works with organic growth but will most likely start with payed ads to target specific customer groups in the future.
+Social Media marketing is a great tool if it's done in the right way. Kollektiv Fem has a presence on social media through the platforms Facebook and Instagram. It helps Kollektiv Fem to communicate with both existing customers but also potential new ones. Through the social media platforms Kollektiv Fem can create engagement, interact on a broad level and maintain brand recognition. For Kollektiv Fem the product sale is being made on the site why it is very important to use the social media platforms to boost traffic to the website (i.e. when a new blog has been published or when the product of the month has been released). For now Kollektiv Fem only focuses on organic growth but will most likely start with payed ads to target specific customer groups in the future.
 
 <details><summary><b>Kollektiv Fem - Facebook</b></summary>
 
@@ -117,7 +117,7 @@ The site also includes a sitemap.xml and robots.txt to make sure that the search
 ## Project Management
 
 ### Trello & Github Board
-For this project I have used the applicatio [Trello](https://trello.com/) and the project board in GitHub to have control over my project. I just this setup on Project Portfolio 4 and it has worked really well this time also. Github was use to plan, create and organise my user stories whilst Trello was used from a more general perspective.
+For this project I have used the application [Trello](https://trello.com/) and the project board in GitHub to have control over my project. I used this setup on Project Portfolio 4 and it has worked really well this time also. Github was use to plan, create and organise my user stories whilst Trello was used from a more general perspective.
 
 <details><summary><b>Trello & Github Board</b></summary>
 
@@ -135,7 +135,7 @@ Models used (besides standard user model) in this project are:
 
 **App: Blog**
 
-* **Category** - Handles blog categories. I made this specific model to have a more dynamic handling of adding blog categorys.
+* **Category** - Handles blog categories. I made this specific model to have a more dynamic handling of adding blog categories.
 * **Post** - Handles all the post blogs and also has a ForeignKey to the category which feed in the categories to the post model.
 
 **App: Checkout**
@@ -239,12 +239,12 @@ Read more about the different pages in the [Features](<#features>) section.
 
 * ### Color Scheme
 
-The color scheme chosen for the 'Kollektiv Fem' site was based around the color **Raw Sienna** [#ce8147] which is being used mainly in the top bar and footer. Other colors being used besides black and white are: **Cornsilk** [#fff4d2], **Caput Mortuum** [#561d25]. Cornsilk is being used in the menu area and Caput Mortuum as nav brand color. I believe that the colors have a warm feel to it but at the same time clean and professional. The colors offers a good readability and contrast as well. I used the online service [Coolors](https://coolors.co/) to choose the color scheme.
+The color scheme chosen for the 'Kollektiv Fem' site was based around the color **Raw Sienna** [#ce8147] which is being used mainly in the top bar and footer. Other colors being used besides black and white are: **Cornsilk** [#fff4d2] and **Caput Mortuum** [#561d25]. Cornsilk is being used in the menu area and Caput Mortuum as nav brand color. I believe that the colors have a warm feel to it but at the same time clean and professional. The colors offers a good readability and contrast as well. I used the online service [Coolors](https://coolors.co/) to choose the color scheme.
 
 ![Color Palette image](readme/assets/images/coolors_palette.png)
 
 * ### Typography
-The fonts used for the site are **Nunito**, **Poppins'** and **Cousine**. Fallback font for Nunito and Poppins is **sans-serif** and fallback font for Cousine is **monospace**.
+The fonts used for the site are **Nunito**, **Poppins** and **Cousine**. Fallback font for Nunito and Poppins is **sans-serif** and fallback font for Cousine is **monospace**.
 
 * 'Nunito' is used on more or less all body text on the site. It has quite a warm and nice look which I think worked really well on the bigger chunks of text on the site.
 
@@ -274,7 +274,7 @@ The top bar is always visible and includes information about free shipping. The 
 </details><br/>
 
 ### **Navigation**
-The navigation bar is includes the same basic options for the user (logged in or not logged in). If the user is logged in och logged in as an administrator the sub-menus look different.
+The navigation bar includes the same basic options for the user (logged in or not logged in). If the user is logged in or logged in as an administrator the sub-menus look different.
 
 **Navigation - User Not Logged In**
 * **Home** - Shows the user a carousel with two images and the latest blog posts
@@ -306,10 +306,11 @@ The navigation bar is includes the same basic options for the user (logged in or
 </details><br/>
 
 **Navigation - User Logged In**
+
 When an ordinary user is logged in the **my account** gets more available options, **my profile** and **my wishlist**.
 
 * **My Profile** - On the profile page the user can change delivery information and see the order history (and confirmations from earlier purchases)
-* **My Wishlist** - On the wishlist page the user can find their wishlist that is populated when the user adds itemt to the wishlist from the product detail area. From this view the user also can remove products from the wishlist (after being promted an 'are you sure'-confirmation message)
+* **My Wishlist** - On the wishlist page the user can find their wishlist that is populated when the user adds items to the wishlist from the product detail area. From this view the user also can remove products from the wishlist (after being promted an 'are you sure'-confirmation message)
 
 <details><summary><b>Navigation - My Account - User Logged In</b></summary>
 
@@ -342,6 +343,7 @@ When an ordinary user is logged in the **my account** gets more available option
 </details><br/>
 
 **Navigation - Admin Logged In**
+
 When a superuser / administrator is logged in the **my account** gets more avilable options, **manage products** and **manage blog**
 
 <details><summary><b>Navigation - My Account - Admin Logged In</b></summary>
@@ -458,7 +460,7 @@ Depending on what the site user chooses in the submenus in the menus **products*
 ![Product View](readme/assets/images/product_view.png)
 </details><br/>
 
-In the product detail view the user can **add the product** to the bag, add the product to the **wishlist**. If the user add the product to the wishlist the wishlist button changes to **in your wishlist**. I the product contains a size, a size option will appear on the product detail page as well.
+In the product detail view the user can **add the product** to the bag, add the product to the **wishlist**. If the user add the product to the wishlist the wishlist button changes to **in your wishlist**. If the product contains a size, a size option will appear on the product detail page as well.
 
 <details><summary><b>Product Detail</b></summary>
 
@@ -484,7 +486,7 @@ When the site user had added products by pressing the **add to bag** button the 
 </details><br/>
 
 ### **Secure Checkout**
-On the secure checkout page the user fills out a form with delivery details, card details to be able to complete the order. In the form the user has a possibility (if logged in) to save the information to the profile. If not logged in they get an option to register / sign in. On the page there is a order summary as well. If something doesn't look right the user has a possibility to adjust the bag. If the user is happy with the order summary they can use the **complete order** button to send the order for processing. The payment service used in this project is Stripe.
+On the secure checkout page the user fills out a form with delivery details, card details to be able to complete the order. In the form the user has a possibility (if logged in) to save the information to the profile. If not logged in they get an option to register / sign in. On the page there is an order summary as well. If something doesn't look right the user has a possibility to adjust the bag. If the user is happy with the order summary they can use the **complete order** button to send the order for processing. The payment service used in this project is Stripe.
 
 <details><summary><b>Secure Checkout</b></summary>
 
@@ -497,15 +499,20 @@ On the secure checkout page the user fills out a form with delivery details, car
 </details><br/>
 
 ### **Order Confirmation**
-If everything goes according to plan and the webhooks between Stripe and the site is OK an order confirmation page will be shown to the user (and a confirmation e-mail will be sent to the users registered e-mail address).
+If everything goes according to plan and the webhooks between Stripe and the site are OK an order confirmation page will be shown to the user (and a confirmation e-mail will be sent to the users registered e-mail address).
 
 <details><summary><b>Order Confirmation</b></summary>
 
 ![Order Confirmation](readme/assets/images/order_confirmation.png)
 </details><br/>
 
-### **Confirmation Emails**
-TO BE UPDATED AFTER DEPLOYMENT
+### **Confirmation Email**
+When the order is confirmed the user gets an confirmation e-mail to the registered e-mail.
+
+<details><summary><b>Confirmation Email</b></summary>
+
+![Confirmation Email](readme/assets/images/confirmation_email.png)
+</details><br/>
 
 ### **Sign Up**
 If the site visitor has no registered user at Kollektiv Fem they can sign up.
@@ -544,7 +551,7 @@ When the user clicks sign out in the menu bar a confirmation page is being showe
 </details><br/>
 
 ### **Footer**
-The footer area includes short information about Kollektiv Fem, links to relevant social media, a newsletter signup form (through MailChimp), a link to Kollektiv Fem on the web, a link to Kollektiv Fems privacy policy and a link to Kollektiv Fems FAQ:s (that includes commonly asked questions and a couple of useful links to Kollektiv Fems friends in the business).
+The footer area includes short information about Kollektiv Fem, links to relevant social media, a newsletter signup form (through MailChimp), a link to Kollektiv Fem on the web, a link to Kollektiv Fems privacy policy and a link to Kollektiv Fems FAQ (that includes commonly asked questions and a couple of useful links to Kollektiv Fems friends in the business).
 
 <details><summary><b>Footer</b></summary>
 
@@ -562,7 +569,7 @@ The footer area includes short information about Kollektiv Fem, links to relevan
 </details><br/>
 
 ### **Visual Feedback To The User**
-The sites incorporates flash messages when an action has been performed (i.e. delete/update/add to bag/ actions). Examples of this in the screenshots below.
+The sites incorporates flash messages when an action has been performed (i.e. delete/update/add to bag-actions). Examples of this in the screenshots below.
 
 <details><summary><b>Confirmation Messages</b></summary>
 
@@ -785,7 +792,7 @@ The code on the Kollektiv Fem site has been tested through W3C Markup Validation
 
 [Back to top](<#table-of-content>)
 
-### CSS Validaton
+### CSS Validation
 When validating my own code the W3C CSS Validator reports no errors but 16 errors connected to Bootstrap were reported.
 
 <details><summary><b>CSS Validation Result</b></summary>
@@ -831,8 +838,8 @@ CI Python Linter [Code Institute Linter](https://pep8ci.herokuapp.com/) was used
 * signals.py - No errors reported
 * urls.py - No errors reported
 * views.py - No errors reported
-* webhook_handler.py - 2 line-too-long errors reported which I was not able to fix before sending in to assessment
-* webhooks.py - 1 line-too-long errors reported which I was not able to fix before sending in to assessment
+* webhook_handler.py - 2 line-too-long errors reported which I was not able to fix before sending in the project for assessment
+* webhooks.py - 1 line-too-long errors reported which I was not able to fix before sending in the project for assessment
 
 **App Home**
 * apps.py - No errors reported
@@ -1284,7 +1291,7 @@ The responsive design tests were carried out manually with [Google Chrome DevToo
 [Back to top](<#table-of-content>)
 
 ### Lighthouse
-Google Lighthouse in Chrome Developer Tools was used to test the application within the areas of *Performance*, *Accessibility*, *Best Practices* and *SEO*. I tested the *home page*, *view all blog posts page*, *view all products page*, *product management page* and *blog management page*. The testing showed the following:
+Google Lighthouse in Chrome Developer Tools was used to test the site within the areas of *Performance*, *Accessibility*, *Best Practices* and *SEO*. I tested the *home page*, *view all blog posts page*, *view all products page*, *product management page* and *blog management page*. The testing showed the following:
 
 * Home Page - Performance: 70, Accessibility: 100, Best Practises: 100, SEO: 92
 * View All Blog Posts Page - Performance: 68, Accessibility: 100, Best Practises: 100, SEO: 92
@@ -1339,7 +1346,7 @@ From a general point of view these are quite good results. On all pages the perf
 [Back to top](<#table-of-content>)
 
 ### Peer Review
-Additional testing of the application was conducted by people outside of the software development field. Some smaller spelling and grammar errors were found on the site and corrected. No major challenges connected to the design or handling of the site.
+Additional testing of the site was conducted by people outside of the software development field. Some smaller spelling and grammar errors were found on the site and corrected. No major challenges connected to the design or handling of the site.
 
 ## Known bugs
 No known bugs besides those in the fixed / unfixed bugs section.
@@ -1379,19 +1386,19 @@ No known bugs besides those in the fixed / unfixed bugs section.
 
 **HTML Validator Error Home**
 
-![HTML Validator Error Home](readme/assets/images/html_validator_home.png)
+![HTML Validator Error Home](readme/assets/images/html_validator_bug_home.png)
 
 **HTML Validator Error Wishlist**
-![HTML Validator Error Wishlist](readme/assets/images/html_validator_bug_wishlist)
+![HTML Validator Error Wishlist](readme/assets/images/html_validator_bug_wishlist.png)
 
 **HTML Validator Error Remove Wishlist**
-![HTML Validator Error Remove Wishlist](readme/assets/images/html_validator_bug_remove_wishlist)
+![HTML Validator Error Remove Wishlist](readme/assets/images/html_validator_bug_remove_wishlist.png)
 
 **HTML Validator Error Footer**
-![HTML Validator Error Footer](readme/assets/images/html_validator_footer.png)
+![HTML Validator Error Footer](readme/assets/images/html_validator_bug_footer.png)
 
 **HTML Validator Error Profile**
-![HTML Validator Error Footer](readme/assets/images/html_validator_profile_page.png)
+![HTML Validator Error Footer](readme/assets/images/html_validator_bug_profile_page.png)
 </details><br />
 
 **2022-11-22**
@@ -1520,7 +1527,7 @@ Now it is time to do our first migration and run the server to test that everyth
 
 * In the top right corner there is a button that is labeled 'New'. Click that and then select 'Create new app'.
 
-<details><summary><b>Heroku Step 09</b></summary>
+<details><summary><b>Heroku Step 9</b></summary>
 
 ![Heroku Step 9](readme/assets/images/heroku_09.png)
 </details><br />
@@ -1639,50 +1646,44 @@ Now it is time to do our first migration and run the server to test that everyth
 ![Heroku Step 23](readme/assets/images/heroku_23.png)
 </details><br />
 
-24. Now it's time to link the file to the Heroku templates directory.
+24. Now it's time to link the file to the Heroku templates directory and change the templates directory to TEMPLATES_DIR in the templates array. We also add a path to allauth which this project uses.
 
 <details><summary><b>Heroku Step 24</b></summary>
 
 ![Heroku Step 24](readme/assets/images/heroku_24.png)
 </details><br />
 
-25. Let's change the templates directory to TEMPLATES_DIR in the templates array. We also add a path to allauth which this project uses.
+
+25. To be able to get the application to work through Heroku we also need to add our Heroku app and localhost to which hosts that are allowed. You might also need to add a CSRF_TRUSTED_ORIGINS line if you are going to run the project locally.
 
 <details><summary><b>Heroku Step 25</b></summary>
 
 ![Heroku Step 25](readme/assets/images/heroku_25.png)
 </details><br />
 
-26. To be able to get the application to work through Heroku we also need to add our Heroku app and localhost to which hosts that are allowed. You might also need to add a CSRF_TRUSTED_ORIGINS line if you are going to run the project locally.
-
-<details><summary><b>Heroku Step 26</b></summary>
-
-![Heroku Step 26](readme/assets/images/heroku_26.png)
-</details><br />
-
-27. Now we just need to add some files to Gitpod.
+26. Now we just need to add some files to Gitpod.
 
 * Create 3 folders in the top level directory: **media**, **static**, **templates**
 * Create a file called **Procfile* and add the line ```web: gunicorn PROJ_NAME.wsgi?``` to it.
 
-28. Now you can save all the files and prepare for the first commit and push to Github by writing the lines below.
+27. Now you can save all the files and prepare for the first commit and push to Github by writing the lines below.
 
 * ```git add .```
 * ```git commit -m "Deployment Commit```
 * ```git push```
 
-29. Before moving on to the Heroku deployment we just need to add one more thing in the config vars. We need to add "PORT" in the KEY input field and "8000" in the VALUE field. If we don't add this there might be problems with the deployment.
+28. Before moving on to the Heroku deployment we just need to add one more thing in the config vars. We need to add "PORT" in the KEY input field and "8000" in the VALUE field. If we don't add this there might be problems with the deployment.
 
-30. Now it's time for deployment. Scroll to the top of the settings page in Heroku and click the 'Deploy' tab. For deployment method, select 'Github'. Search for the repository name you want to deploy and then click connect.
+29. Now it's time for deployment. Scroll to the top of the settings page in Heroku and click the 'Deploy' tab. For deployment method, select 'Github'. Search for the repository name you want to deploy and then click connect.
 
-31. Scroll down to the manual deployment section and click 'Deploy Branch'. Hopefully the deployment is successful!
+30. Scroll down to the manual deployment section and click 'Deploy Branch'. Hopefully the deployment is successful!
 
-<details><summary><b>Heroku Step 31</b></summary>
+<details><summary><b>Heroku Step 30</b></summary>
 
-![Heroku Step 31](readme/assets/images/heroku_31.png)
+![Heroku Step 30](readme/assets/images/heroku_30.png)
 </details><br />
 
-The live link to the 'Review | Alliance' site on Heroku an be found [here](https://project-portfolio-4.herokuapp.com/). And the Github repository can be found [here](https://github.com/worldofmarcus/project-portfolio-4).
+The live link to the 'Review | Alliance' site on Heroku an be found [here](https://project-portfolio-5.herokuapp.com/). And the Github repository can be found [here](https://github.com/worldofmarcus/project-portfolio-5).
 
 [Back to top](<#table-of-content>)
 
@@ -1749,10 +1750,10 @@ To clone and set up this project you need to follow the steps below.
 
 ## Technical
 
-* Some parts of this project are heavily inspired by the 'Building an E-commerce Platform - Project - Boutique Ado' provided by the [Code Institute](https://www.codeinstitute.net) (i.e. webhook_handler, signals and some of the checkout views). I have though incorporated my own design, code and added extra functionality to make this project as original as possible (and to present my knowledge within the scope of the project)
+* Some parts of this project are heavily inspired by the 'Building an E-commerce Platform - Project - Boutique Ado' provided by the [Code Institute](https://www.codeinstitute.net) (i.e. webhook_handler, signals and some of the checkout views). I have though incorporated my own design, code and added extra functionality to make this project as original as possible (and to present my knowledge within the scope of the project).
 
 # Acknowledgements
-This fictional site was created for Portfolio Project #5 (E-Commerce Applications Portfolio Project) - Diploma in Full Stack Software Development Diploma at the [Code Institute](https://www.codeinstitute.net). I would like to thank my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/) for relevant feedback during the project.
+This fictional site was created for Portfolio Project #5 (E-Commerce Applications Portfolio Project) - Diploma in Full Stack Software Development Diploma at the [Code Institute](https://www.codeinstitute.net). I would like to thank my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/) for relevant feedback during the project and my fantastic wife for supporting me through all the projects.
 
 *Marcus Eriksson, 2022-11-22*
 
