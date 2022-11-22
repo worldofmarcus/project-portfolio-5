@@ -1394,6 +1394,15 @@ No known bugs besides those in the fixed / unfixed bugs section.
 ![HTML Validator Error Footer](readme/assets/images/html_validator_profile_page.png)
 </details><br />
 
+**2022-11-22**
+* Bug: When creating a new product and adding a price more than 999.999.99 EUR the site crasches during checkout (throws a 500 error / InvalidRequestError). This bug was fixed by changing the number of accepted digits in the products model.
+
+<details><summary><b>999.999.99 EUR Checkout Bug</b></summary>
+
+![999.999.99 EUR Checkout Bug](readme/assets/images/bug_amount.png)
+</details><br />
+
+
 ### Unfixed Bugs
 
 **2022-11-10**
